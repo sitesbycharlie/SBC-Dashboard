@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="21600">
 <meta name="robots" content="noindex, nofollow">
 <title>Sites By Charlie: Mission Control</title>
 <style>
@@ -74,10 +73,35 @@ select,input[type=search]{background:#000000;color:var(--ink);border:1px solid v
 .sec{font-size:13px;color:var(--red);border-bottom:1px solid rgba(216,64,64,.35);padding-bottom:6px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin:22px 0 10px}
 .hid{color:var(--faint);letter-spacing:.1em}
 .foot{color:var(--faint);font-size:11px;margin-top:18px;line-height:1.5}
+
+/* ===== Dark glassmorphism layer ===== */
+body{background:#000000}
+#app{background-color:transparent}
+.backdrop{position:fixed;inset:0;z-index:-1;background:#000000;overflow:hidden}
+.backdrop i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.backdrop i:nth-child(1){width:520px;height:520px;left:-120px;top:-160px;background:#8E1616}
+.backdrop i:nth-child(2){width:420px;height:420px;right:-100px;top:30%;background:#D84040;opacity:.28}
+.backdrop i:nth-child(3){width:600px;height:600px;left:30%;bottom:-320px;background:#8E1616;opacity:.35}
+.glass,.panel,.card,.opp,.tbl-wrap,.tot div,.feed,.day,.now,.roster .bot{background:rgba(255,255,255,.045)!important;-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border:1px solid rgba(255,255,255,.10);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 8px 32px rgba(0,0,0,.45)}
+.tab,.btn,select,input[type=search]{background:rgba(255,255,255,.05)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-color:rgba(255,255,255,.12)}
+.tab.active{background:linear-gradient(135deg,rgba(142,22,22,.85),rgba(216,64,64,.85))!important}
+th{background:rgba(0,0,0,.55)}
+.chartglass{border-radius:18px;padding:10px;background:rgba(255,255,255,.025);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08)}
+.roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:18px}
+.roster .bot{border-radius:14px;padding:12px 14px;cursor:pointer;border-left:3px solid var(--c)}
+.roster .bot:hover{border-color:rgba(216,64,64,.6)}
+.roster .bn{display:flex;justify-content:space-between;gap:8px;align-items:center;font-weight:700}
+.roster .bs{font-size:10px;font-weight:700;letter-spacing:.08em}
+.roster .bl{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.4}
+.badge{display:inline-block;border-radius:999px;padding:2px 8px;font-size:10px;font-weight:800;letter-spacing:.1em}
+.badge.stale{background:rgba(216,64,64,.18);color:#ff8a8a;border:1px solid #D84040}
+.badge.live{background:rgba(114,201,146,.12);color:#72c992;border:1px solid rgba(114,201,146,.5)}
+.badge.emb{background:rgba(238,238,238,.06);color:rgba(238,238,238,.7);border:1px solid rgba(238,238,238,.2)}
 @media (max-width:759px){#app{padding:14px}h1{font-size:24px}.kv{grid-template-columns:80px 1fr}}
 </style>
 </head>
 <body>
+<div class="backdrop" aria-hidden="true"><i></i><i></i><i></i></div>
 <div id="app">
   <div class="top">
     <div><div class="kicker">Sites By Charlie · Bot team</div><h1>Mission <span>Control</span></h1></div>
@@ -102,8 +126,14 @@ select,input[type=search]{background:#000000;color:var(--ink);border:1px solid v
    Privacy: no emails, social handles or phone numbers belong here.
    ===================================================================== */
 const DATA = {
- "asOf": "23 Nov 2026, 14:30 Dublin",
- "footer": "Snapshot as of 23 Nov 2026, 14:30 Dublin, from each bot's latest activity and the Client Generation CRM. The page reloads every 6 hours, but new numbers only appear when this file is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
+ "asOf": "23 Nov 2026, 15:00 Dublin",
+ "asOfISO": "2026-11-23T15:00+00:00",
+ "sources": {
+  "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
+  "tracker": "2026-11-23 ~14:35 Europe/Dublin",
+  "agents": "2026-11-23T14:56:00+00:00"
+ },
+ "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
   {
    "id": "lead",
@@ -193,8 +223,8 @@ const DATA = {
    ],
    "waiting": [
     "Approve each day's batch in DMer, Emailer and Chaser chats",
-    "Errigal extra: bin or send",
-    "Station House: resend to the correct address?"
+    "Station House: end the sequence? (Chaser recommends)",
+    "Fitsquadgym Day 5: cut the unconfirmed booking-app line?"
    ]
   },
   "prospector": {
@@ -220,11 +250,11 @@ const DATA = {
    "role": "Instagram DM outreach",
    "group": "lead",
    "status": "working",
-   "last": "23 Nov 14:26",
+   "last": "23 Nov 14:54",
    "acts": [
-    "Pulling today's 5 DMs for Charlie to approve",
-    "Tapa Gym · Aoife McGill PT · Bar-Strength",
-    "Zoee Feeney · Steph Fit",
+    "Today's 5 DMs posted for Charlie to approve (~14:30)",
+    "Rewrote Steph Fit's DM to a modern-refresh angle (14:54)",
+    "Aoife McGill (#2) and Steph Fit (#5) awaiting a yes",
     "Signed in to Instagram and ready to send"
    ],
    "queue": [
@@ -234,8 +264,8 @@ const DATA = {
     "0 of 25 DMs sent this week"
    ],
    "waiting": [
-    "Approve DMs by number",
-    "DM vs email per prospect (plan: DM first, email 2–3 days later)"
+    "Approve Aoife's and Steph's DMs, and say who sends them",
+    "Approve the rest of today's 5 by number"
    ]
   },
   "emailer": {
@@ -244,11 +274,11 @@ const DATA = {
    "role": "Cold first-touch emails",
    "group": "lead",
    "status": "working",
-   "last": "23 Nov 14:26",
+   "last": "23 Nov 14:54",
    "acts": [
-    "Pulling today's 5 first-touch emails for approval",
-    "Its pick: Intensity, Aoife McGill, Steph Fit",
-    "…MriduYoga and Orlaith's (no saved plan for today)"
+    "Today's 5 first-touch emails waiting on Charlie's \"send them\"",
+    "Aoife and Steph follow-up emails queued for Wed 25, 9 AM",
+    "Holding those until DMer confirms the DMs went out"
    ],
    "queue": [
     "28 first-touch emails; 5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)",
@@ -266,23 +296,23 @@ const DATA = {
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 08:56",
+   "last": "23 Nov 14:35",
    "acts": [
-    "Daily check 08:56: no replies, no bounces",
-    "Nothing sent since the 3 dental finals on 19 Nov",
-    "21 follow-up cards waiting on approval"
+    "Rechecked today's follow-ups against live pages (14:35)",
+    "4 ready: Donegal Denture, Limitless, O'Flaherty, Pure Grit",
+    "Errigal extra binned, sequence ended (Charlie, 14:28)",
+    "Station House held: site is back up, so the draft is now wrong"
    ],
    "queue": [
-    "3 dental extras (today only)",
-    "4 gym Day 5s",
+    "4 follow-ups ready to send today on Charlie's word",
     "9 catch-ups for the 16 Nov batch (Tue 24)",
     "5 catch-ups for the 17 Nov batch (Wed 25)",
     "Gym Day 9s drafted Wed for Thu"
    ],
    "waiting": [
-    "Approve the 21 cards",
-    "Bin the Errigal extra (Chaser and Cleaner recommend)",
-    "Station House: the address used was wrong; send to the listed one?"
+    "Say \"send\" and name which of the 4 ready follow-ups",
+    "Station House: end its sequence too? (Chaser recommends)",
+    "Fitsquadgym: cut the unconfirmed booking-app line and re-card?"
    ]
   },
   "cleaner": {
@@ -291,10 +321,10 @@ const DATA = {
    "role": "Polishes every draft",
    "group": "lead",
    "status": "idle",
-   "last": "22 Nov evening",
+   "last": "23 Nov ~14:50",
    "acts": [
-    "Cleaned 24 fitness emails, average 6.7/10",
-    "Cleaned 25 fitness DMs, average 6.7/10"
+    "Polished the DM line in Aoife's and Steph's emails",
+    "Cleaned 24 fitness emails and 25 fitness DMs (6.7/10)"
    ],
    "queue": [
     "Standing by for rewrites"
@@ -444,29 +474,39 @@ const DATA = {
  },
  "ticker": [
   {
+   "t": "23 Nov 14:54",
+   "who": "DMer",
+   "text": "Steph Fit's DM rewritten to a modern-refresh angle; Aoife's unchanged"
+  },
+  {
+   "t": "23 Nov 14:54",
+   "who": "Emailer",
+   "text": "Aoife and Steph emails queued for Wed 25, held until their DMs are sent"
+  },
+  {
+   "t": "23 Nov 14:35",
+   "who": "Chaser",
+   "text": "4 follow-ups verified and ready: Denture, Limitless, O'Flaherty, Pure Grit"
+  },
+  {
+   "t": "23 Nov 14:35",
+   "who": "Chaser",
+   "text": "Station House held: its site is back up, so the draft would be wrong"
+  },
+  {
+   "t": "23 Nov 14:28",
+   "who": "Charlie",
+   "text": "Errigal extra binned and its sequence ended"
+  },
+  {
    "t": "23 Nov 14:26",
    "who": "Chief",
    "text": "Asked DMer and Emailer for today's 5 DMs and 5 emails, nothing sent"
   },
   {
-   "t": "23 Nov 14:26",
-   "who": "Emailer",
-   "text": "Pulling Intensity, Aoife McGill, Steph Fit, MriduYoga, Orlaith's"
-  },
-  {
-   "t": "23 Nov 14:26",
-   "who": "DMer",
-   "text": "Pulling Tapa Gym, Aoife McGill, Bar-Strength, Zoee Feeney, Steph Fit"
-  },
-  {
    "t": "23 Nov 08:56",
    "who": "Chaser",
    "text": "Daily check: no replies, no bounces, nothing sent since 19 Nov"
-  },
-  {
-   "t": "23 Nov 08:56",
-   "who": "Chaser",
-   "text": "Reminder: dental extras today only, 16 Nov catch-ups due tomorrow"
   },
   {
    "t": "22 Nov 20:12",
@@ -479,19 +519,9 @@ const DATA = {
    "text": "Jenny's terms confirmed: €0 build, 3 months free, €100/mo"
   },
   {
-   "t": "22 Nov eve",
-   "who": "Cleaner",
-   "text": "24 fitness emails and 25 fitness DMs cleaned, both 6.7/10"
-  },
-  {
    "t": "22 Nov 18:30",
    "who": "Prospector",
    "text": "25 Ireland-wide fitness leads delivered and routed"
-  },
-  {
-   "t": "22 Nov",
-   "who": "Chief",
-   "text": "Send plan tracker live in the CRM: 75 sends Mon–Fri"
   }
  ],
  "stages": [
@@ -1433,10 +1463,10 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 final sent (19 Nov)",
+   "stage": "Day 14 final sent",
    "overdue": "",
-   "next": "Extra follow-up Mon 23 Nov (one extra, today only) · bin recommended",
-   "response": "No reply",
+   "next": "—",
+   "response": "Sequence ended",
    "fitness": false
   },
   {
@@ -1445,9 +1475,9 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 final sent (19 Nov)",
+   "stage": "Day 14 sent",
    "overdue": "",
-   "next": "Extra follow-up Mon 23 Nov (one extra, today only)",
+   "next": "Extra follow-up Mon 23 Nov",
    "response": "No reply",
    "fitness": false
   },
@@ -1457,9 +1487,9 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 final sent (19 Nov)",
+   "stage": "Day 14 sent",
    "overdue": "",
-   "next": "Extra follow-up Mon 23 Nov (one extra, today only)",
+   "next": "Extra held: site is back up, so the draft is wrong. Chaser recommends ending the sequence",
    "response": "No reply",
    "fitness": false
   },
@@ -1663,7 +1693,7 @@ const DATA = {
    "first": "2026-11-18",
    "stage": "Day 1 first touch",
    "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "next": "Day 5 dropped from today pending a line fix · Gym Day 9 Thu 26 Nov",
    "response": "No reply",
    "fitness": false
   },
@@ -1922,7 +1952,7 @@ const DATA = {
  "batches": [
   {
    "label": "5 Nov dental (3)",
-   "detail": "Day 14 finals sent 19 Nov. One extra follow-up each is due Mon 23 Nov only; Errigal recommended to bin."
+   "detail": "Day 14 finals sent 19 Nov. Errigal's extra was binned and its sequence ended (23 Nov). Station House's extra is held. Donegal Denture's extra is ready for today."
   },
   {
    "label": "16 Nov batch (9 + 1 bounce)",
@@ -1937,7 +1967,15 @@ const DATA = {
    "detail": "Day 5 Mon 23 Nov, Day 9 Thu 26 Nov, Day 14 due 1 Dec."
   }
  ],
- "dmNote": "No DMs have been sent yet: 0 are logged in the CRM. 33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
+ "dmNote": "No DMs have been sent yet: 0 are logged. 33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
+ "drafts": {
+  "dmCold": 33,
+  "dmWarm": 1,
+  "dmFitness": 25,
+  "emailFirstTouch": 28,
+  "emailNeedsRewrite": 4,
+  "emailFitness": 24
+ },
  "outreach": {
   "dmsThisWeek": 0,
   "dmTarget": 25,
@@ -1988,7 +2026,7 @@ const DATA = {
    "name": "Station House Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Held",
    "warm": false
   },
   {
@@ -1997,7 +2035,7 @@ const DATA = {
    "name": "Donegal Denture Clinic",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Ready, awaiting Charlie's send",
    "warm": false
   },
   {
@@ -2006,7 +2044,7 @@ const DATA = {
    "name": "Errigal Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Awaiting Charlie's call",
+   "status": "Binned",
    "warm": false
   },
   {
@@ -2015,7 +2053,7 @@ const DATA = {
    "name": "Limitless Gym & Fitness",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Ready, awaiting Charlie's send",
    "warm": false
   },
   {
@@ -2024,7 +2062,7 @@ const DATA = {
    "name": "Fitsquadgym",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Dropped from today (line unconfirmed)",
    "warm": false
   },
   {
@@ -2033,7 +2071,7 @@ const DATA = {
    "name": "O'Flaherty Fitness and Performance",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Ready, awaiting Charlie's send",
    "warm": false
   },
   {
@@ -2042,7 +2080,7 @@ const DATA = {
    "name": "Pure Grit Gym",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Ready, awaiting Charlie's send",
    "warm": false
   },
   {
@@ -2850,7 +2888,7 @@ const DATA = {
 
 (function(){
 "use strict";
-var C={bg:"#000000",panel:"#0a0a0a",panel2:"#1a0606",ink:"#EEEEEE",muted:"rgba(238,238,238,0.6)",faint:"rgba(238,238,238,0.38)",cyan:"#22d3ee",violet:"#a78bfa",green:"#34d399",amber:"#fbbf24",gray:"#64748b",pink:"#f472b6",blue:"#60a5fa",crimson:"#f43f5e"};
+var C={bg:"#000000",panel:"rgba(14,14,16,0.62)",panel2:"rgba(70,12,12,0.62)",ink:"#EEEEEE",muted:"rgba(238,238,238,0.6)",faint:"rgba(238,238,238,0.38)",cyan:"#22d3ee",violet:"#a78bfa",green:"#34d399",amber:"#fbbf24",gray:"#64748b",pink:"#f472b6",blue:"#60a5fa",crimson:"#f43f5e"};
 /* Brand theme (sitesbycharlie.ie :root): black #000000, crimson #8E1616, red #D84040, light #EEEEEE, green #72c992 */
 var T={red:"#D84040",crimson:"#8E1616",light:"#EEEEEE",green:"#72c992",track:"rgba(238,238,238,0.08)"};
 var SC={working:C.green,waiting:C.amber,idle:C.gray,ceo:C.crimson,side:C.faint};
@@ -2863,25 +2901,27 @@ function eur(n){var d=Math.round(n*100)%100===0?0:2;return "€"+n.toLocaleStrin
 function fig(text){return showFig?esc(text):'<span class="hid">€ •••</span>';}
 function pill(text,color){return '<span class="pill" style="color:'+color+';border-color:'+color+'">'+esc(text)+'</span>';}
 function fmtDate(iso){if(!iso)return "—";var m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];var p=iso.split("-");return (+p[2])+" "+m[+p[1]-1]+" "+p[0];}
-var RESP_C={"No reply":C.muted,"Replied":"#72c992","Bounced":"#D84040","Sequence finished":"#EEEEEE","No reply logged":C.muted};
+var RESP_C={"No reply":C.muted,"Replied":"#72c992","Bounced":"#D84040","Sequence finished":"#EEEEEE","Sequence ended":"#8E1616","No reply logged":C.muted};
 
-var BOTS=DATA.bots, GROUPS=DATA.groups;
+var D=DATA,BOTS,GROUPS,team,src="embedded",lastJson="";
+function applyData(d){D=d;BOTS=d.bots;GROUPS=d.groups;team=Object.keys(BOTS).map(function(k){return BOTS[k];}).filter(function(b){return b.status!=="ceo"&&b.status!=="side";});if(!BOTS[sel])sel="chief";}
+applyData(DATA);
 function groupColor(b){if(b.group==="top")return b.id==="charlie"?C.crimson:C.cyan;if(b.group==="side")return C.faint;for(var i=0;i<GROUPS.length;i++)if(GROUPS[i].id===b.group)return GROUPS[i].color;return C.cyan;}
-var team=Object.keys(BOTS).map(function(k){return BOTS[k];}).filter(function(b){return b.status!=="ceo"&&b.status!=="side";});
 function count(s){return team.filter(function(b){return b.status===s;}).length;}
 
 /* ---------- header ---------- */
 function renderStats(){
   $("stats").innerHTML='<span style="color:'+C.green+'">● '+count("working")+' working</span><span style="color:'+C.amber+'">● '+count("waiting")+' waiting on Charlie</span><span style="color:'+C.gray+'">● '+count("idle")+' idle</span>'+
-   '<span class="mono" style="color:'+C.muted+'">as of '+esc(DATA.asOf)+'</span><span class="mono" style="color:'+C.faint+'" id="loaded"></span>'+
+   '<span class="mono" style="color:'+C.muted+'">data as of '+esc(D.asOf)+'</span>'+(isStale()?' <span class="badge stale" title="data.json is more than 12 hours old">STALE</span>':'')+' <span class="badge '+(src==="live"?'live">LIVE DATA':'emb">EMBEDDED')+'</span><span class="mono" style="color:'+C.faint+'" id="loaded"></span>'+
    '<button class="btn'+(showFig?' on':'')+'" id="figBtn" aria-pressed="'+showFig+'">'+(showFig?'Hide figures':'Show figures')+'</button>';
   $("figBtn").onclick=function(){showFig=!showFig;renderStats();renderAll();};
   updateLoaded();
 }
 var loadedAt=new Date();
-function updateLoaded(){var el=$("loaded");if(!el)return;var t=loadedAt.toLocaleTimeString("en-IE",{timeZone:"Europe/Dublin",hour:"2-digit",minute:"2-digit"});var mins=Math.floor((Date.now()-loadedAt)/60000);el.textContent="last loaded "+t+" Dublin ("+(mins<1?"just now":mins+" min ago")+")";}
+function isStale(){var t=Date.parse(D.asOfISO||"");return !isNaN(t)&&Date.now()-t>12*3600*1000;}
+function updateLoaded(){var el=$("loaded");if(!el)return;var t=loadedAt.toLocaleTimeString("en-IE",{timeZone:"Europe/Dublin",hour:"2-digit",minute:"2-digit"});var mins=Math.floor((Date.now()-loadedAt)/60000);el.textContent="last checked "+t+" Dublin ("+(mins<1?"just now":mins+" min ago")+")";}
 
-function renderFeed(){var f=DATA.ticker[tick%DATA.ticker.length];var tx=$("feedText");tx.style.opacity=0;setTimeout(function(){$("feedT").textContent=f.t;$("feedWho").textContent=f.who;tx.textContent=f.text;$("feedN").textContent=(tick%DATA.ticker.length+1)+"/"+DATA.ticker.length;tx.style.opacity=1;},150);}
+function renderFeed(){var f=D.ticker[tick%D.ticker.length];var tx=$("feedText");tx.style.opacity=0;setTimeout(function(){$("feedT").textContent=f.t;$("feedWho").textContent=f.who;tx.textContent=f.text;$("feedN").textContent=(tick%D.ticker.length+1)+"/"+D.ticker.length;tx.style.opacity=1;},150);}
 
 /* ---------- tabs ---------- */
 var TABS=[["org","Org chart"],["pipeline","Pipeline"],["outreach","Outreach"],["history","Outreach history"],["sendplan","Send plan"],["clients","Clients"],["opps","Opportunities"],["revenue","Revenue"]];
@@ -2917,10 +2957,13 @@ function actText(b){return b.status==="idle"?"Last "+b.last+": "+b.acts[0]:b.act
 function renderOrg(){
   var L=layout(mobile),s=[];
   s.push('<svg viewBox="0 0 '+L.w+' '+L.h+'" width="100%" style="display:block" role="img" aria-label="Org chart of the bot team">');
-  s.push('<defs><filter id="glow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+T.red+'" stop-opacity="0"/><stop offset="1" stop-color="'+T.red+'" stop-opacity="0.14"/></linearGradient></defs>');
+  s.push('<defs><filter id="glow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="wire" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="'+L.h+'"><stop offset="0" stop-color="#D84040"/><stop offset="1" stop-color="#8E1616"/></linearGradient><filter id="bloom" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+T.red+'" stop-opacity="0"/><stop offset="1" stop-color="'+T.red+'" stop-opacity="0.14"/></linearGradient></defs>');
   s.push('<rect x="0" y="-60" width="'+L.w+'" height="60" fill="url(#scan)"><animate attributeName="y" values="-60;'+L.h+'" dur="7s" repeatCount="indefinite"/></rect>');
-  L.paths.forEach(function(p){var tb=BOTS[p.to];var live=!tb||tb.status==="working"||tb.status==="waiting";var sp=tb&&tb.status==="working"?"0.9s":live?"1.8s":"4s";
-    s.push('<path d="'+p.d+'" fill="none" stroke="'+p.color+'" stroke-opacity="0.18" stroke-width="2"/><path d="'+p.d+'" fill="none" stroke="'+p.color+'" stroke-opacity="'+(live?0.95:0.35)+'" stroke-width="2" stroke-dasharray="5 11" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="32;0" dur="'+sp+'" repeatCount="indefinite"/></path>');});
+  s.push('<g filter="url(#bloom)">');
+  L.paths.forEach(function(p,i){var tb=BOTS[p.to];var live=!tb||tb.status==="working"||tb.status==="waiting";var sp=tb&&tb.status==="working"?"0.9s":live?"1.8s":"4s";
+    s.push('<path d="'+p.d+'" fill="none" stroke="url(#wire)" stroke-opacity="'+(live?0.55:0.3)+'" stroke-width="2.2"/><path d="'+p.d+'" fill="none" stroke="#ff5a5a" stroke-opacity="'+(live?0.95:0.4)+'" stroke-width="1.6" stroke-dasharray="4 12" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="32;0" dur="'+sp+'" repeatCount="indefinite"/></path>');
+    if(live)s.push('<circle r="2.6" fill="#ffd5d5"><animateMotion dur="'+(tb&&tb.status==="working"?"2.2s":"3.6s")+'" begin="'+(i%5)*0.4+'s" repeatCount="indefinite" path="'+p.d+'"/></circle>');});
+  s.push('</g>');
   GROUPS.forEach(function(g){var h=L.heads[g.id],w=mobile?144:180;s.push('<rect x="'+(h.x-w/2)+'" y="'+(h.y-15)+'" width="'+w+'" height="30" rx="15" fill="'+C.bg+'" stroke="'+g.color+'" stroke-width="1.2"/><text x="'+h.x+'" y="'+(h.y+4)+'" text-anchor="middle" fill="'+g.color+'" font-size="11" font-weight="700" letter-spacing="0.12em">'+esc(g.label.toUpperCase())+'</text>');});
   Object.keys(BOTS).forEach(function(id){var b=BOTS[id],p=L.pos[id];if(!p)return;var col=SC[b.status],gc=groupColor(b),isSel=sel===id;
     var x0=p.x-L.nw/2,y0=p.y-L.nh/2,cx=x0+22;var pulse=b.status==="working"?"1.6s":b.status==="waiting"?"2.6s":b.status==="ceo"?"3s":"";
@@ -2933,11 +2976,11 @@ function renderOrg(){
     s.push('<text data-act="'+id+'" x="'+(x0+40)+'" y="'+(p.y+13)+'" fill="'+(b.status==="idle"?C.faint:C.muted)+'" font-size="10.5">'+esc(clip(actText(b),mobile?40:30))+'</text></g>');});
   if(!mobile)s.push('<text x="'+L.pos.labrat.x+'" y="'+(L.pos.labrat.y+46)+'" text-anchor="middle" fill="'+C.faint+'" font-size="10">Standalone · not part of the team</text>');
   s.push('</svg>');
-  $("v-org").innerHTML='<div class="row"><div class="chart">'+s.join("")+'<div class="hint">Tap or hover a node for its task, queue and what it needs from Charlie. Activity lines cycle through each bot\'s current work.</div></div><div class="panel" id="panel"></div></div><div class="cards" id="strip"></div>';
+  $("v-org").innerHTML='<div class="row"><div class="chart chartglass">'+s.join("")+'<div class="hint">Tap or hover a node for its task, queue and what it needs from Charlie. Activity lines cycle through each bot\'s current work.</div></div><div class="panel" id="panel"></div></div><div class="sec">The whole team</div><div class="roster" id="roster"></div>';
   Array.prototype.forEach.call(document.querySelectorAll("#v-org .node"),function(g){var id=g.getAttribute("data-id");
     g.addEventListener("mouseenter",function(){hover=id;renderPanel();});g.addEventListener("mouseleave",function(){hover=null;renderPanel();});
     g.addEventListener("click",function(){sel=id;renderOrg();});g.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();sel=id;renderOrg();}});});
-  renderPanel();renderStrip();
+  renderPanel();renderRoster();
 }
 function updateActs(){Array.prototype.forEach.call(document.querySelectorAll("[data-act]"),function(t){var b=BOTS[t.getAttribute("data-act")];t.textContent=clip(actText(b),mobile?40:30);});}
 function list(title,items,color){if(!items||!items.length)return "";return '<div class="lbl" style="color:'+color+'">'+esc(title)+'</div>'+items.map(function(it){return '<div class="li"><span style="color:'+color+'">›</span><span>'+esc(it)+'</span></div>';}).join("");}
@@ -2953,20 +2996,25 @@ function renderPanel(){
 function gauge(label,v,max,color,sub){var r=46,fr=max?Math.min(1,v/max):0,a=Math.PI*(1-fr),ex=60+r*Math.cos(a),ey=62-r*Math.sin(a);
   return '<div class="gauge"><svg viewBox="0 0 120 76" width="100%"><path d="M14,62 A46,46 0 0 1 106,62" fill="none" stroke="'+T.track+'" stroke-width="9" stroke-linecap="round"/>'+(fr>0?'<path d="M14,62 A46,46 0 0 1 '+ex.toFixed(1)+','+ey.toFixed(1)+'" fill="none" stroke="'+color+'" stroke-width="9" stroke-linecap="round"/>':'')+
   '<text x="60" y="58" text-anchor="middle" fill="'+C.ink+'" font-size="20" font-weight="700">'+v+'</text><text x="60" y="73" text-anchor="middle" fill="'+C.muted+'" font-size="9">of '+max+'</text></svg><div style="font-size:12px;font-weight:600;margin-top:2px">'+esc(label)+'</div><div style="color:'+C.muted+';font-size:11px">'+esc(sub)+'</div></div>';}
-function stageCounts(){var c={};DATA.stages.forEach(function(s){c[s]=0;});DATA.prospects.forEach(function(p){c[p.stage]=(c[p.stage]||0)+1;});return c;}
-function funnelSvg(){var c=stageCounts(),st=DATA.stages.slice(0,6),max=c[st[0]]||1,s='<svg viewBox="0 0 300 196" width="100%" style="display:block">';
+function stageCounts(){var c={};D.stages.forEach(function(s){c[s]=0;});D.prospects.forEach(function(p){c[p.stage]=(c[p.stage]||0)+1;});return c;}
+function funnelSvg(){var c=stageCounts(),st=D.stages.slice(0,6),max=c[st[0]]||1,s='<svg viewBox="0 0 300 196" width="100%" style="display:block">';
   st.forEach(function(k,i){var v=c[k]||0,bw=v?Math.max(8,v/max*180):0,y=i*32;s+='<text x="0" y="'+(y+17)+'" fill="'+C.muted+'" font-size="11">'+esc(k)+'</text><rect x="86" y="'+(y+4)+'" width="180" height="18" rx="5" fill="'+T.track+'"/>'+(bw?'<rect x="86" y="'+(y+4)+'" width="'+bw+'" height="18" rx="5" fill="'+T.red+'" fill-opacity="'+(1-i*0.12)+'"/>':'')+'<text x="296" y="'+(y+17)+'" fill="'+C.ink+'" font-size="12" font-weight="700" text-anchor="end">'+v+'</text>';});
   return s+'</svg>';}
-function sendCounts(){var sent=DATA.sendPlan.filter(function(x){return x.status==="Sent";}).length;return {sent:sent,total:DATA.sendPlanTarget};}
+function sendCounts(){var sent=D.sendPlan.filter(function(x){return x.status==="Sent";}).length;return {sent:sent,total:D.sendPlanTarget};}
+function renderRoster(){
+  var el=$("roster");if(!el)return;
+  el.innerHTML=Object.keys(BOTS).map(function(id){var b=BOTS[id],col=SC[b.status];return '<div class="bot" data-id="'+id+'" tabindex="0" role="button" style="--c:'+groupColor(b)+'"><div class="bn"><span>'+esc(b.name)+'</span><span class="bs" style="color:'+col+'">● '+esc(SL[b.status].toUpperCase())+'</span></div><div class="bl">'+esc(b.role)+'</div><div class="bl">'+esc(b.status==="idle"||b.status==="side"?"Last: "+b.last+" · "+b.acts[0]:b.acts[0])+'</div></div>';}).join("");
+  Array.prototype.forEach.call(el.querySelectorAll(".bot"),function(n){var id=n.getAttribute("data-id");var go=function(){sel=id;renderOrg();var pn=$("panel");if(pn&&pn.scrollIntoView&&mobile)pn.scrollIntoView({behavior:"smooth",block:"start"});};n.onclick=go;n.onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};});
+}
 function renderStrip(){
-  var o=DATA.outreach,R=DATA.revenue,sc=sendCounts();
-  var opps=DATA.opportunities.filter(function(x){return x.open;});
+  var o=D.outreach,R=D.revenue,sc=sendCounts();
+  var opps=D.opportunities.filter(function(x){return x.open;});
   var h='';
-  h+='<div class="card" style="--c:'+T.red+'"><h3>Pipeline · '+DATA.prospects.length+' prospects</h3>'+funnelSvg()+'<div class="small" style="margin-top:6px">Open opportunities: '+opps.length+'</div>'+opps.map(function(x){return '<div style="display:flex;justify-content:space-between;gap:8px;font-size:12px;margin-top:4px"><span>'+esc(x.name)+'</span><span style="color:'+C.muted+'">'+esc(x.stage)+'</span></div>';}).join("")+'</div>';
+  h+='<div class="card" style="--c:'+T.red+'"><h3>Pipeline · '+D.prospects.length+' prospects</h3>'+funnelSvg()+'<div class="small" style="margin-top:6px">Open opportunities: '+opps.length+'</div>'+opps.map(function(x){return '<div style="display:flex;justify-content:space-between;gap:8px;font-size:12px;margin-top:4px"><span>'+esc(x.name)+'</span><span style="color:'+C.muted+'">'+esc(x.stage)+'</span></div>';}).join("")+'</div>';
   h+='<div class="card" style="--c:'+T.red+'"><h3>Outreach</h3><div class="gauges">'+gauge("DMs this week",o.dmsThisWeek,o.dmTarget,T.red,o.dmTarget+"-a-week target")+gauge("Emails this week",o.emailsThisWeek,o.emailsLastWeek,T.red,o.thisWeekLabel)+gauge("Emails last week",o.emailsLastWeek,o.emailsLastWeek,T.green,o.lastWeekLabel)+'</div><div class="small" style="margin-top:10px">'+esc(o.note)+'</div></div>';
   h+='<div class="card" style="--c:'+T.green+'"><h3>Revenue</h3><div style="display:flex;flex-wrap:wrap;gap:18px"><div><div class="small">Contracted MRR</div><div class="big" style="color:'+T.green+'">'+fig(eur(R.mrr))+'</div></div><div><div class="small">Contracted ARR</div><div class="big">'+fig(eur(R.arr))+'</div></div></div><div class="small" style="margin-top:8px">Collected via Stripe: '+fig(eur(R.stripeCollected))+'<br>Potential MRR if all open deals close: '+fig(eur(R.potentialMrr))+'<br>Setup fees collected: '+fig(eur(R.setupCollected))+(showFig?'':'<br><i>Figures hidden. Use “Show figures”.</i>')+'</div></div>';
-  h+='<div class="card" style="--c:'+T.red+'"><h3>Send plan · '+esc(DATA.sendPlanWeek)+'</h3><div style="display:flex;justify-content:space-between;font-size:13px"><span>'+sc.sent+' of '+sc.total+' sent</span><span style="color:'+C.muted+'">15 a day</span></div><div class="bar"><div style="width:'+(sc.sent/sc.total*100)+'%"></div></div><div class="days">'+DATA.sendDays.map(function(d,i){var items=DATA.sendPlan.filter(function(x){return x.day===d.day;});var s=items.filter(function(x){return x.status==="Sent";}).length;var today=i===0;return '<div class="day" style="'+(today?'border-color:'+T.red:'')+'"><div style="font-size:11px;font-weight:700;color:'+(today?T.red:C.muted)+'">'+esc(d.short)+'</div><div style="font-size:14px;font-weight:700;margin-top:2px">'+s+'/'+items.length+'</div><div style="font-size:10px;color:'+C.faint+'">'+d.emails+' email · '+d.dms+' DM</div></div>';}).join("")+'</div><div class="small" style="margin-top:8px">'+esc(DATA.sendPlanSpill)+'</div></div>';
-  h+='<div class="card" style="--c:'+T.light+'"><h3>Clients · '+DATA.clients.length+' active</h3>'+DATA.clients.map(function(c){return '<div style="padding:6px 0;border-bottom:1px solid var(--line)"><div style="display:flex;justify-content:space-between;gap:8px;font-size:13px"><b style="font-weight:600">'+esc(c.name)+'</b><span style="color:'+T.light+'">'+fig(c.terms)+'</span></div><div style="color:'+C.muted+';font-size:11px">'+esc(c.status)+'</div></div>';}).join("")+'</div>';
+  h+='<div class="card" style="--c:'+T.red+'"><h3>Send plan · '+esc(D.sendPlanWeek)+'</h3><div style="display:flex;justify-content:space-between;font-size:13px"><span>'+sc.sent+' of '+sc.total+' sent</span><span style="color:'+C.muted+'">15 a day</span></div><div class="bar"><div style="width:'+(sc.sent/sc.total*100)+'%"></div></div><div class="days">'+D.sendDays.map(function(d,i){var items=D.sendPlan.filter(function(x){return x.day===d.day;});var s=items.filter(function(x){return x.status==="Sent";}).length;var today=i===0;return '<div class="day" style="'+(today?'border-color:'+T.red:'')+'"><div style="font-size:11px;font-weight:700;color:'+(today?T.red:C.muted)+'">'+esc(d.short)+'</div><div style="font-size:14px;font-weight:700;margin-top:2px">'+s+'/'+items.length+'</div><div style="font-size:10px;color:'+C.faint+'">'+d.emails+' email · '+d.dms+' DM</div></div>';}).join("")+'</div><div class="small" style="margin-top:8px">'+esc(D.sendPlanSpill)+'</div></div>';
+  h+='<div class="card" style="--c:'+T.light+'"><h3>Clients · '+D.clients.length+' active</h3>'+D.clients.map(function(c){return '<div style="padding:6px 0;border-bottom:1px solid var(--line)"><div style="display:flex;justify-content:space-between;gap:8px;font-size:13px"><b style="font-weight:600">'+esc(c.name)+'</b><span style="color:'+T.light+'">'+fig(c.terms)+'</span></div><div style="color:'+C.muted+';font-size:11px">'+esc(c.status)+'</div></div>';}).join("")+'</div>';
   $("strip").innerHTML=h;
 }
 
@@ -2980,27 +3028,27 @@ var STAGE_C={"New":C.muted,"Contacted":T.red,"Replied":T.green,"Call booked":T.l
 var pf={stage:"All",county:"All",cat:"All",q:""};
 function renderPipeline(){
   var c=stageCounts();
-  var P=DATA.prospects.filter(function(p){return (pf.stage==="All"||p.stage===pf.stage)&&(pf.county==="All"||p.county===pf.county)&&(pf.cat==="All"||(pf.cat==="Fitness"?p.fitness||/gym|fit|pt|yoga|pilates|coach|crossfit|box|martial|weight|calisthenic|strength|trainer/i.test(p.category):p.category===pf.cat))&&(!pf.q||(p.name+" "+p.category+" "+p.county).toLowerCase().indexOf(pf.q.toLowerCase())>=0);});
-  var h='<div class="tot">'+DATA.stages.map(function(s){return '<div><b style="color:'+(STAGE_C[s]||C.ink)+'">'+(c[s]||0)+'</b><span>'+esc(s)+'</span></div>';}).join("")+'</div>';
+  var P=D.prospects.filter(function(p){return (pf.stage==="All"||p.stage===pf.stage)&&(pf.county==="All"||p.county===pf.county)&&(pf.cat==="All"||(pf.cat==="Fitness"?p.fitness||/gym|fit|pt|yoga|pilates|coach|crossfit|box|martial|weight|calisthenic|strength|trainer/i.test(p.category):p.category===pf.cat))&&(!pf.q||(p.name+" "+p.category+" "+p.county).toLowerCase().indexOf(pf.q.toLowerCase())>=0);});
+  var h='<div class="tot">'+D.stages.map(function(s){return '<div><b style="color:'+(STAGE_C[s]||C.ink)+'">'+(c[s]||0)+'</b><span>'+esc(s)+'</span></div>';}).join("")+'</div>';
   h+='<div class="row"><div class="card" style="--c:'+T.red+';flex:1 1 300px;max-width:460px"><h3>Funnel</h3>'+funnelSvg()+'</div><div class="card" style="--c:'+T.crimson+';flex:1 1 300px"><h3>By county</h3>'+countyBars()+'</div></div>';
-  h+='<div class="sec">All prospects ('+P.length+' of '+DATA.prospects.length+')</div><div class="filters">'+opts("pfStage","Stage",["All"].concat(DATA.stages),pf.stage)+opts("pfCounty","County",["All"].concat(uniq(DATA.prospects.map(function(p){return p.county;}))),pf.county)+opts("pfCat","Category",["All","Fitness"].concat(uniq(DATA.prospects.map(function(p){return p.category;}))),pf.cat)+'<input type="search" id="pfQ" placeholder="Search name" value="'+esc(pf.q)+'"></div>';
+  h+='<div class="sec">All prospects ('+P.length+' of '+D.prospects.length+')</div><div class="filters">'+opts("pfStage","Stage",["All"].concat(D.stages),pf.stage)+opts("pfCounty","County",["All"].concat(uniq(D.prospects.map(function(p){return p.county;}))),pf.county)+opts("pfCat","Category",["All","Fitness"].concat(uniq(D.prospects.map(function(p){return p.category;}))),pf.cat)+'<input type="search" id="pfQ" placeholder="Search name" value="'+esc(pf.q)+'"></div>';
   h+=table(["Business","Category","County","Stage","Channel"],P.map(function(p){return [esc(p.name)+(p.fitness?' '+pill("Fitness",C.crimson):''),esc(p.category),esc(p.county),pill(p.stage,STAGE_C[p.stage]||C.muted),esc(p.channel)];}));
   $("v-pipeline").innerHTML=h;
   $("pfStage").onchange=function(e){pf.stage=e.target.value;renderPipeline();};$("pfCounty").onchange=function(e){pf.county=e.target.value;renderPipeline();};$("pfCat").onchange=function(e){pf.cat=e.target.value;renderPipeline();};
   $("pfQ").oninput=function(e){pf.q=e.target.value;var pos=e.target.selectionStart;renderPipeline();var q=$("pfQ");q.focus();q.setSelectionRange(pos,pos);};
 }
-function countyBars(){var m={};DATA.prospects.forEach(function(p){m[p.county]=(m[p.county]||0)+1;});var ks=Object.keys(m).sort(function(a,b){return m[b]-m[a];});var max=m[ks[0]];var top=ks.slice(0,8),rest=ks.slice(8).reduce(function(s,k){return s+m[k];},0);if(rest){top.push("Other ("+(ks.length-8)+" counties)");m[top[top.length-1]]=rest;}
+function countyBars(){var m={};D.prospects.forEach(function(p){m[p.county]=(m[p.county]||0)+1;});var ks=Object.keys(m).sort(function(a,b){return m[b]-m[a];});var max=m[ks[0]];var top=ks.slice(0,8),rest=ks.slice(8).reduce(function(s,k){return s+m[k];},0);if(rest){top.push("Other ("+(ks.length-8)+" counties)");m[top[top.length-1]]=rest;}
   var s='<svg viewBox="0 0 400 '+(top.length*26)+'" width="100%">';top.forEach(function(k,i){var y=i*26,w=m[k]/max*220;s+='<text x="0" y="'+(y+15)+'" fill="'+C.muted+'" font-size="11">'+esc(clip(k,24))+'</text><rect x="150" y="'+(y+4)+'" width="'+w+'" height="15" rx="4" fill="'+T.red+'" fill-opacity="0.85"/><text x="'+(156+w)+'" y="'+(y+16)+'" fill="'+C.ink+'" font-size="11" font-weight="700">'+m[k]+'</text>';});return s+'</svg>';}
 
 /* ---------- Outreach tracking (sequences) ---------- */
 var of={ch:"All",resp:"All"};
 function renderOutreach(){
-  var o=DATA.outreach,S=DATA.sequences.filter(function(s){return (of.ch==="All"||s.channel===of.ch)&&(of.resp==="All"||s.response===of.resp);});
-  var tot={"No reply":0,"Replied":0,"Bounced":0};DATA.sequences.forEach(function(s){tot[s.response]=(tot[s.response]||0)+1;});
-  var h='<div class="row"><div class="card" style="--c:'+T.red+'"><h3>This week</h3><div class="gauges">'+gauge("DMs this week",o.dmsThisWeek,o.dmTarget,T.red,o.dmTarget+"-a-week target")+gauge("Emails this week",o.emailsThisWeek,o.emailsLastWeek,T.red,o.thisWeekLabel)+gauge("Emails last week",o.emailsLastWeek,o.emailsLastWeek,T.green,o.lastWeekLabel)+'</div></div><div class="card" style="--c:'+T.red+'"><h3>Sequence</h3><div class="small">'+esc(DATA.sequenceRule)+'</div>'+DATA.batches.map(function(b){return '<div style="font-size:13px;margin-top:8px"><b>'+esc(b.label)+'</b><div class="small">'+esc(b.detail)+'</div></div>';}).join("")+'</div></div>';
-  h+='<div class="sec">Every business contacted ('+S.length+' of '+DATA.sequences.length+')</div><div class="tot"><div><b>'+DATA.sequences.length+'</b><span>Businesses in a sequence</span></div><div><b style="color:'+C.muted+'">'+tot["No reply"]+'</b><span>No reply</span></div><div><b style="color:'+T.green+'">'+tot["Replied"]+'</b><span>Replied</span></div><div><b style="color:'+C.crimson+'">'+tot["Bounced"]+'</b><span>Bounced</span></div><div><b style="color:'+T.red+'">'+o.dmsThisWeek+'</b><span>DMs sent</span></div></div>';
-  h+='<div class="filters">'+opts("ofCh","Channel",["All","Email","DM"],of.ch)+opts("ofResp","Response",["All","No reply","Replied","Bounced"],of.resp)+'</div>';
-  if(of.ch==="DM")h+='<div class="small" style="margin-bottom:10px">'+esc(DATA.dmNote)+'</div>';
+  var o=D.outreach,S=D.sequences.filter(function(s){return (of.ch==="All"||s.channel===of.ch)&&(of.resp==="All"||s.response===of.resp);});
+  var tot={"No reply":0,"Replied":0,"Bounced":0,"Sequence ended":0};D.sequences.forEach(function(s){tot[s.response]=(tot[s.response]||0)+1;});
+  var h='<div class="row"><div class="card" style="--c:'+T.red+'"><h3>This week</h3><div class="gauges">'+gauge("DMs this week",o.dmsThisWeek,o.dmTarget,T.red,o.dmTarget+"-a-week target")+gauge("Emails this week",o.emailsThisWeek,o.emailsLastWeek,T.red,o.thisWeekLabel)+gauge("Emails last week",o.emailsLastWeek,o.emailsLastWeek,T.green,o.lastWeekLabel)+'</div></div><div class="card" style="--c:'+T.red+'"><h3>Sequence</h3><div class="small">'+esc(D.sequenceRule)+'</div>'+D.batches.map(function(b){return '<div style="font-size:13px;margin-top:8px"><b>'+esc(b.label)+'</b><div class="small">'+esc(b.detail)+'</div></div>';}).join("")+'</div></div>';
+  h+='<div class="sec">Every business contacted ('+S.length+' of '+D.sequences.length+')</div><div class="tot"><div><b>'+D.sequences.length+'</b><span>Businesses in a sequence</span></div><div><b style="color:'+C.muted+'">'+tot["No reply"]+'</b><span>No reply</span></div><div><b style="color:'+T.green+'">'+tot["Replied"]+'</b><span>Replied</span></div><div><b style="color:'+C.crimson+'">'+tot["Bounced"]+'</b><span>Bounced</span></div><div><b style="color:'+T.light+'">'+tot["Sequence ended"]+'</b><span>Sequence ended</span></div><div><b style="color:'+T.red+'">'+o.dmsThisWeek+'</b><span>DMs sent</span></div></div>';
+  h+='<div class="filters">'+opts("ofCh","Channel",["All","Email","DM"],of.ch)+opts("ofResp","Response",["All"].concat(uniq(D.sequences.map(function(s){return s.response;}))),of.resp)+'</div>';
+  if(of.ch==="DM")h+='<div class="small" style="margin-bottom:10px">'+esc(D.dmNote)+'</div>';
   h+=table(["Business","Channel","First sent","Follow-up stage","Next due","Response"],S.map(function(s){return [esc(s.name)+(s.fitness?' '+pill("Fitness",C.crimson):'')+'<div class="small">'+esc(s.category)+' · '+esc(s.county)+'</div>',esc(s.channel),fmtDate(s.first),esc(s.stage)+(s.overdue?'<div class="small" style="color:'+C.amber+'">'+esc(s.overdue)+'</div>':''),esc(s.next),pill(s.response,RESP_C[s.response])];}));
   $("v-outreach").innerHTML=h;
   $("ofCh").onchange=function(e){of.ch=e.target.value;renderOutreach();};$("ofResp").onchange=function(e){of.resp=e.target.value;renderOutreach();};
@@ -3009,14 +3057,14 @@ function renderOutreach(){
 /* ---------- Outreach history ---------- */
 var hf={type:"All",outcome:"All",ch:"All"};
 function renderHistory(){
-  var Hs=DATA.history.filter(function(x){return (hf.type==="All"||x.type===hf.type)&&(hf.outcome==="All"||x.outcome===hf.outcome)&&(hf.ch==="All"||x.channel===hf.ch);});
-  var t={};DATA.history.forEach(function(x){t[x.outcome]=(t[x.outcome]||0)+1;});
-  var asc=Hs.slice().reverse(),run={};asc.forEach(function(x,i){run[DATA.history.indexOf(x)]=i+1;});
-  var h='<div class="tot"><div><b>'+DATA.history.length+'</b><span>Total sent</span></div><div><b>'+DATA.history.filter(function(x){return x.channel==="Email";}).length+'</b><span>Emails</span></div><div><b>'+DATA.history.filter(function(x){return x.channel!=="Email";}).length+'</b><span>DMs</span></div>'+
+  var Hs=D.history.filter(function(x){return (hf.type==="All"||x.type===hf.type)&&(hf.outcome==="All"||x.outcome===hf.outcome)&&(hf.ch==="All"||x.channel===hf.ch);});
+  var t={};D.history.forEach(function(x){t[x.outcome]=(t[x.outcome]||0)+1;});
+  var asc=Hs.slice().reverse(),run={};asc.forEach(function(x,i){run[D.history.indexOf(x)]=i+1;});
+  var h='<div class="tot"><div><b>'+D.history.length+'</b><span>Total sent</span></div><div><b>'+D.history.filter(function(x){return x.channel==="Email";}).length+'</b><span>Emails</span></div><div><b>'+D.history.filter(function(x){return x.channel!=="Email";}).length+'</b><span>DMs</span></div>'+
    ["No reply","No reply logged","Replied","Bounced","Sequence finished"].map(function(k){return '<div><b style="color:'+RESP_C[k]+'">'+(t[k]||0)+'</b><span>'+esc(k)+'</span></div>';}).join("")+'</div>';
-  h+='<div class="filters">'+opts("hfType","Type",["All"].concat(uniq(DATA.history.map(function(x){return x.type;}))),hf.type)+opts("hfOut","Outcome",["All"].concat(uniq(DATA.history.map(function(x){return x.outcome;}))),hf.outcome)+opts("hfCh","Channel",["All","Email","DM"],hf.ch)+'<span class="small">Showing '+Hs.length+' · newest first · # is the running count in date order</span></div>';
-  if(hf.ch==="DM")h+='<div class="small" style="margin-bottom:10px">'+esc(DATA.dmNote)+'</div>';
-  h+=table(["#","Date","Business","Channel","Type","Angle","Outcome"],Hs.map(function(x){return [String(run[DATA.history.indexOf(x)]),fmtDate(x.date),esc(x.name),esc(x.channel),esc(x.type),'<span class="small">'+esc(x.angle)+'</span>',pill(x.outcome,RESP_C[x.outcome]||C.muted)];}),["r"]);
+  h+='<div class="filters">'+opts("hfType","Type",["All"].concat(uniq(D.history.map(function(x){return x.type;}))),hf.type)+opts("hfOut","Outcome",["All"].concat(uniq(D.history.map(function(x){return x.outcome;}))),hf.outcome)+opts("hfCh","Channel",["All","Email","DM"],hf.ch)+'<span class="small">Showing '+Hs.length+' · newest first · # is the running count in date order</span></div>';
+  if(hf.ch==="DM")h+='<div class="small" style="margin-bottom:10px">'+esc(D.dmNote)+'</div>';
+  h+=table(["#","Date","Business","Channel","Type","Angle","Outcome"],Hs.map(function(x){return [String(run[D.history.indexOf(x)]),fmtDate(x.date),esc(x.name),esc(x.channel),esc(x.type),'<span class="small">'+esc(x.angle)+'</span>',pill(x.outcome,RESP_C[x.outcome]||C.muted)];}),["r"]);
   $("v-history").innerHTML=h;
   $("hfType").onchange=function(e){hf.type=e.target.value;renderHistory();};$("hfOut").onchange=function(e){hf.outcome=e.target.value;renderHistory();};$("hfCh").onchange=function(e){hf.ch=e.target.value;renderHistory();};
 }
@@ -3025,20 +3073,20 @@ function renderHistory(){
 var sf={kind:"All"};
 function renderSendPlan(){
   var sc=sendCounts();
-  var h='<div class="card" style="--c:'+T.red+';margin-top:0"><h3>'+esc(DATA.sendPlanWeek)+' · '+sc.sent+' of '+sc.total+' sent</h3><div class="bar"><div style="width:'+(sc.sent/sc.total*100)+'%"></div></div><div class="small" style="margin-top:8px">Fitness items: '+DATA.sendPlan.filter(function(x){return x.fitness;}).length+'. Every send waits on Charlie\'s approval in the bot\'s own chat.</div></div>';
+  var h='<div class="card" style="--c:'+T.red+';margin-top:0"><h3>'+esc(D.sendPlanWeek)+' · '+sc.sent+' of '+sc.total+' sent</h3><div class="bar"><div style="width:'+(sc.sent/sc.total*100)+'%"></div></div><div class="small" style="margin-top:8px">Fitness items: '+D.sendPlan.filter(function(x){return x.fitness;}).length+'. Every send waits on Charlie\'s approval in the bot\'s own chat.</div></div>';
   h+='<div class="filters" style="margin-top:14px">'+opts("sfKind","Channel",["All","Email","DM"],sf.kind)+'</div>';
-  DATA.sendDays.forEach(function(d){var items=DATA.sendPlan.filter(function(x){return x.day===d.day&&(sf.kind==="All"||x.kind===sf.kind);});
+  D.sendDays.forEach(function(d){var items=D.sendPlan.filter(function(x){return x.day===d.day&&(sf.kind==="All"||x.kind===sf.kind);});
     h+='<div class="sec">'+esc(d.day)+' <span class="small" style="letter-spacing:0;text-transform:none">· target '+d.emails+' emails, '+d.dms+' DMs</span></div>';
-    h+=table(["Channel","Business","Action","Tag","Status"],items.map(function(x){return [esc(x.kind),esc(x.name),esc(x.action),x.fitness?pill("Fitness",C.crimson):x.warm?pill("Warm",T.green):"—",pill(x.status,x.status==="Sent"?T.green:x.status==="Pending approval"?C.amber:T.light)];}));});
-  h+='<div class="sec">Spills to next week</div><div class="small">'+esc(DATA.spillList.join(", "))+'.</div>';
+    h+=table(["Channel","Business","Action","Tag","Status"],items.map(function(x){return [esc(x.kind),esc(x.name),esc(x.action),x.fitness?pill("Fitness",C.crimson):x.warm?pill("Warm",T.green):"—",pill(x.status,x.status==="Sent"?T.green:/Pending|Ready|Awaiting/.test(x.status)?C.amber:/Binned|Dropped/.test(x.status)?T.crimson:T.light)];}));});
+  h+='<div class="sec">Spills to next week</div><div class="small">'+esc(D.spillList.join(", "))+'.</div>';
   $("v-sendplan").innerHTML=h;$("sfKind").onchange=function(e){sf.kind=e.target.value;renderSendPlan();};
 }
 
 /* ---------- Clients ---------- */
 function renderClients(){
-  var h='<div class="sec" style="margin-top:0">Active clients ('+DATA.clients.length+')</div>';
-  h+=table(["Client","Type","Since","Terms","Status"],DATA.clients.map(function(c){return [esc(c.name),esc(c.niche),fmtDate(c.start),fig(c.terms),esc(c.status)];}));
-  var open=DATA.opportunities.filter(function(x){return x.open;});
+  var h='<div class="sec" style="margin-top:0">Active clients ('+D.clients.length+')</div>';
+  h+=table(["Client","Type","Since","Terms","Status"],D.clients.map(function(c){return [esc(c.name),esc(c.niche),fmtDate(c.start),fig(c.terms),esc(c.status)];}));
+  var open=D.opportunities.filter(function(x){return x.open;});
   h+='<div class="sec">Open opportunities ('+open.length+')</div>';
   h+=table(["Opportunity","Stage","Value","Next step","Owner"],open.map(function(x){return [esc(x.name),pill(x.stage,T.red),fig(x.value),esc(x.next),esc(x.owner)];}));
   $("v-clients").innerHTML=h;
@@ -3047,17 +3095,17 @@ function renderClients(){
 /* ---------- Opportunities ---------- */
 function oppCard(x,color){return '<div class="opp" style="--c:'+color+'"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><h4>'+esc(x.name)+'</h4>'+pill(x.stage,color)+'</div><div class="small">'+esc(x.services||"")+'</div><dl class="kv"><dt>Value</dt><dd>'+fig(x.value)+'</dd><dt>Next step</dt><dd>'+esc(x.next)+'</dd><dt>Owner</dt><dd>'+esc(x.owner)+'</dd>'+(x.note?'<dt>Note</dt><dd class="small">'+esc(x.note)+'</dd>':'')+'</dl></div>';}
 function renderOpps(){
-  var main=DATA.opportunities.filter(function(x){return x.tier==="main";}),act=DATA.opportunities.filter(function(x){return x.tier==="active";});
+  var main=D.opportunities.filter(function(x){return x.tier==="main";}),act=D.opportunities.filter(function(x){return x.tier==="active";});
   var h='<div class="sec" style="margin-top:0">The three main deals</div><div class="row">'+main.map(function(x){return oppCard(x,T.red);}).join("")+'</div>';
   h+='<div class="sec">Actively being worked</div><div class="row">'+act.map(function(x){return oppCard(x,T.crimson);}).join("")+'</div>';
-  h+='<div class="sec">Current clients</div><div class="row">'+DATA.clients.map(function(c){return '<div class="opp" style="--c:'+T.light+'"><h4>'+esc(c.name)+'</h4><div class="small">'+esc(c.niche)+' · since '+fmtDate(c.start)+'</div><dl class="kv"><dt>Terms</dt><dd>'+fig(c.terms)+'</dd><dt>Status</dt><dd>'+esc(c.status)+'</dd></dl></div>';}).join("")+'</div>';
+  h+='<div class="sec">Current clients</div><div class="row">'+D.clients.map(function(c){return '<div class="opp" style="--c:'+T.light+'"><h4>'+esc(c.name)+'</h4><div class="small">'+esc(c.niche)+' · since '+fmtDate(c.start)+'</div><dl class="kv"><dt>Terms</dt><dd>'+fig(c.terms)+'</dd><dt>Status</dt><dd>'+esc(c.status)+'</dd></dl></div>';}).join("")+'</div>';
   if(!showFig)h+='<div class="small" style="margin-top:12px">Money figures are hidden. Use “Show figures” at the top.</div>';
   $("v-opps").innerHTML=h;
 }
 
 /* ---------- Revenue ---------- */
 function renderRevenue(){
-  var R=DATA.revenue;
+  var R=D.revenue;
   var h='<div class="tot"><div><b style="color:'+T.green+'">'+fig(eur(R.mrr))+'</b><span>Contracted MRR</span></div><div><b>'+fig(eur(R.arr))+'</b><span>Contracted ARR</span></div><div><b>'+fig(eur(R.stripeCollected))+'</b><span>Collected via Stripe</span></div><div><b>'+fig(eur(R.potentialMrr))+'</b><span>Potential MRR</span></div><div><b>'+fig(eur(R.setupCollected))+'</b><span>Setup collected</span></div><div><b>'+fig(eur(R.monthlyCosts))+'</b><span>Monthly costs</span></div><div><b>'+fig(eur(R.mrr-R.monthlyCosts))+'</b><span>Net per month</span></div></div>';
   h+='<div class="sec">MRR breakdown</div>'+table(["Client","Monthly","Note"],R.breakdown.map(function(b){return [esc(b.name),fig(eur(b.monthly)),esc(b.note)];}),["","r",""]);
   h+='<div class="sec">If the open opportunities close</div>'+table(["Opportunity","Setup","Monthly","Free months","Year-1 cash"],R.potential.map(function(p){return [esc(p.name),fig(eur(p.setup)),fig(eur(p.monthly)),String(p.freeMonths||"—"),fig(eur(p.year1))];}),["","r","r","r","r"]);
@@ -3070,12 +3118,24 @@ function renderAll(){renderOrg();renderPipeline();renderOutreach();renderHistory
 function checkLayout(){var m=window.innerWidth<760;if(m!==mobile){mobile=m;renderOrg();}}
 
 var h0=(location.hash||"").replace("#","");if(TABS.some(function(t){return t[0]===h0;}))tab=h0;
-$("foot").textContent=DATA.footer;
+$("foot").textContent=D.footer;
 mobile=window.innerWidth<760;
 renderStats();renderTabs();renderAll();showView();renderFeed();
+function loadData(){
+  if(!window.fetch)return;
+  fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();}).then(function(d){
+    if(!d||!d.bots||!d.groups||!d.prospects||!d.history)throw new Error("bad shape");
+    var s=JSON.stringify(d);src="live";loadedAt=new Date();
+    if(s!==lastJson){lastJson=s;applyData(d);$("foot").textContent=D.footer;renderAll();showView();renderFeed();}
+    renderStats();
+  }).catch(function(){loadedAt=new Date();renderStats();});
+}
+loadData();
+setInterval(loadData,10*60*1000);
 window.addEventListener("resize",checkLayout);
 setInterval(function(){tick++;renderFeed();updateActs();var nt=$("nowText");if(nt){var b=BOTS[hover||sel]||BOTS.chief;nt.textContent=b.acts[tick%b.acts.length];}},3200);
-setInterval(updateLoaded,30000);
+setInterval(function(){updateLoaded();var st=isStale();if(st!==lastStale){lastStale=st;renderStats();}},30000);
+var lastStale=isStale();
 })();
 </script>
 </body>

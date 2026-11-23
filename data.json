@@ -1,0 +1,2759 @@
+{
+ "asOf": "23 Nov 2026, 15:00 Dublin",
+ "asOfISO": "2026-11-23T15:00+00:00",
+ "sources": {
+  "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
+  "tracker": "2026-11-23 ~14:35 Europe/Dublin",
+  "agents": "2026-11-23T14:56:00+00:00"
+ },
+ "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
+ "groups": [
+  {
+   "id": "lead",
+   "label": "Lead gen",
+   "color": "#22d3ee",
+   "bots": [
+    "prospector",
+    "dmer",
+    "emailer",
+    "chaser",
+    "cleaner"
+   ]
+  },
+  {
+   "id": "clients",
+   "label": "Clients",
+   "color": "#a78bfa",
+   "bots": [
+    "onboarder",
+    "keeper"
+   ]
+  },
+  {
+   "id": "money",
+   "label": "Money & strategy",
+   "color": "#34d399",
+   "bots": [
+    "ledger",
+    "compass"
+   ]
+  },
+  {
+   "id": "content",
+   "label": "Content & products",
+   "color": "#f472b6",
+   "bots": [
+    "poster",
+    "digitalmaker",
+    "claude"
+   ]
+  },
+  {
+   "id": "support",
+   "label": "Support",
+   "color": "#60a5fa",
+   "bots": [
+    "fixer"
+   ]
+  }
+ ],
+ "bots": {
+  "charlie": {
+   "id": "charlie",
+   "name": "Charlie",
+   "role": "CEO · approves every send",
+   "group": "top",
+   "status": "ceo",
+   "last": "23 Nov 14:26 (voice)",
+   "acts": [
+    "Asked for today's 5 emails and 5 DMs to review",
+    "Asked Chief for this Mission Control board"
+   ],
+   "queue": [
+    "Review today's 5 DMs in DMer's chat",
+    "Review today's 5 emails in Emailer's chat",
+    "Approve Chaser's follow-up cards"
+   ],
+   "waiting": []
+  },
+  "chief": {
+   "id": "chief",
+   "name": "Chief",
+   "role": "Chief of Staff · the hub",
+   "group": "top",
+   "status": "working",
+   "last": "23 Nov 14:26",
+   "acts": [
+    "Building this Mission Control board",
+    "Asked DMer for today's 5 DMs, fitness first",
+    "Asked Emailer for today's 5 first-touch emails",
+    "Tracking the Mon–Fri send plan: 0 of 75 sent"
+   ],
+   "queue": [
+    "Send plan Mon 23 – Fri 27 Nov, 15 sends a day",
+    "Fitness batch slotted for Thu 26 / Fri 27",
+    "Pass DM sent dates to Emailer once logged"
+   ],
+   "waiting": [
+    "Approve each day's batch in DMer, Emailer and Chaser chats",
+    "Station House: end the sequence? (Chaser recommends)",
+    "Fitsquadgym Day 5: cut the unconfirmed booking-app line?"
+   ]
+  },
+  "prospector": {
+   "id": "prospector",
+   "name": "Prospector",
+   "role": "Finds leads with no or weak sites",
+   "group": "lead",
+   "status": "idle",
+   "last": "22 Nov 18:30",
+   "acts": [
+    "Delivered 25 Ireland-wide fitness leads (+14 partials)",
+    "Routed the fitness batch to DMer (25) and Emailer (24)"
+   ],
+   "queue": [
+    "Sunday routine next runs Sun 29 Nov ~6 AM, ready by 10 AM",
+    "Ireland-wide, Donegal and neighbours first; fitness → barbers → salons → other"
+   ],
+   "waiting": []
+  },
+  "dmer": {
+   "id": "dmer",
+   "name": "DMer",
+   "role": "Instagram DM outreach",
+   "group": "lead",
+   "status": "working",
+   "last": "23 Nov 14:54",
+   "acts": [
+    "Today's 5 DMs posted for Charlie to approve (~14:30)",
+    "Rewrote Steph Fit's DM to a modern-refresh angle (14:54)",
+    "Aoife McGill (#2) and Steph Fit (#5) awaiting a yes",
+    "Signed in to Instagram and ready to send"
+   ],
+   "queue": [
+    "33 cold DMs (6 fitness first) + warm DM to Nails by Aileen",
+    "25 fitness DMs F1–F25 from Thu 26 / Fri 27",
+    "Suggests holding F9 Fit Factory, F14 McCullagh's, F25 Barry's",
+    "0 of 25 DMs sent this week"
+   ],
+   "waiting": [
+    "Approve Aoife's and Steph's DMs, and say who sends them",
+    "Approve the rest of today's 5 by number"
+   ]
+  },
+  "emailer": {
+   "id": "emailer",
+   "name": "Emailer",
+   "role": "Cold first-touch emails",
+   "group": "lead",
+   "status": "working",
+   "last": "23 Nov 14:54",
+   "acts": [
+    "Today's 5 first-touch emails waiting on Charlie's \"send them\"",
+    "Aoife and Steph follow-up emails queued for Wed 25, 9 AM",
+    "Holding those until DMer confirms the DMs went out"
+   ],
+   "queue": [
+    "28 first-touch emails; 5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)",
+    "24 fitness emails, each 2–3 days after that business's DM",
+    "Suggests dropping McCullagh's; check Fit Factory, Barry's, Mugendo"
+   ],
+   "waiting": [
+    "Approve today's 5 emails",
+    "Is the 'more gyms around Donegal' line true?"
+   ]
+  },
+  "chaser": {
+   "id": "chaser",
+   "name": "Chaser",
+   "role": "Follow-ups and reply watch",
+   "group": "lead",
+   "status": "waiting",
+   "last": "23 Nov 14:35",
+   "acts": [
+    "Rechecked today's follow-ups against live pages (14:35)",
+    "4 ready: Donegal Denture, Limitless, O'Flaherty, Pure Grit",
+    "Errigal extra binned, sequence ended (Charlie, 14:28)",
+    "Station House held: site is back up, so the draft is now wrong"
+   ],
+   "queue": [
+    "4 follow-ups ready to send today on Charlie's word",
+    "9 catch-ups for the 16 Nov batch (Tue 24)",
+    "5 catch-ups for the 17 Nov batch (Wed 25)",
+    "Gym Day 9s drafted Wed for Thu"
+   ],
+   "waiting": [
+    "Say \"send\" and name which of the 4 ready follow-ups",
+    "Station House: end its sequence too? (Chaser recommends)",
+    "Fitsquadgym: cut the unconfirmed booking-app line and re-card?"
+   ]
+  },
+  "cleaner": {
+   "id": "cleaner",
+   "name": "Cleaner",
+   "role": "Polishes every draft",
+   "group": "lead",
+   "status": "idle",
+   "last": "23 Nov ~14:50",
+   "acts": [
+    "Polished the DM line in Aoife's and Steph's emails",
+    "Cleaned 24 fitness emails and 25 fitness DMs (6.7/10)"
+   ],
+   "queue": [
+    "Standing by for rewrites"
+   ],
+   "waiting": [
+    "Confirm or cut the 'more gyms around Donegal' line"
+   ]
+  },
+  "onboarder": {
+   "id": "onboarder",
+   "name": "Onboarder",
+   "role": "Client agreements and onboarding",
+   "group": "clients",
+   "status": "waiting",
+   "last": "22 Nov 20:04",
+   "acts": [
+    "Jenny's terms locked: €0 build, 3 months free, then €100/mo",
+    "Ready to draft The Burn Studio agreement in her colours"
+   ],
+   "queue": [
+    "Agreement for Jenny (The Burn Studio)"
+   ],
+   "waiting": [
+    "Paste the Kass reference agreement",
+    "Jenny's brand colours"
+   ]
+  },
+  "keeper": {
+   "id": "keeper",
+   "name": "Keeper",
+   "role": "Client care and monthly reviews",
+   "group": "clients",
+   "status": "idle",
+   "last": "18 Nov",
+   "acts": [
+    "Added build-kit component links to the monthly review"
+   ],
+   "queue": [
+    "First monthly review Tue 1 Dec ~10 AM"
+   ],
+   "waiting": [
+    "The update you've been drafting, if you want feedback"
+   ]
+  },
+  "ledger": {
+   "id": "ledger",
+   "name": "Ledger",
+   "role": "CFO · Stripe and payments",
+   "group": "money",
+   "status": "idle",
+   "last": "18 Nov",
+   "acts": [
+    "Posted both Chào Donegal Stripe payment links"
+   ],
+   "queue": [],
+   "waiting": []
+  },
+  "compass": {
+   "id": "compass",
+   "name": "Compass",
+   "role": "Strategy and sales prep",
+   "group": "money",
+   "status": "idle",
+   "last": "16 Nov",
+   "acts": [
+    "Wrote 3 pain points and discovery questions for Don Maguire"
+   ],
+   "queue": [],
+   "waiting": []
+  },
+  "poster": {
+   "id": "poster",
+   "name": "Poster",
+   "role": "Social content",
+   "group": "content",
+   "status": "idle",
+   "last": "5 Nov",
+   "acts": [
+    "November content research and four-week plan",
+    "Recommended Repurpose.io for Instagram → TikTok"
+   ],
+   "queue": [],
+   "waiting": []
+  },
+  "digitalmaker": {
+   "id": "digitalmaker",
+   "name": "Digital Maker",
+   "role": "Digital products",
+   "group": "content",
+   "status": "idle",
+   "last": "7 Nov",
+   "acts": [
+    "Trashed 18 approved pages from the Notion buyer draft",
+    "Draft still private and not sale-ready"
+   ],
+   "queue": [
+    "Calculation, privacy, duplication and device checks remain"
+   ],
+   "waiting": []
+  },
+  "claude": {
+   "id": "claude",
+   "name": "Claude",
+   "role": "Prompt writer",
+   "group": "content",
+   "status": "idle",
+   "last": "18 Nov",
+   "acts": [
+    "Told DMer there's no HTML template, only prompts",
+    "Offered a Claude prompt for a Nails by Aileen demo"
+   ],
+   "queue": [],
+   "waiting": []
+  },
+  "fixer": {
+   "id": "fixer",
+   "name": "Fixer",
+   "role": "Odd jobs",
+   "group": "support",
+   "status": "waiting",
+   "last": "22 Nov 20:12",
+   "acts": [
+    "Burn Studio 'Photos and Info Needed' doc done",
+    "Burn Studio Google Business Profile setup doc done"
+   ],
+   "queue": [
+    "Both docs in Charlie's Drive, not shared yet"
+   ],
+   "waiting": [
+    "Review the two docs",
+    "Jenny's Gmail, if you want a shared photo folder"
+   ]
+  },
+  "labrat": {
+   "id": "labrat",
+   "name": "Lab Rat",
+   "role": "Charlie's personal consultant",
+   "group": "side",
+   "status": "side",
+   "last": "Not tracked here",
+   "acts": [
+    "Standalone, outside the team"
+   ],
+   "queue": [],
+   "waiting": []
+  }
+ },
+ "ticker": [
+  {
+   "t": "23 Nov 14:54",
+   "who": "DMer",
+   "text": "Steph Fit's DM rewritten to a modern-refresh angle; Aoife's unchanged"
+  },
+  {
+   "t": "23 Nov 14:54",
+   "who": "Emailer",
+   "text": "Aoife and Steph emails queued for Wed 25, held until their DMs are sent"
+  },
+  {
+   "t": "23 Nov 14:35",
+   "who": "Chaser",
+   "text": "4 follow-ups verified and ready: Denture, Limitless, O'Flaherty, Pure Grit"
+  },
+  {
+   "t": "23 Nov 14:35",
+   "who": "Chaser",
+   "text": "Station House held: its site is back up, so the draft would be wrong"
+  },
+  {
+   "t": "23 Nov 14:28",
+   "who": "Charlie",
+   "text": "Errigal extra binned and its sequence ended"
+  },
+  {
+   "t": "23 Nov 14:26",
+   "who": "Chief",
+   "text": "Asked DMer and Emailer for today's 5 DMs and 5 emails, nothing sent"
+  },
+  {
+   "t": "23 Nov 08:56",
+   "who": "Chaser",
+   "text": "Daily check: no replies, no bounces, nothing sent since 19 Nov"
+  },
+  {
+   "t": "22 Nov 20:12",
+   "who": "Fixer",
+   "text": "Two Burn Studio docs finished in Drive, not shared"
+  },
+  {
+   "t": "22 Nov 20:04",
+   "who": "Onboarder",
+   "text": "Jenny's terms confirmed: €0 build, 3 months free, €100/mo"
+  },
+  {
+   "t": "22 Nov 18:30",
+   "who": "Prospector",
+   "text": "25 Ireland-wide fitness leads delivered and routed"
+  }
+ ],
+ "stages": [
+  "New",
+  "Contacted",
+  "Replied",
+  "Call booked",
+  "Proposal sent",
+  "Won",
+  "Lost"
+ ],
+ "prospects": [
+  {
+   "name": "G-Force Fitness+Performance",
+   "category": "Gym / PT",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Limitless Gym & Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "TR Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Alex McFadden",
+   "category": "Personal trainer / online coaching",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Ultan Gilligan PT",
+   "category": "Personal trainer",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Austin Doherty / AD Fitness",
+   "category": "Personal trainer / S&C",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Pilar Ramirez / Project Fitness",
+   "category": "Personal trainer / group fitness",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Coach Brianne / Sweet & Spicy Fitness",
+   "category": "Online women's coaching",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Ellen Johnston PT",
+   "category": "Women's strength coaching",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Nicola / Nspire Coaching",
+   "category": "Ladies-only online coaching",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Bodyworx Gym Milford",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "G.I. Gym",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Sculpt Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "JDV Buncrana",
+   "category": "CrossFit / HYROX gym",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Tapa Gym",
+   "category": "Strength / HYROX gym",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "CrossFit Carrick",
+   "category": "Gym",
+   "county": "Leitrim",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Pure Grit Gym",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "EVOLVE Health and Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Intensity Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "OG Fitness (Matthew Oglesby)",
+   "category": "Personal trainer",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Phone"
+  },
+  {
+   "name": "Darragh Brogan Training",
+   "category": "Strength training",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "GD Plumbing",
+   "category": "Plumbing & heating",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Ocean View Beauty Salon",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Shamrock Chinese Takeaway",
+   "category": "Takeaway",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Phone"
+  },
+  {
+   "name": "Casablanca Barbers",
+   "category": "Barbershop",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Phone"
+  },
+  {
+   "name": "Denis's Barber Shop",
+   "category": "Barbershop",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Phone"
+  },
+  {
+   "name": "Errigal Dental",
+   "category": "Dental",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Donegal Denture Clinic",
+   "category": "Dental",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Station House Dental",
+   "category": "Dental",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Chào Donegal",
+   "category": "Nail spa",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Courtney Harron PT",
+   "category": "PT",
+   "county": "Unknown",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "The House of Beauty",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Império Beauty",
+   "category": "Lashes",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Tay Lashes",
+   "category": "Lashes",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "AB Beauty & Training",
+   "category": "Lashes / courses",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Freedom Flow Wellness",
+   "category": "Pilates / yoga",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Bespoke Brows by Hannah",
+   "category": "Brows",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Ahmad Barber Shop",
+   "category": "Barber",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Golden's Hair Salon",
+   "category": "Hair",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Shrimpdog",
+   "category": "Food truck",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Honey Nails & Beauty",
+   "category": "Nails",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Yoga With Sarah Mo",
+   "category": "Yoga",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Instagram"
+  },
+  {
+   "name": "LD Beauty (Brow Queen)",
+   "category": "Brows / lashes",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Blueway Beauty",
+   "category": "Beauty",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "MriduYoga",
+   "category": "Yoga",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Donegal Barber",
+   "category": "Barber",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "R and R Nails & Beauty",
+   "category": "Nails",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "La Vie Beauty",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "On The Go Coffee Co",
+   "category": "Coffee truck + bakery",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Castle Clinic Podiatry",
+   "category": "Podiatry",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "The Foot Care Clinic",
+   "category": "Chiropody",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Inishowen Foot Health",
+   "category": "Foot health",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Eden Sports Injury Clinic",
+   "category": "Sports injury and massage",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "R Russell Electrical",
+   "category": "Electrical and refrigeration",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "DK Beauty",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Villa Bella",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Lydia's Beauty Rooms",
+   "category": "Beauty",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Yoga & Pilates with Edel",
+   "category": "Yoga",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Glamberry",
+   "category": "Nails / courses",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Prestige Beauty Salon",
+   "category": "Beauty",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Ash Aesthetics Beauty",
+   "category": "Beauty",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Emer's Beauty & Skincare",
+   "category": "Beauty & skincare",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Studio 47 Barbers",
+   "category": "Barber",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Wee Blue Van",
+   "category": "Other",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Hammer Fitness",
+   "category": "Fitness",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Studio of Glamour by Leila",
+   "category": "Other",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "The Beauty Room Kinlough",
+   "category": "Beauty",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Fitsquadgym",
+   "category": "Gym",
+   "county": "Offaly",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "O'Flaherty Fitness and Performance",
+   "category": "Gym",
+   "county": "Donegal",
+   "stage": "Contacted",
+   "channel": "Email"
+  },
+  {
+   "name": "Nails by Aileen",
+   "category": "Home nail artist",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Glow Beauty Salon",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Aine's Inspirations Beauty",
+   "category": "Beauty / holistic",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Sparkling Nails",
+   "category": "Nails",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Devine Lashes",
+   "category": "Lashes",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Niche Salons",
+   "category": "Barber",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "District 47 Barber Co",
+   "category": "Barber",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Mullets Barbershop",
+   "category": "Barber",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Studio One Hair & Beauty",
+   "category": "Salon",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Picasso's Beauty Salon",
+   "category": "Beauty",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Aoife McGill PT",
+   "category": "PT gym",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Frosses Coffee Well",
+   "category": "Café",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "The Pod",
+   "category": "Coffee caravan",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "King & Crew Barbershop",
+   "category": "Barber",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Nikki's Beauty Salon",
+   "category": "Beauty",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Calisthenics Sligo / Bar-Strength",
+   "category": "Calisthenics",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Zoee Feeney Fitness",
+   "category": "Online coach",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Blaze Barber Shop",
+   "category": "Barber",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Glam Lash by Grazka",
+   "category": "Lashes",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Steph Fit Coaching",
+   "category": "PT / online coach",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Vicky's Make Up & Beauty",
+   "category": "Beauty",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "T's Barbers",
+   "category": "Barber",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "Opal & Co.",
+   "category": "Hair salon",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Creamers Barbershop",
+   "category": "Barber",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Orlaith's Barber Shop",
+   "category": "Barber",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Wall St Barber Shop",
+   "category": "Barber",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Email"
+  },
+  {
+   "name": "AAlba Foot Clinic",
+   "category": "Podiatry",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Instagram"
+  },
+  {
+   "name": "Sásta Sligo",
+   "category": "Gym",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Train&Gain",
+   "category": "Gym / PT",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Sheila's Nail Salon",
+   "category": "Nails",
+   "county": "Donegal",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "Mick The Barber",
+   "category": "Barber",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "The Hair & Beauty Shop",
+   "category": "Hair & beauty",
+   "county": "Leitrim",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "A1 Barbers",
+   "category": "Barber",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "E.K Beauty Room",
+   "category": "Beauty",
+   "county": "Sligo",
+   "stage": "New",
+   "channel": "Facebook"
+  },
+  {
+   "name": "VFit (Vaidas)",
+   "category": "Personal trainer / strength coaching",
+   "county": "Dublin",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Dublin Combat Academy",
+   "category": "Martial arts / MMA",
+   "county": "Dublin",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Luke Kelly",
+   "category": "Online transformation coach",
+   "county": "Dublin",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Inner Space Pilates (Kacey Tully)",
+   "category": "Pilates studio",
+   "county": "Dublin",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "DLUX Coaching (Daniel Luxford)",
+   "category": "Personal trainer / coach",
+   "county": "Cork",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Cork Weightlifting Club",
+   "category": "Olympic weightlifting club",
+   "county": "Cork",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Tuam Yoga & Pilates Studio (Charlotte Farragher)",
+   "category": "Yoga & pilates studio",
+   "county": "Galway",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Yoga Stretch Galway",
+   "category": "Yoga",
+   "county": "Galway",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "The Fit Factory",
+   "category": "Gym",
+   "county": "Limerick",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "FitnessByMatt (Matej Matt Kaleja)",
+   "category": "Personal trainer / S&C",
+   "county": "Limerick",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Women's Health Limerick (Leonora Kennedy)",
+   "category": "Women's health / postnatal pilates",
+   "county": "Limerick",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Atlas Gym Belfast",
+   "category": "Gym",
+   "county": "Antrim/Down (Belfast)",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Real Honest Coaching (Jordan Barron)",
+   "category": "Personal trainer / coach",
+   "county": "Antrim/Down (Belfast)",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "McCullagh's Amateur Boxing Club",
+   "category": "Amateur boxing club",
+   "county": "Antrim/Down (Belfast)",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "The GYM Newry",
+   "category": "24-hour gym",
+   "county": "Down",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "The Power House by RK",
+   "category": "24-hour gym",
+   "county": "Fermanagh",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Eamon Doherty",
+   "category": "Online coach & PT",
+   "county": "Derry",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Molly Eden-Curley (Move With Molly)",
+   "category": "PT / online coach",
+   "county": "Derry",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Santosha Wellness Studios",
+   "category": "Yoga & wellness studio",
+   "county": "Louth",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Joe Coyle Fitness",
+   "category": "PT / group training",
+   "county": "Louth",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "100% Personal Training",
+   "category": "Gym / personal training",
+   "county": "Mayo",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Align Yoga Studio",
+   "category": "Yoga studio",
+   "county": "Cavan",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Mugendo Martial Arts Academy",
+   "category": "Martial arts",
+   "county": "Meath",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Absolute Fitness (Mick Brennan)",
+   "category": "PT / fitness studio",
+   "county": "Kilkenny",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  },
+  {
+   "name": "Barry's Fitness",
+   "category": "PT / fitness",
+   "county": "Waterford",
+   "stage": "New",
+   "channel": "Instagram",
+   "fitness": true
+  }
+ ],
+ "sequences": [
+  {
+   "name": "Errigal Dental",
+   "category": "Dental",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-05",
+   "stage": "Day 14 final sent",
+   "overdue": "",
+   "next": "—",
+   "response": "Sequence ended",
+   "fitness": false
+  },
+  {
+   "name": "Donegal Denture Clinic",
+   "category": "Dental",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-05",
+   "stage": "Day 14 sent",
+   "overdue": "",
+   "next": "Extra follow-up Mon 23 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Station House Dental",
+   "category": "Dental",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-05",
+   "stage": "Day 14 sent",
+   "overdue": "",
+   "next": "Extra held: site is back up, so the draft is wrong. Chaser recommends ending the sequence",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "JDV Buncrana",
+   "category": "CrossFit / HYROX gym",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "CrossFit Carrick",
+   "category": "Gym",
+   "county": "Leitrim",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Honey Nails & Beauty",
+   "category": "Nails",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Donegal Barber",
+   "category": "Barber",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "",
+   "next": "Not delivered · Facebook DM by Charlie",
+   "response": "Bounced",
+   "fitness": false
+  },
+  {
+   "name": "R and R Nails & Beauty",
+   "category": "Nails",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "La Vie Beauty",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Yoga With Sarah Mo",
+   "category": "Yoga",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "On The Go Coffee Co",
+   "category": "Coffee truck + bakery",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Castle Clinic Podiatry",
+   "category": "Podiatry",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "The Foot Care Clinic",
+   "category": "Chiropody",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-16",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 20 Nov, not sent",
+   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Inishowen Foot Health",
+   "category": "Foot health",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-17",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 21 Nov, not sent",
+   "next": "Day 9 catch-up (17 Nov batch) Wed 25 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Eden Sports Injury Clinic",
+   "category": "Sports injury and massage",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-17",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 21 Nov, not sent",
+   "next": "Day 9 catch-up (17 Nov batch) Wed 25 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "R Russell Electrical",
+   "category": "Electrical and refrigeration",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-17",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 21 Nov, not sent",
+   "next": "Day 9 catch-up (17 Nov batch) Wed 25 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "DK Beauty",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-17",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 21 Nov, not sent",
+   "next": "Day 9 catch-up (17 Nov batch) Wed 25 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Villa Bella",
+   "category": "Beauty salon",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-17",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 21 Nov, not sent",
+   "next": "Day 9 catch-up (17 Nov batch) Wed 25 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Limitless Gym & Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-18",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 22 Nov, not sent",
+   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Fitsquadgym",
+   "category": "Gym",
+   "county": "Offaly",
+   "channel": "Email",
+   "first": "2026-11-18",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 22 Nov, not sent",
+   "next": "Day 5 dropped from today pending a line fix · Gym Day 9 Thu 26 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "O'Flaherty Fitness and Performance",
+   "category": "Gym",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-18",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 22 Nov, not sent",
+   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Pure Grit Gym",
+   "category": "Gym",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-18",
+   "stage": "Day 1 first touch",
+   "overdue": "Day 5 was due 22 Nov, not sent",
+   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "response": "No reply",
+   "fitness": false
+  }
+ ],
+ "history": [
+  {
+   "date": "2026-11-19",
+   "name": "Station House Dental",
+   "channel": "Email",
+   "type": "Follow-up (Day 14 final)",
+   "angle": "Day-14 FINAL — site still not opening, SSL expired Aug 2026",
+   "outcome": "Sequence finished"
+  },
+  {
+   "date": "2026-11-19",
+   "name": "Errigal Dental",
+   "channel": "Email",
+   "type": "Follow-up (Day 14 final)",
+   "angle": "Day-14 FINAL — newest News & Events Nov 2021, Covid 19 link still on homepage",
+   "outcome": "Sequence finished"
+  },
+  {
+   "date": "2026-11-19",
+   "name": "Donegal Denture Clinic",
+   "channel": "Email",
+   "type": "Follow-up (Day 14 final)",
+   "angle": "Day-14 FINAL — About still mentions Atlas Denture Centre; dimploma + is was typos",
+   "outcome": "Sequence finished"
+  },
+  {
+   "date": "2026-11-18",
+   "name": "Limitless Gym & Fitness",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — Facebook-only, no website",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-18",
+   "name": "Fitsquadgym",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — listed site fitcareer.ie is down",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-18",
+   "name": "O'Flaherty Fitness and Performance",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — upgrade a basic site to an interactive one that converts",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-18",
+   "name": "Pure Grit Gym",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — fix the current site: typos, broken Eircode, no prices or join button",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-17",
+   "name": "Inishowen Foot Health",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Pain-point framing — cost of no website or a weak one, dedicated site as the fix, soft que",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-17",
+   "name": "Eden Sports Injury Clinic",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Pain-point framing — cost of no website or a weak one, dedicated site as the fix, soft que",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-17",
+   "name": "R Russell Electrical",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Pain-point framing — cost of no website or a weak one, dedicated site as the fix, soft que",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-17",
+   "name": "DK Beauty",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Pain-point framing — cost of no website or a weak one, dedicated site as the fix, soft que",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-17",
+   "name": "Villa Bella",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Pain-point framing — cost of no website or a weak one, dedicated site as the fix, soft que",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "JDV Buncrana",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — cost of a missing or poor website",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "CrossFit Carrick / Carrick Fitness",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — cost of a missing or poor website",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "Honey Nails & Beauty",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — cost of a missing or poor website",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "Donegal Barber",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — cost of a missing or poor website",
+   "outcome": "Bounced"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "R and R Nails & Beauty",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — cost of a missing or poor website",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "La Vie Beauty",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — La Vie's Wix page",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "Yoga With Sarah Mo",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — Your Donegal Town classes",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "On The Go Coffee Co",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — Your Square page",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "Castle Clinic Podiatry",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — A site for Castle Clinic in Moville",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-16",
+   "name": "The Foot Care Clinic",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "v2 no-mock-up interest check — The website link on your Google listing",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-13",
+   "name": "Reform Barbershop",
+   "channel": "Email",
+   "type": "Email (warm thread)",
+   "angle": "Square online booking set-up",
+   "outcome": "Replied"
+  },
+  {
+   "date": "2026-11-05",
+   "name": "Errigal Dental",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Dated site / losing patients",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-05",
+   "name": "Donegal Denture Clinic",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Dated site costing patients",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-05",
+   "name": "Station House Dental",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "Website not opening",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-10-31",
+   "name": "The Burn Studio",
+   "channel": "Email",
+   "type": "Proposal email",
+   "angle": "Concepts + founding client offer",
+   "outcome": "No reply logged"
+  },
+  {
+   "date": "2026-10-27",
+   "name": "Don Maguire Gym + Coaching",
+   "channel": "Email",
+   "type": "Proposal email",
+   "angle": "Website review + exclusive rebuild proposal",
+   "outcome": "No reply logged"
+  }
+ ],
+ "sequenceRule": "Email sequence: Day 1 first touch, then Day 5, Day 9 and Day 14 (final). Overdue Day 5s were folded into the Day 9 catch-ups so nobody gets two emails in two days.",
+ "batches": [
+  {
+   "label": "5 Nov dental (3)",
+   "detail": "Day 14 finals sent 19 Nov. Errigal's extra was binned and its sequence ended (23 Nov). Station House's extra is held. Donegal Denture's extra is ready for today."
+  },
+  {
+   "label": "16 Nov batch (9 + 1 bounce)",
+   "detail": "Day 5 (20 Nov) not sent. Day 9 catch-ups Tue 24 Nov, Day 14 due 29 Nov. Donegal Barber bounced and moved to a Facebook DM for Charlie."
+  },
+  {
+   "label": "17 Nov batch (5)",
+   "detail": "Day 5 (21 Nov) not sent. Day 9 catch-ups Wed 25 Nov, Day 14 due 30 Nov."
+  },
+  {
+   "label": "18 Nov gyms (4)",
+   "detail": "Day 5 Mon 23 Nov, Day 9 Thu 26 Nov, Day 14 due 1 Dec."
+  }
+ ],
+ "dmNote": "No DMs have been sent yet: 0 are logged. 33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
+ "drafts": {
+  "dmCold": 33,
+  "dmWarm": 1,
+  "dmFitness": 25,
+  "emailFirstTouch": 28,
+  "emailNeedsRewrite": 4,
+  "emailFitness": 24
+ },
+ "outreach": {
+  "dmsThisWeek": 0,
+  "dmTarget": 25,
+  "emailsThisWeek": 0,
+  "emailsLastWeek": 21,
+  "thisWeekLabel": "w/c 23 Nov",
+  "lastWeekLabel": "16–19 Nov, +1 bounce",
+  "note": "Cold replies: 0. Last emails out: the 3 dental finals, 19 Nov ~13:16. One warm reply logged (Reform, 13 Nov)."
+ },
+ "sendPlanWeek": "Mon 23 – Fri 27 Nov",
+ "sendPlanTarget": 75,
+ "sendDays": [
+  {
+   "day": "Mon 23 Nov",
+   "short": "Mon 23",
+   "emails": 7,
+   "dms": 8
+  },
+  {
+   "day": "Tue 24 Nov",
+   "short": "Tue 24",
+   "emails": 9,
+   "dms": 6
+  },
+  {
+   "day": "Wed 25 Nov",
+   "short": "Wed 25",
+   "emails": 9,
+   "dms": 6
+  },
+  {
+   "day": "Thu 26 Nov",
+   "short": "Thu 26",
+   "emails": 8,
+   "dms": 7
+  },
+  {
+   "day": "Fri 27 Nov",
+   "short": "Fri 27",
+   "emails": 8,
+   "dms": 7
+  }
+ ],
+ "sendPlan": [
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Station House Dental",
+   "action": "Extra follow-up",
+   "fitness": false,
+   "status": "Held",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Donegal Denture Clinic",
+   "action": "Extra follow-up",
+   "fitness": false,
+   "status": "Ready, awaiting Charlie's send",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Errigal Dental",
+   "action": "Extra follow-up",
+   "fitness": false,
+   "status": "Binned",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Limitless Gym & Fitness",
+   "action": "Gym Day 5",
+   "fitness": true,
+   "status": "Ready, awaiting Charlie's send",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Fitsquadgym",
+   "action": "Gym Day 5",
+   "fitness": true,
+   "status": "Dropped from today (line unconfirmed)",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "O'Flaherty Fitness and Performance",
+   "action": "Gym Day 5",
+   "fitness": true,
+   "status": "Ready, awaiting Charlie's send",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Pure Grit Gym",
+   "action": "Gym Day 5",
+   "fitness": true,
+   "status": "Ready, awaiting Charlie's send",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "Tapa Gym",
+   "action": "Instagram DM",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "Aoife McGill PT",
+   "action": "Instagram DM",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "Bar-Strength (Calisthenics Sligo)",
+   "action": "Instagram DM",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "Zoee Feeney Fitness",
+   "action": "Instagram DM",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "Steph Fit Coaching",
+   "action": "Instagram DM",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "MriduYoga",
+   "action": "Instagram DM",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "The House of Beauty",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "DM",
+   "name": "Mentora Beauty (Carolaine)",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "JDV Buncrana",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "CrossFit Carrick",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "Yoga With Sarah Mo",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "Honey Nails & Beauty",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "R and R Nails & Beauty",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "La Vie Beauty",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "On The Go Coffee Co",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "Castle Clinic Podiatry",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "Email",
+   "name": "The Foot Care Clinic",
+   "action": "Day 9 catch-up (16 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "DM",
+   "name": "Tay Lashes",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "DM",
+   "name": "AB Beauty & Training",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "DM",
+   "name": "LD Beauty",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "DM",
+   "name": "Blueway Beauty",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "DM",
+   "name": "Ahmad Barber Shop",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Tue 24 Nov",
+   "kind": "DM",
+   "name": "Glow Beauty Salon",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "Eden Sports Injury Clinic",
+   "action": "Day 9 catch-up (17 Nov batch)",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "Inishowen Foot Health",
+   "action": "Day 9 catch-up (17 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "R Russell Electrical",
+   "action": "Day 9 catch-up (17 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "DK Beauty",
+   "action": "Day 9 catch-up (17 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "Villa Bella",
+   "action": "Day 9 catch-up (17 Nov batch)",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "Aoife McGill PT",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "Zoee Feeney Fitness",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "Steph Fit Coaching",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "MriduYoga",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "Golden's Hair Salon",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "Shrimpdog",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "Aine's Inspirations Beauty",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "Sparkling Nails",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "Devine Lashes",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "Niche Salons",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "Limitless Gym & Fitness",
+   "action": "Gym Day 9",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "Fitsquadgym",
+   "action": "Gym Day 9",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "O'Flaherty Fitness and Performance",
+   "action": "Gym Day 9",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "Pure Grit Gym",
+   "action": "Gym Day 9",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "EVOLVE Health and Fitness",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "Intensity Fitness",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "Yoga & Pilates with Edel",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "Email",
+   "name": "Glow Beauty Salon",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "DM",
+   "name": "District 47 Barber Co",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "DM",
+   "name": "Mullets Barbershop",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "DM",
+   "name": "Studio One Hair & Beauty",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "DM",
+   "name": "Frosses Coffee Well",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "DM",
+   "name": "King & Crew Barbershop",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "DM",
+   "name": "Nikki's Beauty Salon",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Thu 26 Nov",
+   "kind": "DM",
+   "name": "Blaze Barber Shop",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Sparkling Nails",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Devine Lashes",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "LD Beauty",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Blueway Beauty",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Picasso's Beauty Salon",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "T's Barbers",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Wall St Barber Shop",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Ash Aesthetics Beauty",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "DM",
+   "name": "Glam Lash by Grazka",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "DM",
+   "name": "Vicky's Make Up & Beauty",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "DM",
+   "name": "Opal & Co.",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "DM",
+   "name": "Creamers Barbershop",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "DM",
+   "name": "Orlaith's Barber Shop",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "DM",
+   "name": "AAlba Foot Clinic",
+   "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "DM",
+   "name": "Nails by Aileen",
+   "action": "Warm Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": true
+  }
+ ],
+ "sendPlanSpill": "12 more first-touch emails spill into next week.",
+ "spillList": [
+  "Studio One Hair & Beauty",
+  "Frosses Coffee Well",
+  "King & Crew Barbershop",
+  "Nikki's Beauty Salon",
+  "Glam Lash by Grazka",
+  "Vicky's Make Up & Beauty",
+  "Creamers Barbershop",
+  "Orlaith's Barber Shop",
+  "AAlba Foot Clinic",
+  "Lydia's Beauty Rooms",
+  "Glamberry",
+  "Prestige Beauty Salon"
+ ],
+ "clients": [
+  {
+   "name": "Michael Roarty Fitness",
+   "niche": "Online fitness coaching",
+   "start": "2026-03-19",
+   "terms": "€250 setup + €50/mo",
+   "status": "Live. 12 months prepaid on 24 Oct, covering to 1 Nov 2027"
+  },
+  {
+   "name": "Kass Diarra",
+   "niche": "Online PT",
+   "start": "2026-07-10",
+   "terms": "€75/mo",
+   "status": "Live. The €75 due 10 Nov hadn't arrived as of 15 Nov; Charlie chasing"
+  },
+  {
+   "name": "The Blueberry Tearooms",
+   "niche": "Cafe / tearoom",
+   "start": "2026-05-20",
+   "terms": "€300 once-off",
+   "status": "Live. No monthly fee stated"
+  },
+  {
+   "name": "Reform Barbershop",
+   "niche": "Barbershop",
+   "start": "2026-10-02",
+   "terms": "Complimentary",
+   "status": "Live. Warm: Square online booking for a January go-live"
+  }
+ ],
+ "opportunities": [
+  {
+   "name": "Chào Donegal",
+   "tier": "main",
+   "open": true,
+   "stage": "Proposal ready to present",
+   "services": "Nail spa website, .ie domain and first-year care",
+   "value": "€1,000 upfront (build, .ie domain, first year) or €350 setup + €65/mo with the first month free (year one €1,065)",
+   "next": "Hand the proposal over in person; start date TBC. Nothing paid yet",
+   "owner": "Charlie · Ledger set up both Stripe payment links (18 Nov)"
+  },
+  {
+   "name": "Don Maguire Gym + Coaching",
+   "tier": "main",
+   "open": true,
+   "stage": "Proposal sent 27 Oct",
+   "services": "Multi-page gym and coaching website, shop and checkout, SEO, reviews and launch assets",
+   "value": "€250 setup (normally €500), months 1–6 free, then €75/mo founder rate (normally €150). Year-one cash €700",
+   "next": "Follow up on the 27 Oct proposal",
+   "owner": "Charlie · Compass prepped discovery questions (16 Nov)",
+   "note": "Payment link: unconfirmed (from Chief's notes; the CRM doesn't record one)"
+  },
+  {
+   "name": "The Burn Studio (Jenny)",
+   "tier": "main",
+   "open": true,
+   "stage": "Terms agreed · agreement in progress",
+   "services": "Studio website; domain and hosting included in the monthly care",
+   "value": "€0 build (normally €500), 3 months free, then €100/mo founder rate (normally €150–€175)",
+   "next": "Onboarder drafts the agreement once Charlie pastes the Kass reference; Fixer's info docs are ready to review",
+   "owner": "Onboarder (agreement) · Fixer (info docs) · Charlie"
+  },
+  {
+   "name": "Nails by Aileen",
+   "tier": "active",
+   "open": false,
+   "stage": "Proposal drafted (Chief's notes)",
+   "services": "Home nail artist with no website; no-website waitlist-page pitch",
+   "value": "Not priced in the CRM",
+   "next": "Warm Instagram DM awaiting Charlie's approval, slotted for Fri 27 Nov",
+   "owner": "DMer · Charlie",
+   "note": "The CRM lists this as a DM draft. 'Proposal drafted' comes from Chief's notes"
+  },
+  {
+   "name": "Conor Gallagher Coaching",
+   "tier": "active",
+   "open": true,
+   "stage": "Proposal ready to present",
+   "services": "One-page landing site for a new online fitness coach",
+   "value": "€50/mo for 12 months (€600) or €500 for the first year",
+   "next": "Charlie to present the proposal in person (approved 15 Nov)",
+   "owner": "Charlie"
+  },
+  {
+   "name": "DT Fitness",
+   "tier": "active",
+   "open": true,
+   "stage": "Opportunity",
+   "services": "Option B: DT Fitness + Rilion Gracie (two sites). Option A: gym site only",
+   "value": "Option B €495 setup + €199/mo, first 2 months free (yearly €2,000). Option A €395 + €120/mo (yearly €1,250)",
+   "next": "Confirm Option A or B and the proposal status",
+   "owner": "Charlie"
+  },
+  {
+   "name": "Reform Barbershop (Leon)",
+   "tier": "active",
+   "open": false,
+   "stage": "Client · booking system",
+   "services": "Square online booking set-up for a January go-live",
+   "value": "No fee documented in the CRM (site was complimentary)",
+   "next": "Leon to send back the info sheet. A Friday meeting is being arranged (Chief's notes, not in the CRM yet)",
+   "owner": "Charlie"
+  }
+ ],
+ "revenue": {
+  "mrr": 125,
+  "arr": 1500,
+  "stripeCollected": 0,
+  "potentialMrr": 614,
+  "setupCollected": 550,
+  "monthlyCosts": 8.15,
+  "breakdown": [
+   {
+    "name": "Michael Roarty Fitness",
+    "monthly": 50,
+    "note": "Reduced from €75. Prepaid €500 on 24 Oct, covering to 1 Nov 2027"
+   },
+   {
+    "name": "Kass Diarra",
+    "monthly": 75,
+    "note": "10 Nov payment not received as of 15 Nov"
+   },
+   {
+    "name": "The Blueberry Tearooms",
+    "monthly": 0,
+    "note": "€300 once-off, no monthly fee"
+   },
+   {
+    "name": "Reform Barbershop",
+    "monthly": 0,
+    "note": "Complimentary, no monthly fee"
+   }
+  ],
+  "potential": [
+   {
+    "name": "Don Maguire Gym + Coaching",
+    "setup": 250,
+    "monthly": 75,
+    "freeMonths": 6,
+    "year1": 700
+   },
+   {
+    "name": "DT Fitness",
+    "setup": 495,
+    "monthly": 199,
+    "freeMonths": 2,
+    "year1": 2485
+   },
+   {
+    "name": "The Burn Studio",
+    "setup": 0,
+    "monthly": 100,
+    "freeMonths": 3,
+    "year1": 900
+   },
+   {
+    "name": "Chào Donegal",
+    "setup": 350,
+    "monthly": 65,
+    "freeMonths": 1,
+    "year1": 1065
+   },
+   {
+    "name": "Conor Gallagher Coaching",
+    "setup": 0,
+    "monthly": 50,
+    "freeMonths": 0,
+    "year1": 600
+   }
+  ],
+  "note": "Contracted MRR is agreed terms, not cash collected. Clients pay by Revolut and invoice, so Stripe isn't the record yet. Monthly costs are recurring receipts only (domains and Google AI Plus). Year-one cash is setup plus the paid months after any free period."
+ }
+}
