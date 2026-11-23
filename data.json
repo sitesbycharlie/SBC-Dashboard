@@ -1,10 +1,10 @@
 {
- "asOf": "23 Nov 2026, 17:19 Dublin",
- "asOfISO": "2026-11-23T17:19+00:00",
+ "asOf": "23 Nov 2026, 18:25 Dublin",
+ "asOfISO": "2026-11-23T18:25+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-23 ~16:42 Europe/Dublin",
-  "agents": "2026-11-23T15:52:36+00:00"
+  "agents": "2026-11-23T18:25:48+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,24 +86,24 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "23 Nov 15:45",
+   "last": "23 Nov 18:25",
    "acts": [
-    "Logged Zoee Feeney Fitness as Replied — not now, warm for later. Cancelled her Wed 25 email and Day 5, 9 and 14 follow-ups, and removed the email from the send plan",
-    "Logged Aoife and Steph messages as sent on 23 Nov and set email follow-ups for Wednesday, 25 Nov",
-    "Logged Bar-Strength and Zoee DMs as sent 23 Nov (DMer to confirm exact times) and scheduled email follow-ups for Wed 25",
+    "Set every bot to report its status to Mission Control after each job, and shipped the darker HUD layout fixes",
+    "Logged Zoee Feeney Fitness as Replied — not now, warm for later. Cancelled her Wednesday email and Day 5, 9 and 14 follow-ups",
+    "Logged four Instagram DMs as sent on 23 Nov (Aoife, Steph, Bar-Strength and Zoee) and set email follow-ups for Wednesday, 25 Nov",
     "Closed the Station House Dental lead as lost, with no further follow-ups",
-    "Added a T's Barbers Facebook or Booksy DM for Wed 25, pending Charlie's approval",
-    "Kept Don Maguire target: commitment by Fri 27"
+    "Added a T's Barbers Facebook or Booksy message for Wednesday, 25 Nov, pending Charlie's approval",
+    "Kept Don Maguire's commitment target of Friday, 27 Nov"
    ],
    "queue": [
     "Send plan Mon 23 – Fri 27 Nov (12 of 79 sent)",
-    "Wed 25: T's Barbers DM draft plus three DM-first email follow-ups (Aoife, Steph, and Bar-Strength if an address is confirmed)",
+    "Wed 25: T's Barbers message draft plus email follow-ups for Aoife, Steph, and Bar-Strength if an address is confirmed",
     "Fitness batch slotted for Thu 26 / Fri 27"
    ],
    "waiting": [
-    "Approve the T's Barbers Facebook or Booksy DM for Wed 25",
-    "Don's commitment by Fri",
-    "DMer to confirm exact send times for Bar-Strength and Zoee"
+    "Go-ahead on the bespoke redesign direction",
+    "Approve the T's Barbers Facebook or Booksy message for Wednesday, 25 Nov, and who sends it",
+    "Don Maguire's commitment by Friday, 27 Nov"
    ]
   },
   "prospector": {
@@ -112,11 +112,11 @@
    "role": "Finds leads with no or weak sites",
    "group": "lead",
    "status": "idle",
-   "last": "23 Nov 15:42",
+   "last": "23 Nov 17:21",
    "acts": [
-    "Confirmed Tapa Gym has no public email (checked Instagram, directories, old site, company records)",
-    "Told Emailer Tapa cannot go on the email list; remaining channel is phone",
-    "Delivered 25 Ireland-wide fitness leads (+14 partials) on 22 Nov"
+    "Finished the Tapa Gym email search: no confirmed address found. Remaining channel is phone",
+    "Told Emailer that Tapa cannot go on the email list",
+    "Delivered 25 Ireland-wide fitness leads (+14 partials) on 22 Nov, already handed to DMer and Emailer"
    ],
    "queue": [
     "Sunday routine next runs Sun 29 Nov ~6 AM, ready by 10 AM",
@@ -130,19 +130,20 @@
    "role": "Instagram DM outreach",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 15:39",
+   "last": "23 Nov 17:21",
    "acts": [
-    "Aoife and Steph DMs confirmed sent by Charlie on 23 Nov",
-    "Bar-Strength and Zoee logged as sent 23 Nov; exact times still to confirm",
-    "New job: draft a T's Barbers DM for Wed 25 via Facebook or Booksy, for Charlie's approval"
+    "Drafted and cleaned a Facebook message for T's Barbers (Sligo), ready for Wednesday, 25 Nov",
+    "Logged Zoee Feeney Fitness as replied: not now, maybe later",
+    "Aoife and Steph messages confirmed sent by Charlie on 23 Nov",
+    "Bar-Strength and Zoee logged as sent 23 Nov; exact times still to confirm"
    ],
    "queue": [
-    "Draft the T's Barbers Facebook or Booksy DM for Wed 25 and get Charlie's approval",
-    "Confirm exact send times for Bar-Strength and Zoee",
-    "Rest of the week's planned DMs, plus 25 fitness DMs from Thu 26 / Fri 27"
+    "T's Barbers Facebook or Booksy message is ready for Wednesday, 25 Nov, pending Charlie's approval and who sends it",
+    "Confirm exact send times for Bar-Strength and Zoee, if known",
+    "Rest of the week's planned messages, plus 25 fitness messages from Thursday, 26 Nov / Friday, 27 Nov"
    ],
    "waiting": [
-    "Approve the T's Barbers Facebook or Booksy DM for Wed 25",
+    "Approve the T's Barbers message for Wednesday, 25 Nov, and say who sends it",
     "Exact send times for Bar-Strength and Zoee, if known"
    ]
   },
@@ -152,21 +153,23 @@
    "role": "Cold first-touch emails",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 15:42",
+   "last": "23 Nov 17:21",
    "acts": [
+    "Sent five approved first-touch emails (Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic); the T's Barbers message bounced",
+    "Merged inbox checks into one hourly routine",
     "Zoee Feeney Fitness email follow-up cancelled after her 23 Nov reply; no email to her is queued",
-    "Aoife, Steph and Bar-Strength email follow-ups remain scheduled Wed 25 (2–3 days after the 23 Nov DMs)",
+    "Aoife, Steph and Bar-Strength email follow-ups remain scheduled for Wednesday, 25 Nov",
     "Bar-Strength has no email in current drafts; confirm whether a public address exists before sending, and do not invent one",
     "T's Barbers stays off the email list (bounced); no email follow-ups queued"
    ],
    "queue": [
-    "Wed 25 email follow-ups: Aoife, Steph, and Bar-Strength if an address is confirmed",
+    "Wednesday, 25 Nov email follow-ups: Aoife, Steph, and Bar-Strength if an address is confirmed",
     "Remaining first-touch emails in this week's plan and the spill list",
-    "Remaining fitness emails, each 2–3 days after that business's DM (Zoee's email is cancelled)",
+    "Remaining fitness emails, each 2–3 days after that business's message (Zoee's email is cancelled)",
     "4 need fixes (EVOLVE, Edel, LD Beauty, Prestige)"
    ],
    "waiting": [
-    "Is the 'more gyms around Donegal' line true?",
+    "Aoife McGill PT and Steph Fit Coaching emails go to Charlie for approval on Wednesday, 25 Nov",
     "Whether Bar-Strength has a public email (do not invent one)"
    ]
   },
@@ -176,20 +179,20 @@
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 15:17",
+   "last": "23 Nov 17:21",
    "acts": [
-    "Sent four follow-up emails at 15:17, as replies in their original threads, after Charlie's go-ahead at 15:16",
+    "Sent four approved follow-ups today: Donegal Denture Clinic, Limitless, O'Flaherty Fitness and Pure Grit",
     "Sent a one-off extra to Donegal Denture Clinic; that sequence has ended",
-    "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thu 26 Nov, Day 14 Tue 1 Dec",
-    "Fitsquad's Day 5 was dropped; the Errigal sequence has ended; Station House Dental was closed as lost on 23 Nov, with no further follow-ups"
+    "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thursday, 26 Nov, Day 14 Tuesday, 1 Dec",
+    "Closed Zoee Feeney Fitness as replied, not now. Fitsquad's Day 5 was dropped; the Errigal sequence has ended; Station House Dental was closed as lost on 23 Nov"
    ],
    "queue": [
-    "9 catch-ups for the 16 Nov batch (Tue 24)",
-    "5 catch-ups for the 17 Nov batch (Wed 25)",
-    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thu 26"
+    "9 catch-ups for the 16 Nov batch (Tuesday, 24 Nov)",
+    "5 catch-ups for the 17 Nov batch (Wednesday, 25 Nov)",
+    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thursday, 26 Nov — Fitsquad must drop the unverified booking-app claim"
    ],
    "waiting": [
-    "Fitsquad Day 9: drop the unverified booking-app claim"
+    "Approval on 14 catch-up follow-up drafts (9 for Tuesday, 24 Nov, 5 for Wednesday, 25 Nov)"
    ]
   },
   "cleaner": {
@@ -198,16 +201,16 @@
    "role": "Polishes every draft",
    "group": "lead",
    "status": "idle",
-   "last": "23 Nov 14:54",
+   "last": "23 Nov 17:21",
    "acts": [
-    "Polished the DM-mention line in Aoife's and Steph's emails at 14:54; neither email has been sent",
-    "Cleaned 24 fitness emails and 25 fitness DMs earlier today"
+    "Polished today's outreach: 24 fitness emails, 7 v2 emails, the Aoife and Steph DM-reference lines, and the T's Barbers Messenger draft",
+    "None of those polished emails have been sent except the earlier approved first-touches"
    ],
    "queue": [
     "Standing by for rewrites"
    ],
    "waiting": [
-    "Confirm or cut the 'more gyms around Donegal' line"
+    "Confirm whether the “more gyms around Donegal” line is true before those emails go out"
    ]
   },
   "onboarder": {
@@ -216,17 +219,18 @@
    "role": "Client agreements and onboarding",
    "group": "clients",
    "status": "waiting",
-   "last": "22 Nov 20:04",
+   "last": "23 Nov 17:21",
    "acts": [
-    "Jenny's terms locked: €0 build, 3 months free, then €100/mo",
-    "Ready to draft The Burn Studio agreement in her colours"
+    "Confirmed The Burn Studio agreement terms with Charlie; Nails By Aileen proposal reworked",
+    "Jenny's terms remain: no build fee, three months free, then €100 a month"
    ],
    "queue": [
-    "Agreement for Jenny (The Burn Studio)"
+    "Agreement for The Burn Studio",
+    "Nails By Aileen proposal sign-off"
    ],
    "waiting": [
-    "Paste the Kass reference agreement",
-    "Jenny's brand colours"
+    "Reference agreement paste for The Burn Studio",
+    "Sign-off on the Nails By Aileen proposal"
    ]
   },
   "keeper": {
@@ -234,16 +238,18 @@
    "name": "Keeper",
    "role": "Client site guardian · scouts every client site from onboarding",
    "group": "clients",
-   "status": "idle",
-   "last": "18 Nov 01:21",
+   "status": "waiting",
+   "last": "23 Nov 17:22",
    "acts": [
-    "Added build-kit component links to the monthly review"
+    "Set up twice-weekly site scouting for all four client sites; first run Thursday, 26 Nov",
+    "Monthly check-ins run from 1 Dec"
    ],
    "queue": [
-    "First monthly review Tue 1 Dec ~10 AM"
+    "First twice-weekly scout Thursday, 26 Nov",
+    "First monthly review Tuesday, 1 Dec ~10 AM"
    ],
    "waiting": [
-    "The update you've been drafting, if you want feedback"
+    "Approve or discard the November check-in drafts for Kass PT and Michael Roarty Fitness"
    ]
   },
   "ledger": {
@@ -252,9 +258,10 @@
    "role": "CFO · Stripe and payments",
    "group": "money",
    "status": "idle",
-   "last": "18 Nov 01:16",
+   "last": "23 Nov 17:22",
    "acts": [
-    "Posted both Chào Donegal Stripe payment links"
+    "Daily payments check done; Stripe was quiet",
+    "Payment links for Chào Donegal and Don Maguire Fitness are live and waiting"
    ],
    "queue": [],
    "waiting": []
@@ -265,12 +272,15 @@
    "role": "Strategy and sales prep",
    "group": "money",
    "status": "idle",
-   "last": "16 Nov 17:19",
+   "last": "23 Nov 17:21",
    "acts": [
-    "Wrote 3 pain points and discovery questions for Don Maguire"
+    "Prepped three pain points and discovery questions for a gym owner call",
+    "v2 package pricing benchmarked and finalised"
    ],
    "queue": [],
-   "waiting": []
+   "waiting": [
+    "Whether to define yearly prepay, free-month and minimum-term options"
+   ]
   },
   "poster": {
    "id": "poster",
@@ -278,43 +288,50 @@
    "role": "Social content",
    "group": "content",
    "status": "idle",
-   "last": "5 Nov 21:03",
+   "last": "23 Nov 17:22",
    "acts": [
-    "November content research and four-week plan",
-    "Recommended Repurpose.io for Instagram → TikTok"
+    "Delivered short-form content research, a weekly personal-story plan, and an Instagram-to-TikTok cross-posting recommendation",
+    "Nothing has been connected or published"
    ],
    "queue": [],
-   "waiting": []
+   "waiting": [
+    "Decide whether to try the recommended cross-posting tool"
+   ]
   },
   "digitalmaker": {
    "id": "digitalmaker",
    "name": "Digital Maker",
    "role": "Digital products",
    "group": "content",
-   "status": "idle",
-   "last": "7 Nov 19:21",
+   "status": "waiting",
+   "last": "23 Nov 17:22",
    "acts": [
-    "Removed 18 approved pages from the Notion buyer draft",
-    "Draft still private and not sale-ready"
+    "Built and cleaned a private Life & Work Planner Notion template draft; launch QA is still pending",
+    "Draft is still private and not sale-ready"
    ],
    "queue": [
-    "Calculation, privacy, duplication and device checks remain"
+    "Launch QA: calculation, privacy, duplication and device checks"
    ],
-   "waiting": []
+   "waiting": [
+    "Desktop and phone review of the planner draft, plus a duplicate test from a separate Notion account"
+   ]
   },
   "claude": {
    "id": "claude",
    "name": "Claude",
    "role": "Prompt writer",
    "group": "content",
-   "status": "idle",
-   "last": "18 Nov 14:39",
+   "status": "waiting",
+   "last": "23 Nov 17:22",
    "acts": [
+    "Told DMer no reusable site template exists, and offered a Nails by Aileen build prompt",
     "Chào Donegal prompts are finished; Charlie is building it in Claude",
     "SEO (keywords, titles, meta, headings, schema, Google Business Profile) now goes into every build prompt"
    ],
    "queue": [],
-   "waiting": []
+   "waiting": [
+    "Nails by Aileen details (services, prices, photos, branding) if a demo build prompt is wanted"
+   ]
   },
   "fixer": {
    "id": "fixer",
@@ -322,17 +339,15 @@
    "role": "Diagnoses issues Keeper flags and hands Charlie a recommended fix",
    "group": "support",
    "status": "waiting",
-   "last": "22 Nov 20:12",
+   "last": "23 Nov 17:22",
    "acts": [
-    "Finished the Burn Studio photos-and-info briefing",
-    "Burn Studio Google Business Profile setup doc done"
+    "Built The Burn Studio photos and info document plus a Google Business Profile setup document"
    ],
    "queue": [
-    "Both docs in Charlie's Drive, not shared yet"
+    "Both documents are in Charlie's Drive and have not been shared yet"
    ],
    "waiting": [
-    "Review the two docs",
-    "Jenny's Gmail, if you want a shared photo folder"
+    "Share both Burn Studio documents with Jenny (edit access)"
    ]
   },
   "labrat": {
@@ -350,6 +365,81 @@
   }
  },
  "ticker": [
+  {
+   "t": "23 Nov 18:25",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "23 Nov 17:22",
+   "who": "Chief",
+   "text": "Set every bot to report its status to Mission Control after each job, and shipped the darker HUD layout fixes."
+  },
+  {
+   "t": "23 Nov 17:22",
+   "who": "Keeper",
+   "text": "Twice-weekly site scouting is set up for all four client sites. First run is Thursday, 26 Nov. Monthly check-ins start 1 Dec."
+  },
+  {
+   "t": "23 Nov 17:22",
+   "who": "Claude",
+   "text": "No reusable site template is available for DMer. A Nails by Aileen build prompt was offered, pending details."
+  },
+  {
+   "t": "23 Nov 17:22",
+   "who": "Digital Maker",
+   "text": "A private Life & Work Planner Notion draft is ready for Charlie's desktop and phone review."
+  },
+  {
+   "t": "23 Nov 17:22",
+   "who": "Ledger",
+   "text": "Daily payments check done. Stripe was quiet. Payment links for Chào Donegal and Don Maguire Fitness are live and waiting."
+  },
+  {
+   "t": "23 Nov 17:22",
+   "who": "Poster",
+   "text": "Delivered short-form research, a weekly personal-story plan, and an Instagram-to-TikTok cross-posting recommendation. Nothing is connected or published."
+  },
+  {
+   "t": "23 Nov 17:22",
+   "who": "Fixer",
+   "text": "The Burn Studio photos-and-info briefing and Google Business Profile setup document are ready, waiting to be shared with Jenny."
+  },
+  {
+   "t": "23 Nov 17:21",
+   "who": "DMer",
+   "text": "Drafted and cleaned a Facebook message for T's Barbers, ready for Wednesday, 25 Nov, pending Charlie's approval and who sends it."
+  },
+  {
+   "t": "23 Nov 17:21",
+   "who": "Onboarder",
+   "text": "The Burn Studio agreement terms were confirmed. The Nails By Aileen proposal was reworked and is waiting for sign-off."
+  },
+  {
+   "t": "23 Nov 17:21",
+   "who": "Compass",
+   "text": "v2 package pricing was benchmarked and finalised. Yearly prepay, free-month and minimum-term options are still open questions."
+  },
+  {
+   "t": "23 Nov 17:21",
+   "who": "Cleaner",
+   "text": "Polished today's outreach, including 24 fitness emails, 7 v2 emails, and the T's Barbers Messenger draft."
+  },
+  {
+   "t": "23 Nov 17:21",
+   "who": "Chaser",
+   "text": "Fourteen catch-up follow-up drafts are waiting for approval: nine for Tuesday, 24 Nov, and five for Wednesday, 25 Nov."
+  },
+  {
+   "t": "23 Nov 17:21",
+   "who": "Emailer",
+   "text": "Merged inbox checks into one hourly routine. Aoife and Steph follow-up emails go to Charlie for approval on Wednesday, 25 Nov."
+  },
+  {
+   "t": "23 Nov 17:21",
+   "who": "Prospector",
+   "text": "Finished the Tapa Gym email search with no confirmed address. The 25-lead fitness batch is already with DMer and Emailer."
+  },
   {
    "t": "23 Nov 16:42",
    "who": "Chief",
