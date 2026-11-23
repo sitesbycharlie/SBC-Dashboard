@@ -1,10 +1,10 @@
 {
- "asOf": "23 Nov 2026, 15:00 Dublin",
- "asOfISO": "2026-11-23T15:00+00:00",
+ "asOf": "23 Nov 2026, 15:23 Dublin",
+ "asOfISO": "2026-11-23T15:23+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-23 ~14:35 Europe/Dublin",
-  "agents": "2026-11-23T14:56:00+00:00"
+  "tracker": "2026-11-23 ~15:17 Europe/Dublin",
+  "agents": "2026-11-23T15:22:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -122,23 +122,22 @@
    "name": "DMer",
    "role": "Instagram DM outreach",
    "group": "lead",
-   "status": "working",
-   "last": "23 Nov 14:54",
+   "status": "waiting",
+   "last": "23 Nov 15:08",
    "acts": [
-    "Today's 5 DMs posted for Charlie to approve (~14:30)",
-    "Rewrote Steph Fit's DM to a modern-refresh angle (14:54)",
-    "Aoife McGill (#2) and Steph Fit (#5) awaiting a yes",
-    "Signed in to Instagram and ready to send"
+    "Charlie approved Aoife McGill (coach-proof) and Steph Fit (modern-refresh) at 15:08",
+    "Charlie is sending both himself from his own Instagram; awaiting confirmation they went out",
+    "Those two are not counted as sent yet"
    ],
    "queue": [
     "33 cold DMs (6 fitness first) + warm DM to Nails by Aileen",
     "25 fitness DMs F1–F25 from Thu 26 / Fri 27",
-    "Suggests holding F9 Fit Factory, F14 McCullagh's, F25 Barry's",
-    "0 of 25 DMs sent this week"
+    "Rest of today's planned DMs still pending",
+    "Suggests holding F9 Fit Factory, F14 McCullagh's, F25 Barry's"
    ],
    "waiting": [
-    "Approve Aoife's and Steph's DMs, and say who sends them",
-    "Approve the rest of today's 5 by number"
+    "Confirm Aoife's and Steph's DMs went out",
+    "Approve the rest of today's DMs"
    ]
   },
   "emailer": {
@@ -147,19 +146,21 @@
    "role": "Cold first-touch emails",
    "group": "lead",
    "status": "working",
-   "last": "23 Nov 14:54",
+   "last": "23 Nov 15:11",
    "acts": [
-    "Today's 5 first-touch emails waiting on Charlie's \"send them\"",
-    "Aoife and Steph follow-up emails queued for Wed 25, 9 AM",
-    "Holding those until DMer confirms the DMs went out"
+    "Sent 5 first-touch emails at ~15:11, on Charlie's go: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic",
+    "Day 5 follow-ups due 27 Nov (Chaser)",
+    "Aoife and Steph follow-up emails still held until their DMs are confirmed sent",
+    "T's Barbers first-touch bounced ~15:10 (550, address does not exist); not counted as delivered"
    ],
    "queue": [
-    "28 first-touch emails; 5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)",
+    "Remaining first-touch emails in this week's plan and the spill list",
     "24 fitness emails, each 2–3 days after that business's DM",
+    "5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)",
     "Suggests dropping McCullagh's; check Fit Factory, Barry's, Mugendo"
    ],
    "waiting": [
-    "Approve today's 5 emails",
+    "Aoife and Steph DM confirmation before those follow-up emails",
     "Is the 'more gyms around Donegal' line true?"
    ]
   },
@@ -169,23 +170,21 @@
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 14:35",
+   "last": "23 Nov 15:17",
    "acts": [
-    "Rechecked today's follow-ups against live pages (14:35)",
-    "4 ready: Donegal Denture, Limitless, O'Flaherty, Pure Grit",
-    "Errigal extra binned, sequence ended (Charlie, 14:28)",
-    "Station House held: site is back up, so the draft is now wrong"
+    "Sent 4 follow-ups at ~15:17 as replies in their original threads, after Charlie's 15:16 go",
+    "Donegal Denture one-off extra sent; sequence ENDED",
+    "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thu 26 Nov, Day 14 Tue 1 Dec",
+    "Fitsquad Day 5 dropped today; Station House still held; Errigal ended"
    ],
    "queue": [
-    "4 follow-ups ready to send today on Charlie's word",
     "9 catch-ups for the 16 Nov batch (Tue 24)",
     "5 catch-ups for the 17 Nov batch (Wed 25)",
-    "Gym Day 9s drafted Wed for Thu"
+    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thu 26"
    ],
    "waiting": [
-    "Say \"send\" and name which of the 4 ready follow-ups",
     "Station House: end its sequence too? (Chaser recommends)",
-    "Fitsquadgym: cut the unconfirmed booking-app line and re-card?"
+    "Fitsquad Day 9: drop the unverified booking-app claim"
    ]
   },
   "cleaner": {
@@ -346,6 +345,26 @@
   }
  },
  "ticker": [
+  {
+   "t": "23 Nov 15:17",
+   "who": "Chaser",
+   "text": "Sent 4 follow-ups: Donegal Denture extra (sequence ended), Day 5 for Limitless, O'Flaherty and Pure Grit"
+  },
+  {
+   "t": "23 Nov 15:10",
+   "who": "Emailer",
+   "text": "T's Barbers first-touch bounced (550, address does not exist); Day 5 email follow-up cancelled"
+  },
+  {
+   "t": "23 Nov 15:11",
+   "who": "Emailer",
+   "text": "Sent 5 first-touch emails: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic"
+  },
+  {
+   "t": "23 Nov 15:08",
+   "who": "DMer",
+   "text": "Charlie approved Aoife McGill and Steph Fit DMs; he is sending them himself, awaiting confirmation"
+  },
   {
    "t": "23 Nov 14:54",
    "who": "DMer",
@@ -537,8 +556,9 @@
    "name": "Intensity Fitness",
    "category": "Gym",
    "county": "Donegal",
-   "stage": "New",
-   "channel": "Email"
+   "stage": "Contacted",
+   "channel": "Email",
+   "fitness": true
   },
   {
    "name": "OG Fitness (Matthew Oglesby)",
@@ -719,8 +739,9 @@
    "name": "MriduYoga",
    "category": "Yoga",
    "county": "Leitrim",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Donegal Barber",
@@ -961,11 +982,12 @@
    "channel": "Instagram"
   },
   {
-   "name": "Aoife McGill PT",
+   "name": "Aoife McGill Personal Training",
    "category": "PT gym",
    "county": "Donegal",
    "stage": "New",
-   "channel": "Instagram"
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Frosses Coffee Well",
@@ -1025,10 +1047,11 @@
   },
   {
    "name": "Steph Fit Coaching",
-   "category": "PT / online coach",
+   "category": "Online coach / PT",
    "county": "Sligo",
    "stage": "New",
-   "channel": "Instagram"
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Vicky's Make Up & Beauty",
@@ -1041,7 +1064,7 @@
    "name": "T's Barbers",
    "category": "Barber",
    "county": "Sligo",
-   "stage": "New",
+   "stage": "Bounced – needs new contact",
    "channel": "Email"
   },
   {
@@ -1062,7 +1085,7 @@
    "name": "Orlaith's Barber Shop",
    "category": "Barber",
    "county": "Leitrim",
-   "stage": "New",
+   "stage": "Contacted",
    "channel": "Instagram"
   },
   {
@@ -1076,7 +1099,7 @@
    "name": "AAlba Foot Clinic",
    "category": "Podiatry",
    "county": "Leitrim",
-   "stage": "New",
+   "stage": "Contacted",
    "channel": "Instagram"
   },
   {
@@ -1336,9 +1359,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 final sent",
+   "stage": "Sequence ended",
    "overdue": "",
-   "next": "—",
+   "next": "Sequence ended (extra binned, not sent)",
    "response": "Sequence ended",
    "fitness": false
   },
@@ -1348,10 +1371,10 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 sent",
+   "stage": "Sequence ended",
    "overdue": "",
-   "next": "Extra follow-up Mon 23 Nov",
-   "response": "No reply",
+   "next": "Sequence ended 23 Nov after the one-off extra",
+   "response": "Sequence ended",
    "fitness": false
   },
   {
@@ -1408,9 +1431,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
+   "stage": "Bounced",
    "overdue": "",
-   "next": "Not delivered · Facebook DM by Charlie",
+   "next": "Not delivered · needs another channel",
    "response": "Bounced",
    "fitness": false
   },
@@ -1552,9 +1575,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-18",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "stage": "Day 5 sent",
+   "overdue": "",
+   "next": "Day 9 due 26 Nov · Day 14 due 1 Dec (Chaser)",
    "response": "No reply",
    "fitness": false
   },
@@ -1565,8 +1588,8 @@
    "channel": "Email",
    "first": "2026-11-18",
    "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Day 5 dropped from today pending a line fix · Gym Day 9 Thu 26 Nov",
+   "overdue": "",
+   "next": "Day 5 dropped from today (unverified booking-app line) · Day 9 Thu 26 Nov must drop that claim",
    "response": "No reply",
    "fitness": false
   },
@@ -1576,9 +1599,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-18",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "stage": "Day 5 sent",
+   "overdue": "",
+   "next": "Day 9 due 26 Nov · Day 14 due 1 Dec (Chaser)",
    "response": "No reply",
    "fitness": false
   },
@@ -1588,14 +1611,162 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-18",
+   "stage": "Day 5 sent",
+   "overdue": "",
+   "next": "Day 9 due 26 Nov · Day 14 due 1 Dec (Chaser)",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Intensity Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-23",
    "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
+   "response": "No reply",
+   "fitness": true
+  },
+  {
+   "name": "MriduYoga",
+   "category": "Yoga",
+   "county": "Leitrim",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Day 1 first touch",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
+   "response": "No reply",
+   "fitness": true
+  },
+  {
+   "name": "Orlaith's Barber Shop",
+   "category": "Barber",
+   "county": "Leitrim",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Day 1 first touch",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "T's Barbers",
+   "category": "Barber",
+   "county": "Sligo",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Bounced",
+   "overdue": "",
+   "next": "Email dead, needs Instagram/Booksy. Day 5 email follow-up cancelled",
+   "response": "Bounced",
+   "fitness": false
+  },
+  {
+   "name": "AAlba Foot Clinic",
+   "category": "Podiatry",
+   "county": "Leitrim",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Day 1 first touch",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
    "response": "No reply",
    "fitness": false
   }
  ],
  "history": [
+  {
+   "date": "2026-11-23",
+   "name": "Aoife McGill Personal Training",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Coach-proof Instagram DM",
+   "outcome": "Approved, Charlie sending himself, awaiting confirmation"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Steph Fit Coaching",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Modern-refresh Instagram DM",
+   "outcome": "Approved, Charlie sending himself, awaiting confirmation"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Intensity Fitness",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — dead domain redirecting to gambling spam",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "MriduYoga",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — site still 'coming soon' and links scattered",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Orlaith's Barber Shop",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — award-winning with no site or booking",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "T's Barbers",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — 4.9 from 898 Booksy reviews but no site",
+   "outcome": "Bounced"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "AAlba Foot Clinic",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — site dated 2020",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Donegal Denture Clinic",
+   "channel": "Email",
+   "type": "Follow-up (extra)",
+   "angle": "Extra follow-up — old Atlas branding: 'All Rights Reserve' footer, atlasAdmin author tag",
+   "outcome": "Sequence ended"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Limitless Gym & Fitness",
+   "channel": "Email",
+   "type": "Follow-up (Day 5)",
+   "angle": "Day 5 follow-up — FitFit third-party page, Google lists it as a supplement store",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "O'Flaherty Fitness and Performance",
+   "channel": "Email",
+   "type": "Follow-up (Day 5)",
+   "angle": "Day 5 follow-up — athletes programmes and body comp analysis have no price or enquiry opti",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Pure Grit Gym",
+   "channel": "Email",
+   "type": "Follow-up (Day 5)",
+   "angle": "Day 5 follow-up — typo and Eircode still there; strongman, powerlifting, bodybuilding and ",
+   "outcome": "No reply"
+  },
   {
    "date": "2026-11-19",
    "name": "Station House Dental",
@@ -1852,19 +2023,19 @@
  "outreach": {
   "dmsThisWeek": 0,
   "dmTarget": 25,
-  "emailsThisWeek": 0,
+  "emailsThisWeek": 8,
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies: 0. Last emails out: the 3 dental finals, 19 Nov ~13:16. One warm reply logged (Reform, 13 Nov)."
+  "note": "Cold replies: 0. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 (Donegal Denture extra, now ended; Day 5 for Limitless, O'Flaherty and Pure Grit). Earlier today: 4 first-touches delivered ~15:11 (Intensity Fitness, MriduYoga, Orlaith's Barber Shop, AAlba Foot Clinic); T's Barbers bounced (550) and is not counted as delivered. Two Instagram DMs approved at 15:08 (Aoife McGill, Steph Fit); Charlie is sending them himself, awaiting confirmation. One warm reply logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
- "sendPlanTarget": 75,
+ "sendPlanTarget": 77,
  "sendDays": [
   {
    "day": "Mon 23 Nov",
    "short": "Mon 23",
-   "emails": 7,
+   "emails": 12,
    "dms": 8
   },
   {
@@ -1876,19 +2047,19 @@
   {
    "day": "Wed 25 Nov",
    "short": "Wed 25",
-   "emails": 9,
+   "emails": 8,
    "dms": 6
   },
   {
    "day": "Thu 26 Nov",
    "short": "Thu 26",
-   "emails": 8,
+   "emails": 7,
    "dms": 7
   },
   {
    "day": "Fri 27 Nov",
    "short": "Fri 27",
-   "emails": 8,
+   "emails": 7,
    "dms": 7
   }
  ],
@@ -1908,7 +2079,7 @@
    "name": "Donegal Denture Clinic",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -1926,7 +2097,7 @@
    "name": "Limitless Gym & Fitness",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -1944,7 +2115,7 @@
    "name": "O'Flaherty Fitness and Performance",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -1953,7 +2124,52 @@
    "name": "Pure Grit Gym",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Intensity Fitness",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "MriduYoga",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Orlaith's Barber Shop",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "T's Barbers",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Bounced",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "AAlba Foot Clinic",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Sent",
    "warm": false
   },
   {
@@ -1968,10 +2184,10 @@
   {
    "day": "Mon 23 Nov",
    "kind": "DM",
-   "name": "Aoife McGill PT",
-   "action": "Instagram DM",
+   "name": "Aoife McGill Personal Training",
+   "action": "Instagram DM — coach-proof, Charlie sending",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Approved, Charlie sending, awaiting confirmation",
    "warm": false
   },
   {
@@ -1996,9 +2212,9 @@
    "day": "Mon 23 Nov",
    "kind": "DM",
    "name": "Steph Fit Coaching",
-   "action": "Instagram DM",
+   "action": "Instagram DM — modern-refresh, Charlie sending",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Approved, Charlie sending, awaiting confirmation",
    "warm": false
   },
   {
@@ -2211,8 +2427,8 @@
   {
    "day": "Wed 25 Nov",
    "kind": "Email",
-   "name": "Aoife McGill PT",
-   "action": "First-touch email",
+   "name": "Aoife McGill Personal Training",
+   "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
    "warm": false
@@ -2230,16 +2446,7 @@
    "day": "Wed 25 Nov",
    "kind": "Email",
    "name": "Steph Fit Coaching",
-   "action": "First-touch email",
-   "fitness": true,
-   "status": "Pending approval",
-   "warm": false
-  },
-  {
-   "day": "Wed 25 Nov",
-   "kind": "Email",
-   "name": "MriduYoga",
-   "action": "First-touch email",
+   "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
    "warm": false
@@ -2338,15 +2545,6 @@
    "day": "Thu 26 Nov",
    "kind": "Email",
    "name": "EVOLVE Health and Fitness",
-   "action": "First-touch email",
-   "fitness": true,
-   "status": "Pending approval",
-   "warm": false
-  },
-  {
-   "day": "Thu 26 Nov",
-   "kind": "Email",
-   "name": "Intensity Fitness",
    "action": "First-touch email",
    "fitness": true,
    "status": "Pending approval",
@@ -2481,15 +2679,6 @@
   {
    "day": "Fri 27 Nov",
    "kind": "Email",
-   "name": "T's Barbers",
-   "action": "First-touch email",
-   "fitness": false,
-   "status": "Pending approval",
-   "warm": false
-  },
-  {
-   "day": "Fri 27 Nov",
-   "kind": "Email",
    "name": "Wall St Barber Shop",
    "action": "First-touch email",
    "fitness": false,
@@ -2569,7 +2758,7 @@
    "warm": true
   }
  ],
- "sendPlanSpill": "12 more first-touch emails spill into next week.",
+ "sendPlanSpill": "10 more first-touch emails spill into next week.",
  "spillList": [
   "Studio One Hair & Beauty",
   "Frosses Coffee Well",
@@ -2578,8 +2767,6 @@
   "Glam Lash by Grazka",
   "Vicky's Make Up & Beauty",
   "Creamers Barbershop",
-  "Orlaith's Barber Shop",
-  "AAlba Foot Clinic",
   "Lydia's Beauty Rooms",
   "Glamberry",
   "Prestige Beauty Salon"
@@ -2629,12 +2816,12 @@
    "name": "Don Maguire Gym + Coaching",
    "tier": "main",
    "open": true,
-   "stage": "Proposal sent 27 Oct",
+   "stage": "Verbal yes, awaiting commitment",
    "services": "Multi-page gym and coaching website, shop and checkout, SEO, reviews and launch assets",
    "value": "€250 setup (normally €500), months 1–6 free, then €75/mo founder rate (normally €150). Year-one cash €700",
-   "next": "Follow up on the 27 Oct proposal",
+   "next": "TARGET: get Don's commitment this week (by Fri 27 Nov 2026)",
    "owner": "Charlie · Compass prepped discovery questions (16 Nov)",
-   "note": "Payment link: unconfirmed (from Chief's notes; the CRM doesn't record one)"
+   "note": "Payment link: unconfirmed (from Chief's notes; the CRM doesn't record one) · 23 Nov 2026: Charlie spoke with Don: he said he'll go for it and will confirm today or over the next few days. Photo shoot in a few weeks (new equipment); hoping to go live in a few weeks. Payment date and firm go-live TBC on commitment. The original 23 Nov launch target has lapsed."
   },
   {
    "name": "The Burn Studio (Jenny)",
@@ -2688,6 +2875,27 @@
    "owner": "Charlie"
   }
  ],
+ "visits": [
+  {
+   "business": "Chào Donegal",
+   "opportunity": "Chào Donegal",
+   "opportunityId": "opp-chao",
+   "targetDay": "This week (w/c 23 Nov 2026)",
+   "purpose": "In-person visit to hand over the proposal",
+   "status": "Planned",
+   "notes": "Linked to the existing Chào Donegal opportunity and its welcome-offer proposal (Option 1 €1,000 upfront or Option 2 €350 setup + €65/month). Start date TBC. Nothing paid yet."
+  },
+  {
+   "business": "DT Fitness",
+   "opportunity": "DT Fitness",
+   "opportunityId": "opp-dt",
+   "targetDay": "Mon 23 or Wed 25 Nov 2026",
+   "purpose": "Charlie may call in",
+   "status": "Planned",
+   "notes": "Linked to the existing DT Fitness opportunity. Charlie may call in today (Mon 23 Nov) or on Wed 25 Nov."
+  }
+ ],
+ "visitsNote": "More drop-in targets around town will be added as Charlie names them.",
  "revenue": {
   "mrr": 125,
   "arr": 1500,

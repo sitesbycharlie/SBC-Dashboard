@@ -3096,7 +3096,20 @@ function renderClients(){
 function oppCard(x,color){return '<div class="opp" style="--c:'+color+'"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><h4>'+esc(x.name)+'</h4>'+pill(x.stage,color)+'</div><div class="small">'+esc(x.services||"")+'</div><dl class="kv"><dt>Value</dt><dd>'+fig(x.value)+'</dd><dt>Next step</dt><dd>'+esc(x.next)+'</dd><dt>Owner</dt><dd>'+esc(x.owner)+'</dd>'+(x.note?'<dt>Note</dt><dd class="small">'+esc(x.note)+'</dd>':'')+'</dl></div>';}
 function renderOpps(){
   var main=D.opportunities.filter(function(x){return x.tier==="main";}),act=D.opportunities.filter(function(x){return x.tier==="active";});
-  var h='<div class="sec" style="margin-top:0">The three main deals</div><div class="row">'+main.map(function(x){return oppCard(x,T.red);}).join("")+'</div>';
+  var visits=Array.isArray(D.visits)?D.visits.filter(function(v){return v&&typeof v==="object";}):[];
+  var h="";
+  if(visits.length){
+    h+='<div class="sec" style="margin-top:0">In-person visits</div>';
+    if(D.visitsNote)h+='<div class="small" style="margin:-4px 0 12px">'+esc(D.visitsNote)+'</div>';
+    h+='<div class="row">'+visits.map(function(v){
+      var rows="";
+      if(v.opportunity)rows+='<dt>Opportunity</dt><dd>'+esc(v.opportunity)+'</dd>';
+      if(v.targetDay)rows+='<dt>Target day</dt><dd>'+esc(v.targetDay)+'</dd>';
+      if(v.notes)rows+='<dt>Notes</dt><dd class="small">'+esc(v.notes)+'</dd>';
+      return '<div class="opp" style="--c:'+T.red+'"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><h4>'+esc(v.business)+'</h4>'+(v.status?pill(v.status,T.red):"")+'</div>'+(v.purpose?'<div class="small">'+esc(v.purpose)+'</div>':"")+(rows?'<dl class="kv">'+rows+'</dl>':"")+'</div>';
+    }).join("")+'</div>';
+  }
+  h+='<div class="sec"'+(visits.length?'':' style="margin-top:0"')+'>The three main deals</div><div class="row">'+main.map(function(x){return oppCard(x,T.red);}).join("")+'</div>';
   h+='<div class="sec">Actively being worked</div><div class="row">'+act.map(function(x){return oppCard(x,T.crimson);}).join("")+'</div>';
   h+='<div class="sec">Current clients</div><div class="row">'+D.clients.map(function(c){return '<div class="opp" style="--c:'+T.light+'"><h4>'+esc(c.name)+'</h4><div class="small">'+esc(c.niche)+' · since '+fmtDate(c.start)+'</div><dl class="kv"><dt>Terms</dt><dd>'+fig(c.terms)+'</dd><dt>Status</dt><dd>'+esc(c.status)+'</dd></dl></div>';}).join("")+'</div>';
   if(!showFig)h+='<div class="small" style="margin-top:12px">Money figures are hidden. Use “Show figures” at the top.</div>';
