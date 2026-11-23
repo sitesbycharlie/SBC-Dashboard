@@ -1,10 +1,10 @@
 {
- "asOf": "23 Nov 2026, 15:45 Dublin",
- "asOfISO": "2026-11-23T15:45+00:00",
+ "asOf": "23 Nov 2026, 15:57 Dublin",
+ "asOfISO": "2026-11-23T15:57+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-23 ~15:17 Europe/Dublin",
-  "agents": "2026-11-23T15:45:49+00:00"
+  "tracker": "2026-11-23 ~15:48 Europe/Dublin",
+  "agents": "2026-11-23T15:52:36+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -66,20 +66,16 @@
    "status": "ceo",
    "last": "23 Nov 15:39",
    "acts": [
-    "Approved today's 5 first-touch emails and 4 follow-ups",
-    "Approved Aoife and Steph DMs, sending them himself (awaiting confirmation)",
-    "Confirmed he DM'd Tapa Gym on 16 Nov (still unseen)",
-    "Don Maguire: verbal yes, awaiting commitment by Fri 27",
-    "T's Barbers bounced; remaining channel is Facebook or Booksy",
-    "Tapa has no public email; remaining channel is phone"
+    "Confirmed Aoife and Steph Instagram DMs sent (23 Nov)",
+    "Said Bar-Strength and Zoee DMs are approved/done (logged 23 Nov; DMer to confirm times)",
+    "Binned Station House Dental (Closed/Lost, 23 Nov)",
+    "Asked for a T's Barbers Facebook or Booksy DM on Wed 25",
+    "Keep Don Maguire commitment target by Fri 27"
    ],
    "queue": [
-    "Confirm Aoife's and Steph's DMs went out",
-    "Approve Bar-Strength and Zoee DMs",
+    "Approve the T's Barbers Facebook or Booksy DM (Wed 25)",
     "Don Maguire commitment by Fri 27",
-    "Station House: end the sequence?",
-    "T's Barbers: contact via Facebook or Booksy",
-    "Tapa: await IG reply, or phone"
+    "Wed 25: email follow-ups for Aoife, Steph, Zoee, and Bar-Strength if an address is confirmed"
    ],
    "waiting": []
   },
@@ -91,27 +87,21 @@
    "status": "waiting",
    "last": "23 Nov 15:45",
    "acts": [
-    "Mission Control redesign pushed and auto-refresh routine set up",
-    "Logged today's 5 first-touch emails, 4 follow-ups, and the T's Barbers bounce",
-    "Flagged Don Maguire's verbal yes, awaiting commitment by Fri 27",
-    "Created the in-person visits list",
-    "Corrected Tapa's Instagram DM to 16 Nov (Unseen; counts last week)",
-    "Prospector confirmed Tapa has no public email; Friday email slot skipped; next step is awaiting IG reply, or Charlie to phone",
-    "T's Barbers next step: no valid email; contact via Facebook or Booksy; no follow-ups queued",
-    "Told the bots Mission Control is the single dashboard",
-    "Refreshed every bot card from today's transcripts"
+    "Logged Aoife and Steph DMs as sent 23 Nov (no earlier date on record) and set email follow-ups for Wed 25",
+    "Logged Bar-Strength and Zoee DMs as sent 23 Nov (DMer to confirm exact times) and scheduled email follow-ups for Wed 25",
+    "Binned Station House Dental: Closed/Lost, no further follow-ups",
+    "Added a T's Barbers Facebook or Booksy DM for Wed 25, pending Charlie's approval",
+    "Kept Don Maguire target: commitment by Fri 27"
    ],
    "queue": [
-    "Send plan Mon 23 – Fri 27 Nov (8 of 78 sent; Tapa Fri skipped, T's bounced)",
-    "Fitness batch slotted for Thu 26 / Fri 27",
-    "Pass DM sent dates to Emailer once Aoife and Steph are confirmed"
+    "Send plan Mon 23 – Fri 27 Nov (12 of 80 sent)",
+    "Wed 25: T's Barbers DM draft plus four DM-first email follow-ups",
+    "Fitness batch slotted for Thu 26 / Fri 27"
    ],
    "waiting": [
-    "Confirm Aoife and Steph DMs",
-    "DMer approvals for Bar-Strength and Zoee",
+    "Approve the T's Barbers Facebook or Booksy DM for Wed 25",
     "Don's commitment by Fri",
-    "Station House decision",
-    "A T's Barbers DM"
+    "DMer to confirm exact send times for Bar-Strength and Zoee"
    ]
   },
   "prospector": {
@@ -140,20 +130,18 @@
    "status": "waiting",
    "last": "23 Nov 15:39",
    "acts": [
-    "Charlie confirmed he DM'd Tapa Gym himself on 16 Nov; still unseen; counts in last week, not this week",
-    "Charlie approved Aoife McGill and Steph Fit at 15:08 and is sending both himself; awaiting confirmation",
-    "Steph's DM wording revised at 15:37; those two are not counted as sent yet",
-    "Today's remaining DMs (Bar-Strength and Zoee) are still waiting on approval"
+    "Aoife and Steph DMs confirmed sent by Charlie on 23 Nov",
+    "Bar-Strength and Zoee logged as sent 23 Nov; exact times still to confirm",
+    "New job: draft a T's Barbers DM for Wed 25 via Facebook or Booksy, for Charlie's approval"
    ],
    "queue": [
-    "Bar-Strength and Zoee Feeney, still pending Charlie's approval",
-    "33 cold DMs (6 fitness first) + warm DM to Nails by Aileen",
-    "25 fitness DMs F1–F25 from Thu 26 / Fri 27",
-    "Suggests holding F9 Fit Factory, F14 McCullagh's, F25 Barry's"
+    "Draft the T's Barbers Facebook or Booksy DM for Wed 25 and get Charlie's approval",
+    "Confirm exact send times for Bar-Strength and Zoee",
+    "Rest of the week's planned DMs, plus 25 fitness DMs from Thu 26 / Fri 27"
    ],
    "waiting": [
-    "Confirm Aoife's and Steph's DMs went out",
-    "Approve Bar-Strength and Zoee DMs"
+    "Approve the T's Barbers Facebook or Booksy DM for Wed 25",
+    "Exact send times for Bar-Strength and Zoee, if known"
    ]
   },
   "emailer": {
@@ -164,20 +152,19 @@
    "status": "waiting",
    "last": "23 Nov 15:42",
    "acts": [
-    "Sent 5 first-touch emails at ~15:11, on Charlie's go: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic",
-    "T's Barbers first-touch bounced ~15:10 (550, address does not exist); not counted as delivered; no email follow-ups queued",
-    "Prospector confirmed Tapa has no public email, so the Fri 27 first-touch email is skipped",
-    "Aoife and Steph follow-up emails still held until their DMs are confirmed sent"
+    "Aoife, Steph, Zoee and Bar-Strength email follow-ups now scheduled Wed 25 (2–3 days after the 23 Nov DMs)",
+    "Bar-Strength has no email in current drafts; confirm whether a public address exists before sending, and do not invent one",
+    "T's Barbers stays off the email list (bounced); no email follow-ups queued"
    ],
    "queue": [
+    "Wed 25 email follow-ups: Aoife, Steph, Zoee, and Bar-Strength if an address is confirmed",
     "Remaining first-touch emails in this week's plan and the spill list",
     "24 fitness emails, each 2–3 days after that business's DM",
-    "5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)",
-    "Suggests dropping McCullagh's; check Fit Factory, Barry's, Mugendo"
+    "5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)"
    ],
    "waiting": [
-    "Aoife and Steph DM confirmation before those follow-up emails",
-    "Is the 'more gyms around Donegal' line true?"
+    "Is the 'more gyms around Donegal' line true?",
+    "Whether Bar-Strength has a public email (do not invent one)"
    ]
   },
   "chaser": {
@@ -191,7 +178,7 @@
     "Sent 4 follow-ups at ~15:17 as replies in their original threads, after Charlie's 15:16 go",
     "Donegal Denture one-off extra sent; sequence ENDED",
     "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thu 26 Nov, Day 14 Tue 1 Dec",
-    "Fitsquad Day 5 dropped today; Station House still held; Errigal ended"
+    "Fitsquad Day 5 dropped today; Errigal ended; Station House binned 23 Nov (Closed/Lost), no further follow-ups"
    ],
    "queue": [
     "9 catch-ups for the 16 Nov batch (Tue 24)",
@@ -199,7 +186,6 @@
     "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thu 26"
    ],
    "waiting": [
-    "Station House: end its sequence too? (Chaser recommends)",
     "Fitsquad Day 9: drop the unverified booking-app claim"
    ]
   },
@@ -243,7 +229,7 @@
   "keeper": {
    "id": "keeper",
    "name": "Keeper",
-   "role": "Client care and monthly reviews",
+   "role": "Client site guardian · scouts every client site from onboarding",
    "group": "clients",
    "status": "idle",
    "last": "18 Nov 01:21",
@@ -330,7 +316,7 @@
   "fixer": {
    "id": "fixer",
    "name": "Fixer",
-   "role": "Odd jobs",
+   "role": "Diagnoses issues Keeper flags and hands Charlie a recommended fix",
    "group": "support",
    "status": "waiting",
    "last": "22 Nov 20:12",
@@ -361,6 +347,16 @@
   }
  },
  "ticker": [
+  {
+   "t": "23 Nov 15:48",
+   "who": "Charlie",
+   "text": "Confirmed Aoife and Steph DMs sent; Bar-Strength and Zoee done; binned Station House; T's Barbers DM planned for Wed 25"
+  },
+  {
+   "t": "23 Nov 15:48",
+   "who": "Chief",
+   "text": "Logged 4 confirmed DMs for 23 Nov; email follow-ups set for Wed 25; Station House Closed/Lost; Don commitment still due Fri 27"
+  },
   {
    "t": "23 Nov 15:45",
    "who": "Chief",
@@ -450,6 +446,56 @@
    "t": "22 Nov 18:30",
    "who": "Prospector",
    "text": "25 Ireland-wide fitness leads delivered and routed"
+  }
+ ],
+ "workflows": [
+  {
+   "id": "support",
+   "title": "Support workflow",
+   "hint": "After a client comes on board, Keeper scouts the live site and checks everything is working and perfect. If something needs fixing or Charlie's attention, Keeper pings Fixer. Fixer diagnoses the issue and hands Charlie a recommended fix. Charlie is the final decision-maker.",
+   "nodes": [
+    {
+     "id": "client",
+     "label": "Client comes on board",
+     "sub": "Onboarding complete",
+     "kind": "start"
+    },
+    {
+     "id": "keeper",
+     "label": "Keeper",
+     "sub": "Client site guardian. Scouts every client site from onboarding, checking everything is working and perfect.",
+     "kind": "bot"
+    },
+    {
+     "id": "fixer",
+     "label": "Fixer",
+     "sub": "Diagnoses issues Keeper flags.",
+     "kind": "bot"
+    },
+    {
+     "id": "charlie",
+     "label": "Charlie",
+     "sub": "Final decision-maker. Decides on the recommended fix.",
+     "kind": "ceo"
+    }
+   ],
+   "edges": [
+    {
+     "from": "client",
+     "to": "keeper",
+     "label": "Keeper scouts the live site"
+    },
+    {
+     "from": "keeper",
+     "to": "fixer",
+     "label": "If something needs fixing or Charlie's attention, Keeper pings Fixer"
+    },
+    {
+     "from": "fixer",
+     "to": "charlie",
+     "label": "Passes diagnosis and a recommended fix"
+    }
+   ]
   }
  ],
  "stages": [
@@ -664,7 +710,7 @@
    "name": "Station House Dental",
    "category": "Dental",
    "county": "Donegal",
-   "stage": "Contacted",
+   "stage": "Lost",
    "channel": "Email"
   },
   {
@@ -1022,7 +1068,7 @@
    "name": "Aoife McGill Personal Training",
    "category": "PT gym",
    "county": "Donegal",
-   "stage": "New",
+   "stage": "Contacted",
    "channel": "Instagram",
    "fitness": true
   },
@@ -1058,15 +1104,17 @@
    "name": "Calisthenics Sligo / Bar-Strength",
    "category": "Calisthenics",
    "county": "Sligo",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Zoee Feeney Fitness",
    "category": "Online coach",
    "county": "Sligo",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Blaze Barber Shop",
@@ -1086,7 +1134,7 @@
    "name": "Steph Fit Coaching",
    "category": "Online coach / PT",
    "county": "Sligo",
-   "stage": "New",
+   "stage": "Contacted",
    "channel": "Instagram",
    "fitness": true
   },
@@ -1420,10 +1468,10 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 sent",
+   "stage": "Sequence ended",
    "overdue": "",
-   "next": "Extra held: site is back up, so the draft is wrong. Chaser recommends ending the sequence",
-   "response": "No reply",
+   "next": "Binned 23 Nov by Charlie. Closed/Lost. No further follow-ups.",
+   "response": "Sequence ended",
    "fitness": false
   },
   {
@@ -1698,7 +1746,7 @@
    "first": "2026-11-23",
    "stage": "Bounced",
    "overdue": "",
-   "next": "No valid email; contact via Facebook or Booksy. Day 5 email follow-up cancelled; no email follow-ups queued",
+   "next": "No valid email; Facebook or Booksy DM planned Wed 25 Nov (DMer drafting; needs Charlie's approval). Day 5 email follow-up cancelled; no email follow-ups queued",
    "response": "Bounced",
    "fitness": false
   },
@@ -1722,7 +1770,7 @@
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Coach-proof Instagram DM",
-   "outcome": "Approved, Charlie sending himself, awaiting confirmation"
+   "outcome": "No reply"
   },
   {
    "date": "2026-11-23",
@@ -1730,7 +1778,23 @@
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Modern-refresh Instagram DM",
-   "outcome": "Approved, Charlie sending himself, awaiting confirmation"
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Calisthenics Sligo / Bar-Strength",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Zoee Feeney Fitness",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "No reply"
   },
   {
    "date": "2026-11-23",
@@ -1803,6 +1867,38 @@
    "type": "Follow-up (Day 5)",
    "angle": "Day 5 follow-up — typo and Eircode still there; strongman, powerlifting, bodybuilding and ",
    "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Aoife McGill Personal Training",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Coach-proof Instagram DM",
+   "outcome": "Sent by Charlie"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Steph Fit Coaching",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Modern-refresh Instagram DM",
+   "outcome": "Sent by Charlie"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Calisthenics Sligo / Bar-Strength",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "Sent (DMer to confirm exact time)"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Zoee Feeney Fitness",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "Sent (DMer to confirm exact time)"
   },
   {
    "date": "2026-11-19",
@@ -2056,7 +2152,7 @@
    "detail": "Day 5 Mon 23 Nov, Day 9 Thu 26 Nov, Day 14 due 1 Dec."
   }
  ],
- "dmNote": "No DMs have been sent yet: 0 are logged. 33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
+ "dmNote": "33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
  "drafts": {
   "dmCold": 33,
   "dmWarm": 1,
@@ -2066,16 +2162,16 @@
   "emailFitness": 24
  },
  "outreach": {
-  "dmsThisWeek": 0,
+  "dmsThisWeek": 8,
   "dmTarget": 25,
   "emailsThisWeek": 8,
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 0. Tapa Gym was DM'd by Charlie on 16 Nov (Unseen) and counts in last week, not w/c 23 Nov. Two DMs (Aoife McGill, Steph Fit) are approved and awaiting confirmation. Tapa has no public email (Prospector confirmed 23 Nov 15:42); the Fri 27 first-touch email is skipped; next step is awaiting IG reply, or Charlie to phone. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 (Donegal Denture extra, now ended; Day 5 for Limitless, O'Flaherty and Pure Grit). Also 4 first-touches delivered ~15:11 (Intensity Fitness, MriduYoga, Orlaith's Barber Shop, AAlba Foot Clinic); T's Barbers bounced (550) and is not counted as delivered. T's Barbers: no valid email; contact via Facebook or Booksy; no email follow-ups queued. One warm reply logged (Reform, 13 Nov)."
+  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie 23 Nov; Bar-Strength and Zoee Feeney logged as sent 23 Nov, DMer to confirm exact times). Tapa Gym was DM'd by Charlie on 16 Nov (Unseen) and counts in last week, not w/c 23 Nov. Email follow-ups for those four DMs are scheduled Wed 25 Nov (2–3 days later). Bar-Strength has no email in current drafts; Emailer to confirm whether a public address exists before sending. T's Barbers: Facebook or Booksy DM planned Wed 25 Nov (DMer drafting; needs Charlie's approval); no email follow-ups queued. Station House Dental was binned by Charlie on 23 Nov (Closed/Lost); no further follow-ups. Don Maguire remains Verbal yes, awaiting commitment by Fri 27 Nov. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 and 4 first-touches delivered ~15:11; T's Barbers bounced (550) and is not counted as delivered. One warm reply logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
- "sendPlanTarget": 78,
+ "sendPlanTarget": 80,
  "sendDays": [
   {
    "day": "Mon 23 Nov",
@@ -2092,8 +2188,8 @@
   {
    "day": "Wed 25 Nov",
    "short": "Wed 25",
-   "emails": 8,
-   "dms": 6
+   "emails": 9,
+   "dms": 7
   },
   {
    "day": "Thu 26 Nov",
@@ -2115,7 +2211,7 @@
    "name": "Station House Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Held",
+   "status": "Binned",
    "warm": false
   },
   {
@@ -2232,7 +2328,7 @@
    "name": "Aoife McGill Personal Training",
    "action": "Instagram DM — coach-proof, Charlie sending",
    "fitness": true,
-   "status": "Approved, Charlie sending, awaiting confirmation",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2241,7 +2337,7 @@
    "name": "Bar-Strength (Calisthenics Sligo)",
    "action": "Instagram DM",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2250,7 +2346,7 @@
    "name": "Zoee Feeney Fitness",
    "action": "Instagram DM",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2259,7 +2355,7 @@
    "name": "Steph Fit Coaching",
    "action": "Instagram DM — modern-refresh, Charlie sending",
    "fitness": true,
-   "status": "Approved, Charlie sending, awaiting confirmation",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2482,7 +2578,7 @@
    "day": "Wed 25 Nov",
    "kind": "Email",
    "name": "Zoee Feeney Fitness",
-   "action": "First-touch email",
+   "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
    "warm": false
@@ -2491,6 +2587,15 @@
    "day": "Wed 25 Nov",
    "kind": "Email",
    "name": "Steph Fit Coaching",
+   "action": "First-touch email, 2–3 days after the DM",
+   "fitness": true,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "Email",
+   "name": "Bar-Strength (Calisthenics Sligo)",
    "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
@@ -2546,6 +2651,15 @@
    "kind": "DM",
    "name": "Niche Salons",
    "action": "Instagram DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "T's Barbers",
+   "action": "Facebook or Booksy DM",
    "fitness": false,
    "status": "Pending approval",
    "warm": false

@@ -91,6 +91,9 @@ th{background:rgba(0,0,0,.55)}
 .roster .bot{border-radius:14px;padding:12px 14px;cursor:pointer;border-left:3px solid var(--c)}
 .roster .bot:hover{border-color:rgba(216,64,64,.6)}
 .roster .bn{display:flex;justify-content:space-between;gap:8px;align-items:center;font-weight:700}
+.wf{margin-top:8px}
+.wf .chartglass{padding:14px 10px 8px}
+@media (max-width:759px){.wf svg{min-height:560px}}
 .roster .bs{font-size:10px;font-weight:700;letter-spacing:.08em}
 .roster .bl{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.4}
 .badge{display:inline-block;border-radius:999px;padding:2px 8px;font-size:10px;font-weight:800;letter-spacing:.1em}
@@ -126,12 +129,12 @@ th{background:rgba(0,0,0,.55)}
    Privacy: no emails, social handles or phone numbers belong here.
    ===================================================================== */
 const DATA = {
- "asOf": "23 Nov 2026, 15:00 Dublin",
- "asOfISO": "2026-11-23T15:00+00:00",
+ "asOf": "23 Nov 2026, 15:57 Dublin",
+ "asOfISO": "2026-11-23T15:57+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-23 ~14:35 Europe/Dublin",
-  "agents": "2026-11-23T14:56:00+00:00"
+  "tracker": "2026-11-23 ~15:48 Europe/Dublin",
+  "agents": "2026-11-23T15:52:36+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -191,15 +194,18 @@ const DATA = {
    "role": "CEO · approves every send",
    "group": "top",
    "status": "ceo",
-   "last": "23 Nov 14:26 (voice)",
+   "last": "23 Nov 15:39",
    "acts": [
-    "Asked for today's 5 emails and 5 DMs to review",
-    "Asked Chief for this Mission Control board"
+    "Confirmed Aoife and Steph Instagram DMs sent (23 Nov)",
+    "Said Bar-Strength and Zoee DMs are approved/done (logged 23 Nov; DMer to confirm times)",
+    "Binned Station House Dental (Closed/Lost, 23 Nov)",
+    "Asked for a T's Barbers Facebook or Booksy DM on Wed 25",
+    "Keep Don Maguire commitment target by Fri 27"
    ],
    "queue": [
-    "Review today's 5 DMs in DMer's chat",
-    "Review today's 5 emails in Emailer's chat",
-    "Approve Chaser's follow-up cards"
+    "Approve the T's Barbers Facebook or Booksy DM (Wed 25)",
+    "Don Maguire commitment by Fri 27",
+    "Wed 25: email follow-ups for Aoife, Steph, Zoee, and Bar-Strength if an address is confirmed"
    ],
    "waiting": []
   },
@@ -208,23 +214,24 @@ const DATA = {
    "name": "Chief",
    "role": "Chief of Staff · the hub",
    "group": "top",
-   "status": "working",
-   "last": "23 Nov 14:26",
+   "status": "waiting",
+   "last": "23 Nov 15:45",
    "acts": [
-    "Building this Mission Control board",
-    "Asked DMer for today's 5 DMs, fitness first",
-    "Asked Emailer for today's 5 first-touch emails",
-    "Tracking the Mon–Fri send plan: 0 of 75 sent"
+    "Logged Aoife and Steph DMs as sent 23 Nov (no earlier date on record) and set email follow-ups for Wed 25",
+    "Logged Bar-Strength and Zoee DMs as sent 23 Nov (DMer to confirm exact times) and scheduled email follow-ups for Wed 25",
+    "Binned Station House Dental: Closed/Lost, no further follow-ups",
+    "Added a T's Barbers Facebook or Booksy DM for Wed 25, pending Charlie's approval",
+    "Kept Don Maguire target: commitment by Fri 27"
    ],
    "queue": [
-    "Send plan Mon 23 – Fri 27 Nov, 15 sends a day",
-    "Fitness batch slotted for Thu 26 / Fri 27",
-    "Pass DM sent dates to Emailer once logged"
+    "Send plan Mon 23 – Fri 27 Nov (12 of 80 sent)",
+    "Wed 25: T's Barbers DM draft plus four DM-first email follow-ups",
+    "Fitness batch slotted for Thu 26 / Fri 27"
    ],
    "waiting": [
-    "Approve each day's batch in DMer, Emailer and Chaser chats",
-    "Station House: end the sequence? (Chaser recommends)",
-    "Fitsquadgym Day 5: cut the unconfirmed booking-app line?"
+    "Approve the T's Barbers Facebook or Booksy DM for Wed 25",
+    "Don's commitment by Fri",
+    "DMer to confirm exact send times for Bar-Strength and Zoee"
    ]
   },
   "prospector": {
@@ -233,10 +240,11 @@ const DATA = {
    "role": "Finds leads with no or weak sites",
    "group": "lead",
    "status": "idle",
-   "last": "22 Nov 18:30",
+   "last": "23 Nov 15:42",
    "acts": [
-    "Delivered 25 Ireland-wide fitness leads (+14 partials)",
-    "Routed the fitness batch to DMer (25) and Emailer (24)"
+    "Confirmed Tapa Gym has no public email (checked Instagram, directories, old site, company records)",
+    "Told Emailer Tapa cannot go on the email list; remaining channel is phone",
+    "Delivered 25 Ireland-wide fitness leads (+14 partials) on 22 Nov"
    ],
    "queue": [
     "Sunday routine next runs Sun 29 Nov ~6 AM, ready by 10 AM",
@@ -249,23 +257,21 @@ const DATA = {
    "name": "DMer",
    "role": "Instagram DM outreach",
    "group": "lead",
-   "status": "working",
-   "last": "23 Nov 14:54",
+   "status": "waiting",
+   "last": "23 Nov 15:39",
    "acts": [
-    "Today's 5 DMs posted for Charlie to approve (~14:30)",
-    "Rewrote Steph Fit's DM to a modern-refresh angle (14:54)",
-    "Aoife McGill (#2) and Steph Fit (#5) awaiting a yes",
-    "Signed in to Instagram and ready to send"
+    "Aoife and Steph DMs confirmed sent by Charlie on 23 Nov",
+    "Bar-Strength and Zoee logged as sent 23 Nov; exact times still to confirm",
+    "New job: draft a T's Barbers DM for Wed 25 via Facebook or Booksy, for Charlie's approval"
    ],
    "queue": [
-    "33 cold DMs (6 fitness first) + warm DM to Nails by Aileen",
-    "25 fitness DMs F1–F25 from Thu 26 / Fri 27",
-    "Suggests holding F9 Fit Factory, F14 McCullagh's, F25 Barry's",
-    "0 of 25 DMs sent this week"
+    "Draft the T's Barbers Facebook or Booksy DM for Wed 25 and get Charlie's approval",
+    "Confirm exact send times for Bar-Strength and Zoee",
+    "Rest of the week's planned DMs, plus 25 fitness DMs from Thu 26 / Fri 27"
    ],
    "waiting": [
-    "Approve Aoife's and Steph's DMs, and say who sends them",
-    "Approve the rest of today's 5 by number"
+    "Approve the T's Barbers Facebook or Booksy DM for Wed 25",
+    "Exact send times for Bar-Strength and Zoee, if known"
    ]
   },
   "emailer": {
@@ -273,21 +279,22 @@ const DATA = {
    "name": "Emailer",
    "role": "Cold first-touch emails",
    "group": "lead",
-   "status": "working",
-   "last": "23 Nov 14:54",
+   "status": "waiting",
+   "last": "23 Nov 15:42",
    "acts": [
-    "Today's 5 first-touch emails waiting on Charlie's \"send them\"",
-    "Aoife and Steph follow-up emails queued for Wed 25, 9 AM",
-    "Holding those until DMer confirms the DMs went out"
+    "Aoife, Steph, Zoee and Bar-Strength email follow-ups now scheduled Wed 25 (2–3 days after the 23 Nov DMs)",
+    "Bar-Strength has no email in current drafts; confirm whether a public address exists before sending, and do not invent one",
+    "T's Barbers stays off the email list (bounced); no email follow-ups queued"
    ],
    "queue": [
-    "28 first-touch emails; 5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)",
+    "Wed 25 email follow-ups: Aoife, Steph, Zoee, and Bar-Strength if an address is confirmed",
+    "Remaining first-touch emails in this week's plan and the spill list",
     "24 fitness emails, each 2–3 days after that business's DM",
-    "Suggests dropping McCullagh's; check Fit Factory, Barry's, Mugendo"
+    "5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)"
    ],
    "waiting": [
-    "Approve today's 5 emails",
-    "Is the 'more gyms around Donegal' line true?"
+    "Is the 'more gyms around Donegal' line true?",
+    "Whether Bar-Strength has a public email (do not invent one)"
    ]
   },
   "chaser": {
@@ -296,23 +303,20 @@ const DATA = {
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 14:35",
+   "last": "23 Nov 15:17",
    "acts": [
-    "Rechecked today's follow-ups against live pages (14:35)",
-    "4 ready: Donegal Denture, Limitless, O'Flaherty, Pure Grit",
-    "Errigal extra binned, sequence ended (Charlie, 14:28)",
-    "Station House held: site is back up, so the draft is now wrong"
+    "Sent 4 follow-ups at ~15:17 as replies in their original threads, after Charlie's 15:16 go",
+    "Donegal Denture one-off extra sent; sequence ENDED",
+    "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thu 26 Nov, Day 14 Tue 1 Dec",
+    "Fitsquad Day 5 dropped today; Errigal ended; Station House binned 23 Nov (Closed/Lost), no further follow-ups"
    ],
    "queue": [
-    "4 follow-ups ready to send today on Charlie's word",
     "9 catch-ups for the 16 Nov batch (Tue 24)",
     "5 catch-ups for the 17 Nov batch (Wed 25)",
-    "Gym Day 9s drafted Wed for Thu"
+    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thu 26"
    ],
    "waiting": [
-    "Say \"send\" and name which of the 4 ready follow-ups",
-    "Station House: end its sequence too? (Chaser recommends)",
-    "Fitsquadgym: cut the unconfirmed booking-app line and re-card?"
+    "Fitsquad Day 9: drop the unverified booking-app claim"
    ]
   },
   "cleaner": {
@@ -321,10 +325,10 @@ const DATA = {
    "role": "Polishes every draft",
    "group": "lead",
    "status": "idle",
-   "last": "23 Nov ~14:50",
+   "last": "23 Nov 14:54",
    "acts": [
-    "Polished the DM line in Aoife's and Steph's emails",
-    "Cleaned 24 fitness emails and 25 fitness DMs (6.7/10)"
+    "Polished the DM-mention line in Aoife's and Steph's emails at 14:54; neither email has been sent",
+    "Cleaned 24 fitness emails and 25 fitness DMs earlier today"
    ],
    "queue": [
     "Standing by for rewrites"
@@ -355,10 +359,10 @@ const DATA = {
   "keeper": {
    "id": "keeper",
    "name": "Keeper",
-   "role": "Client care and monthly reviews",
+   "role": "Client site guardian · scouts every client site from onboarding",
    "group": "clients",
    "status": "idle",
-   "last": "18 Nov",
+   "last": "18 Nov 01:21",
    "acts": [
     "Added build-kit component links to the monthly review"
    ],
@@ -375,7 +379,7 @@ const DATA = {
    "role": "CFO · Stripe and payments",
    "group": "money",
    "status": "idle",
-   "last": "18 Nov",
+   "last": "18 Nov 01:16",
    "acts": [
     "Posted both Chào Donegal Stripe payment links"
    ],
@@ -388,7 +392,7 @@ const DATA = {
    "role": "Strategy and sales prep",
    "group": "money",
    "status": "idle",
-   "last": "16 Nov",
+   "last": "16 Nov 17:19",
    "acts": [
     "Wrote 3 pain points and discovery questions for Don Maguire"
    ],
@@ -401,7 +405,7 @@ const DATA = {
    "role": "Social content",
    "group": "content",
    "status": "idle",
-   "last": "5 Nov",
+   "last": "5 Nov 21:03",
    "acts": [
     "November content research and four-week plan",
     "Recommended Repurpose.io for Instagram → TikTok"
@@ -415,7 +419,7 @@ const DATA = {
    "role": "Digital products",
    "group": "content",
    "status": "idle",
-   "last": "7 Nov",
+   "last": "7 Nov 19:21",
    "acts": [
     "Trashed 18 approved pages from the Notion buyer draft",
     "Draft still private and not sale-ready"
@@ -431,10 +435,10 @@ const DATA = {
    "role": "Prompt writer",
    "group": "content",
    "status": "idle",
-   "last": "18 Nov",
+   "last": "18 Nov 14:39",
    "acts": [
-    "Told DMer there's no HTML template, only prompts",
-    "Offered a Claude prompt for a Nails by Aileen demo"
+    "Chào Donegal prompts are finished; Charlie is building it in Claude",
+    "SEO (keywords, titles, meta, headings, schema, Google Business Profile) now goes into every build prompt"
    ],
    "queue": [],
    "waiting": []
@@ -442,7 +446,7 @@ const DATA = {
   "fixer": {
    "id": "fixer",
    "name": "Fixer",
-   "role": "Odd jobs",
+   "role": "Diagnoses issues Keeper flags and hands Charlie a recommended fix",
    "group": "support",
    "status": "waiting",
    "last": "22 Nov 20:12",
@@ -473,6 +477,56 @@ const DATA = {
   }
  },
  "ticker": [
+  {
+   "t": "23 Nov 15:48",
+   "who": "Charlie",
+   "text": "Confirmed Aoife and Steph DMs sent; Bar-Strength and Zoee done; binned Station House; T's Barbers DM planned for Wed 25"
+  },
+  {
+   "t": "23 Nov 15:48",
+   "who": "Chief",
+   "text": "Logged 4 confirmed DMs for 23 Nov; email follow-ups set for Wed 25; Station House Closed/Lost; Don commitment still due Fri 27"
+  },
+  {
+   "t": "23 Nov 15:45",
+   "who": "Chief",
+   "text": "Refreshed every bot card from transcripts; Tapa Fri email skipped (no public email); T's next step is Facebook or Booksy"
+  },
+  {
+   "t": "23 Nov 15:42",
+   "who": "Prospector",
+   "text": "Confirmed Tapa Gym has no public email; remaining channel is phone"
+  },
+  {
+   "t": "23 Nov 15:42",
+   "who": "Emailer",
+   "text": "Tapa cannot go on the email list (no public email); Friday first-touch slot skipped"
+  },
+  {
+   "t": "23 Nov 15:39",
+   "who": "DMer",
+   "text": "Charlie confirmed the Tapa Instagram DM went out on 16 Nov and is still unseen"
+  },
+  {
+   "t": "23 Nov 15:17",
+   "who": "Chaser",
+   "text": "Sent 4 follow-ups: Donegal Denture extra (sequence ended), Day 5 for Limitless, O'Flaherty and Pure Grit"
+  },
+  {
+   "t": "23 Nov 15:10",
+   "who": "Emailer",
+   "text": "T's Barbers first-touch bounced (550, address does not exist); Day 5 email follow-up cancelled"
+  },
+  {
+   "t": "23 Nov 15:11",
+   "who": "Emailer",
+   "text": "Sent 5 first-touch emails: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic"
+  },
+  {
+   "t": "23 Nov 15:08",
+   "who": "DMer",
+   "text": "Charlie approved Aoife McGill and Steph Fit DMs; he is sending them himself, awaiting confirmation"
+  },
   {
    "t": "23 Nov 14:54",
    "who": "DMer",
@@ -522,6 +576,56 @@ const DATA = {
    "t": "22 Nov 18:30",
    "who": "Prospector",
    "text": "25 Ireland-wide fitness leads delivered and routed"
+  }
+ ],
+ "workflows": [
+  {
+   "id": "support",
+   "title": "Support workflow",
+   "hint": "After a client comes on board, Keeper scouts the live site and checks everything is working and perfect. If something needs fixing or Charlie's attention, Keeper pings Fixer. Fixer diagnoses the issue and hands Charlie a recommended fix. Charlie is the final decision-maker.",
+   "nodes": [
+    {
+     "id": "client",
+     "label": "Client comes on board",
+     "sub": "Onboarding complete",
+     "kind": "start"
+    },
+    {
+     "id": "keeper",
+     "label": "Keeper",
+     "sub": "Client site guardian. Scouts every client site from onboarding, checking everything is working and perfect.",
+     "kind": "bot"
+    },
+    {
+     "id": "fixer",
+     "label": "Fixer",
+     "sub": "Diagnoses issues Keeper flags.",
+     "kind": "bot"
+    },
+    {
+     "id": "charlie",
+     "label": "Charlie",
+     "sub": "Final decision-maker. Decides on the recommended fix.",
+     "kind": "ceo"
+    }
+   ],
+   "edges": [
+    {
+     "from": "client",
+     "to": "keeper",
+     "label": "Keeper scouts the live site"
+    },
+    {
+     "from": "keeper",
+     "to": "fixer",
+     "label": "If something needs fixing or Charlie's attention, Keeper pings Fixer"
+    },
+    {
+     "from": "fixer",
+     "to": "charlie",
+     "label": "Passes diagnosis and a recommended fix"
+    }
+   ]
   }
  ],
  "stages": [
@@ -636,8 +740,9 @@ const DATA = {
    "name": "Tapa Gym",
    "category": "Strength / HYROX gym",
    "county": "Sligo",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "CrossFit Carrick",
@@ -664,8 +769,9 @@ const DATA = {
    "name": "Intensity Fitness",
    "category": "Gym",
    "county": "Donegal",
-   "stage": "New",
-   "channel": "Email"
+   "stage": "Contacted",
+   "channel": "Email",
+   "fitness": true
   },
   {
    "name": "OG Fitness (Matthew Oglesby)",
@@ -734,7 +840,7 @@ const DATA = {
    "name": "Station House Dental",
    "category": "Dental",
    "county": "Donegal",
-   "stage": "Contacted",
+   "stage": "Lost",
    "channel": "Email"
   },
   {
@@ -846,8 +952,9 @@ const DATA = {
    "name": "MriduYoga",
    "category": "Yoga",
    "county": "Leitrim",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Donegal Barber",
@@ -1088,11 +1195,12 @@ const DATA = {
    "channel": "Instagram"
   },
   {
-   "name": "Aoife McGill PT",
+   "name": "Aoife McGill Personal Training",
    "category": "PT gym",
    "county": "Donegal",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Frosses Coffee Well",
@@ -1126,15 +1234,17 @@ const DATA = {
    "name": "Calisthenics Sligo / Bar-Strength",
    "category": "Calisthenics",
    "county": "Sligo",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Zoee Feeney Fitness",
    "category": "Online coach",
    "county": "Sligo",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Blaze Barber Shop",
@@ -1152,10 +1262,11 @@ const DATA = {
   },
   {
    "name": "Steph Fit Coaching",
-   "category": "PT / online coach",
+   "category": "Online coach / PT",
    "county": "Sligo",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "Vicky's Make Up & Beauty",
@@ -1168,7 +1279,7 @@ const DATA = {
    "name": "T's Barbers",
    "category": "Barber",
    "county": "Sligo",
-   "stage": "New",
+   "stage": "Bounced – needs new contact",
    "channel": "Email"
   },
   {
@@ -1189,7 +1300,7 @@ const DATA = {
    "name": "Orlaith's Barber Shop",
    "category": "Barber",
    "county": "Leitrim",
-   "stage": "New",
+   "stage": "Contacted",
    "channel": "Instagram"
   },
   {
@@ -1203,7 +1314,7 @@ const DATA = {
    "name": "AAlba Foot Clinic",
    "category": "Podiatry",
    "county": "Leitrim",
-   "stage": "New",
+   "stage": "Contacted",
    "channel": "Instagram"
   },
   {
@@ -1463,9 +1574,9 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 final sent",
+   "stage": "Sequence ended",
    "overdue": "",
-   "next": "—",
+   "next": "Sequence ended (extra binned, not sent)",
    "response": "Sequence ended",
    "fitness": false
   },
@@ -1475,10 +1586,10 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 sent",
+   "stage": "Sequence ended",
    "overdue": "",
-   "next": "Extra follow-up Mon 23 Nov",
-   "response": "No reply",
+   "next": "Sequence ended 23 Nov after the one-off extra",
+   "response": "Sequence ended",
    "fitness": false
   },
   {
@@ -1487,10 +1598,10 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-05",
-   "stage": "Day 14 sent",
+   "stage": "Sequence ended",
    "overdue": "",
-   "next": "Extra held: site is back up, so the draft is wrong. Chaser recommends ending the sequence",
-   "response": "No reply",
+   "next": "Binned 23 Nov by Charlie. Closed/Lost. No further follow-ups.",
+   "response": "Sequence ended",
    "fitness": false
   },
   {
@@ -1535,9 +1646,9 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
+   "stage": "Bounced",
    "overdue": "",
-   "next": "Not delivered · Facebook DM by Charlie",
+   "next": "Not delivered · needs another channel",
    "response": "Bounced",
    "fitness": false
   },
@@ -1679,9 +1790,9 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-18",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "stage": "Day 5 sent",
+   "overdue": "",
+   "next": "Day 9 due 26 Nov · Day 14 due 1 Dec (Chaser)",
    "response": "No reply",
    "fitness": false
   },
@@ -1692,8 +1803,8 @@ const DATA = {
    "channel": "Email",
    "first": "2026-11-18",
    "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Day 5 dropped from today pending a line fix · Gym Day 9 Thu 26 Nov",
+   "overdue": "",
+   "next": "Day 5 dropped from today (unverified booking-app line) · Day 9 Thu 26 Nov must drop that claim",
    "response": "No reply",
    "fitness": false
   },
@@ -1703,9 +1814,9 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-18",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "stage": "Day 5 sent",
+   "overdue": "",
+   "next": "Day 9 due 26 Nov · Day 14 due 1 Dec (Chaser)",
    "response": "No reply",
    "fitness": false
   },
@@ -1715,14 +1826,210 @@ const DATA = {
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-18",
+   "stage": "Day 5 sent",
+   "overdue": "",
+   "next": "Day 9 due 26 Nov · Day 14 due 1 Dec (Chaser)",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "Intensity Fitness",
+   "category": "Gym",
+   "county": "Donegal",
+   "channel": "Email",
+   "first": "2026-11-23",
    "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 22 Nov, not sent",
-   "next": "Gym Day 5 Mon 23 Nov · Gym Day 9 Thu 26 Nov",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
+   "response": "No reply",
+   "fitness": true
+  },
+  {
+   "name": "MriduYoga",
+   "category": "Yoga",
+   "county": "Leitrim",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Day 1 first touch",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
+   "response": "No reply",
+   "fitness": true
+  },
+  {
+   "name": "Orlaith's Barber Shop",
+   "category": "Barber",
+   "county": "Leitrim",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Day 1 first touch",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
+   "response": "No reply",
+   "fitness": false
+  },
+  {
+   "name": "T's Barbers",
+   "category": "Barber",
+   "county": "Sligo",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Bounced",
+   "overdue": "",
+   "next": "No valid email; Facebook or Booksy DM planned Wed 25 Nov (DMer drafting; needs Charlie's approval). Day 5 email follow-up cancelled; no email follow-ups queued",
+   "response": "Bounced",
+   "fitness": false
+  },
+  {
+   "name": "AAlba Foot Clinic",
+   "category": "Podiatry",
+   "county": "Leitrim",
+   "channel": "Email",
+   "first": "2026-11-23",
+   "stage": "Day 1 first touch",
+   "overdue": "",
+   "next": "Day 5 due 27 Nov (Chaser)",
    "response": "No reply",
    "fitness": false
   }
  ],
  "history": [
+  {
+   "date": "2026-11-23",
+   "name": "Aoife McGill Personal Training",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Coach-proof Instagram DM",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Steph Fit Coaching",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Modern-refresh Instagram DM",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Calisthenics Sligo / Bar-Strength",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Zoee Feeney Fitness",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Intensity Fitness",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — dead domain redirecting to gambling spam",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "MriduYoga",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — site still 'coming soon' and links scattered",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Orlaith's Barber Shop",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — award-winning with no site or booking",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "T's Barbers",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — 4.9 from 898 Booksy reviews but no site",
+   "outcome": "Bounced"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "AAlba Foot Clinic",
+   "channel": "Email",
+   "type": "First-touch email",
+   "angle": "First-touch — site dated 2020",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Donegal Denture Clinic",
+   "channel": "Email",
+   "type": "Follow-up (extra)",
+   "angle": "Extra follow-up — old Atlas branding: 'All Rights Reserve' footer, atlasAdmin author tag",
+   "outcome": "Sequence ended"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Limitless Gym & Fitness",
+   "channel": "Email",
+   "type": "Follow-up (Day 5)",
+   "angle": "Day 5 follow-up — FitFit third-party page, Google lists it as a supplement store",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "O'Flaherty Fitness and Performance",
+   "channel": "Email",
+   "type": "Follow-up (Day 5)",
+   "angle": "Day 5 follow-up — athletes programmes and body comp analysis have no price or enquiry opti",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Pure Grit Gym",
+   "channel": "Email",
+   "type": "Follow-up (Day 5)",
+   "angle": "Day 5 follow-up — typo and Eircode still there; strongman, powerlifting, bodybuilding and ",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Aoife McGill Personal Training",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Coach-proof Instagram DM",
+   "outcome": "Sent by Charlie"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Steph Fit Coaching",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Modern-refresh Instagram DM",
+   "outcome": "Sent by Charlie"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Calisthenics Sligo / Bar-Strength",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "Sent (DMer to confirm exact time)"
+  },
+  {
+   "date": "2026-11-23",
+   "name": "Zoee Feeney Fitness",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "Instagram DM",
+   "outcome": "Sent (DMer to confirm exact time)"
+  },
   {
    "date": "2026-11-19",
    "name": "Station House Dental",
@@ -1900,6 +2207,14 @@ const DATA = {
    "outcome": "No reply"
   },
   {
+   "date": "2026-11-16",
+   "name": "Tapa Gym",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "No-website Instagram DM",
+   "outcome": "Unseen"
+  },
+  {
    "date": "2026-11-13",
    "name": "Reform Barbershop",
    "channel": "Email",
@@ -1967,7 +2282,7 @@ const DATA = {
    "detail": "Day 5 Mon 23 Nov, Day 9 Thu 26 Nov, Day 14 due 1 Dec."
   }
  ],
- "dmNote": "No DMs have been sent yet: 0 are logged. 33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
+ "dmNote": "33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
  "drafts": {
   "dmCold": 33,
   "dmWarm": 1,
@@ -1977,21 +2292,21 @@ const DATA = {
   "emailFitness": 24
  },
  "outreach": {
-  "dmsThisWeek": 0,
+  "dmsThisWeek": 8,
   "dmTarget": 25,
-  "emailsThisWeek": 0,
+  "emailsThisWeek": 8,
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies: 0. Last emails out: the 3 dental finals, 19 Nov ~13:16. One warm reply logged (Reform, 13 Nov)."
+  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie 23 Nov; Bar-Strength and Zoee Feeney logged as sent 23 Nov, DMer to confirm exact times). Tapa Gym was DM'd by Charlie on 16 Nov (Unseen) and counts in last week, not w/c 23 Nov. Email follow-ups for those four DMs are scheduled Wed 25 Nov (2–3 days later). Bar-Strength has no email in current drafts; Emailer to confirm whether a public address exists before sending. T's Barbers: Facebook or Booksy DM planned Wed 25 Nov (DMer drafting; needs Charlie's approval); no email follow-ups queued. Station House Dental was binned by Charlie on 23 Nov (Closed/Lost); no further follow-ups. Don Maguire remains Verbal yes, awaiting commitment by Fri 27 Nov. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 and 4 first-touches delivered ~15:11; T's Barbers bounced (550) and is not counted as delivered. One warm reply logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
- "sendPlanTarget": 75,
+ "sendPlanTarget": 80,
  "sendDays": [
   {
    "day": "Mon 23 Nov",
    "short": "Mon 23",
-   "emails": 7,
+   "emails": 12,
    "dms": 8
   },
   {
@@ -2004,12 +2319,12 @@ const DATA = {
    "day": "Wed 25 Nov",
    "short": "Wed 25",
    "emails": 9,
-   "dms": 6
+   "dms": 7
   },
   {
    "day": "Thu 26 Nov",
    "short": "Thu 26",
-   "emails": 8,
+   "emails": 7,
    "dms": 7
   },
   {
@@ -2026,7 +2341,7 @@ const DATA = {
    "name": "Station House Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Held",
+   "status": "Binned",
    "warm": false
   },
   {
@@ -2035,7 +2350,7 @@ const DATA = {
    "name": "Donegal Denture Clinic",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2053,7 +2368,7 @@ const DATA = {
    "name": "Limitless Gym & Fitness",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2071,7 +2386,7 @@ const DATA = {
    "name": "O'Flaherty Fitness and Performance",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2080,7 +2395,52 @@ const DATA = {
    "name": "Pure Grit Gym",
    "action": "Gym Day 5",
    "fitness": true,
-   "status": "Ready, awaiting Charlie's send",
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Intensity Fitness",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "MriduYoga",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "Orlaith's Barber Shop",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Sent",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "T's Barbers",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Bounced",
+   "warm": false
+  },
+  {
+   "day": "Mon 23 Nov",
+   "kind": "Email",
+   "name": "AAlba Foot Clinic",
+   "action": "First-touch email",
+   "fitness": false,
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2089,16 +2449,16 @@ const DATA = {
    "name": "Tapa Gym",
    "action": "Instagram DM",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Skipped",
    "warm": false
   },
   {
    "day": "Mon 23 Nov",
    "kind": "DM",
-   "name": "Aoife McGill PT",
-   "action": "Instagram DM",
+   "name": "Aoife McGill Personal Training",
+   "action": "Instagram DM — coach-proof, Charlie sending",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2107,7 +2467,7 @@ const DATA = {
    "name": "Bar-Strength (Calisthenics Sligo)",
    "action": "Instagram DM",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2116,16 +2476,16 @@ const DATA = {
    "name": "Zoee Feeney Fitness",
    "action": "Instagram DM",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
    "day": "Mon 23 Nov",
    "kind": "DM",
    "name": "Steph Fit Coaching",
-   "action": "Instagram DM",
+   "action": "Instagram DM — modern-refresh, Charlie sending",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2338,8 +2698,8 @@ const DATA = {
   {
    "day": "Wed 25 Nov",
    "kind": "Email",
-   "name": "Aoife McGill PT",
-   "action": "First-touch email",
+   "name": "Aoife McGill Personal Training",
+   "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
    "warm": false
@@ -2348,7 +2708,7 @@ const DATA = {
    "day": "Wed 25 Nov",
    "kind": "Email",
    "name": "Zoee Feeney Fitness",
-   "action": "First-touch email",
+   "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
    "warm": false
@@ -2357,7 +2717,7 @@ const DATA = {
    "day": "Wed 25 Nov",
    "kind": "Email",
    "name": "Steph Fit Coaching",
-   "action": "First-touch email",
+   "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
    "warm": false
@@ -2365,8 +2725,8 @@ const DATA = {
   {
    "day": "Wed 25 Nov",
    "kind": "Email",
-   "name": "MriduYoga",
-   "action": "First-touch email",
+   "name": "Bar-Strength (Calisthenics Sligo)",
+   "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
    "warm": false
@@ -2426,6 +2786,15 @@ const DATA = {
    "warm": false
   },
   {
+   "day": "Wed 25 Nov",
+   "kind": "DM",
+   "name": "T's Barbers",
+   "action": "Facebook or Booksy DM",
+   "fitness": false,
+   "status": "Pending approval",
+   "warm": false
+  },
+  {
    "day": "Thu 26 Nov",
    "kind": "Email",
    "name": "Limitless Gym & Fitness",
@@ -2465,15 +2834,6 @@ const DATA = {
    "day": "Thu 26 Nov",
    "kind": "Email",
    "name": "EVOLVE Health and Fitness",
-   "action": "First-touch email",
-   "fitness": true,
-   "status": "Pending approval",
-   "warm": false
-  },
-  {
-   "day": "Thu 26 Nov",
-   "kind": "Email",
-   "name": "Intensity Fitness",
    "action": "First-touch email",
    "fitness": true,
    "status": "Pending approval",
@@ -2608,15 +2968,6 @@ const DATA = {
   {
    "day": "Fri 27 Nov",
    "kind": "Email",
-   "name": "T's Barbers",
-   "action": "First-touch email",
-   "fitness": false,
-   "status": "Pending approval",
-   "warm": false
-  },
-  {
-   "day": "Fri 27 Nov",
-   "kind": "Email",
    "name": "Wall St Barber Shop",
    "action": "First-touch email",
    "fitness": false,
@@ -2630,6 +2981,15 @@ const DATA = {
    "action": "First-touch email",
    "fitness": false,
    "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Tapa Gym",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Skipped — no public email; Charlie DM'd 16 Nov; remaining channel is phone",
    "warm": false
   },
   {
@@ -2696,7 +3056,7 @@ const DATA = {
    "warm": true
   }
  ],
- "sendPlanSpill": "12 more first-touch emails spill into next week.",
+ "sendPlanSpill": "10 more first-touch emails spill into next week.",
  "spillList": [
   "Studio One Hair & Beauty",
   "Frosses Coffee Well",
@@ -2705,8 +3065,6 @@ const DATA = {
   "Glam Lash by Grazka",
   "Vicky's Make Up & Beauty",
   "Creamers Barbershop",
-  "Orlaith's Barber Shop",
-  "AAlba Foot Clinic",
   "Lydia's Beauty Rooms",
   "Glamberry",
   "Prestige Beauty Salon"
@@ -2756,12 +3114,12 @@ const DATA = {
    "name": "Don Maguire Gym + Coaching",
    "tier": "main",
    "open": true,
-   "stage": "Proposal sent 27 Oct",
+   "stage": "Verbal yes, awaiting commitment",
    "services": "Multi-page gym and coaching website, shop and checkout, SEO, reviews and launch assets",
    "value": "€250 setup (normally €500), months 1–6 free, then €75/mo founder rate (normally €150). Year-one cash €700",
-   "next": "Follow up on the 27 Oct proposal",
+   "next": "TARGET: get Don's commitment this week (by Fri 27 Nov 2026)",
    "owner": "Charlie · Compass prepped discovery questions (16 Nov)",
-   "note": "Payment link: unconfirmed (from Chief's notes; the CRM doesn't record one)"
+   "note": "Payment link: unconfirmed (from Chief's notes; the CRM doesn't record one) · 23 Nov 2026: Charlie spoke with Don: he said he'll go for it and will confirm today or over the next few days. Photo shoot in a few weeks (new equipment); hoping to go live in a few weeks. Payment date and firm go-live TBC on commitment. The original 23 Nov launch target has lapsed."
   },
   {
    "name": "The Burn Studio (Jenny)",
@@ -2815,6 +3173,27 @@ const DATA = {
    "owner": "Charlie"
   }
  ],
+ "visits": [
+  {
+   "business": "Chào Donegal",
+   "opportunity": "Chào Donegal",
+   "opportunityId": "opp-chao",
+   "targetDay": "This week (w/c 23 Nov 2026)",
+   "purpose": "In-person visit to hand over the proposal",
+   "status": "Planned",
+   "notes": "Linked to the existing Chào Donegal opportunity and its welcome-offer proposal (Option 1 €1,000 upfront or Option 2 €350 setup + €65/month). Start date TBC. Nothing paid yet."
+  },
+  {
+   "business": "DT Fitness",
+   "opportunity": "DT Fitness",
+   "opportunityId": "opp-dt",
+   "targetDay": "Mon 23 or Wed 25 Nov 2026",
+   "purpose": "Charlie may call in",
+   "status": "Planned",
+   "notes": "Linked to the existing DT Fitness opportunity. Charlie may call in today (Mon 23 Nov) or on Wed 25 Nov."
+  }
+ ],
+ "visitsNote": "More drop-in targets around town will be added as Charlie names them.",
  "revenue": {
   "mrr": 125,
   "arr": 1500,
@@ -2976,11 +3355,72 @@ function renderOrg(){
     s.push('<text data-act="'+id+'" x="'+(x0+40)+'" y="'+(p.y+13)+'" fill="'+(b.status==="idle"?C.faint:C.muted)+'" font-size="10.5">'+esc(clip(actText(b),mobile?40:30))+'</text></g>');});
   if(!mobile)s.push('<text x="'+L.pos.labrat.x+'" y="'+(L.pos.labrat.y+46)+'" text-anchor="middle" fill="'+C.faint+'" font-size="10">Standalone · not part of the team</text>');
   s.push('</svg>');
-  $("v-org").innerHTML='<div class="row"><div class="chart chartglass">'+s.join("")+'<div class="hint">Tap or hover a node for its task, queue and what it needs from Charlie. Activity lines cycle through each bot\'s current work.</div></div><div class="panel" id="panel"></div></div><div class="sec">The whole team</div><div class="roster" id="roster"></div>';
+  $("v-org").innerHTML='<div class="row"><div class="chart chartglass">'+s.join("")+'<div class="hint">Tap or hover a node for its task, queue and what it needs from Charlie. Activity lines cycle through each bot\'s current work.</div></div><div class="panel" id="panel"></div></div>'+renderWorkflows()+'<div class="sec">The whole team</div><div class="roster" id="roster"></div>';
   Array.prototype.forEach.call(document.querySelectorAll("#v-org .node"),function(g){var id=g.getAttribute("data-id");
     g.addEventListener("mouseenter",function(){hover=id;renderPanel();});g.addEventListener("mouseleave",function(){hover=null;renderPanel();});
     g.addEventListener("click",function(){sel=id;renderOrg();});g.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();sel=id;renderOrg();}});});
   renderPanel();renderRoster();
+}
+function wfLayout(wf,mob){
+  var nodes=wf.nodes||[], pos={}, nw=mob?300:200, nh=mob?78:86, w,h;
+  if(!mob){
+    w=1280; var gap=w/(nodes.length); nodes.forEach(function(n,i){pos[n.id]={x:gap*(i+0.5),y:100};});
+    h=250;
+  }else{
+    w=400; nodes.forEach(function(n,i){pos[n.id]={x:200,y:54+i*160};});
+    h=54+nodes.length*160+16;
+  }
+  return {w:w,h:h,nw:nw,nh:nh,pos:pos};
+}
+function renderWorkflows(){
+  var list=D.workflows||[];
+  if(!list.length)return "";
+  return list.map(function(wf){
+    var L=wfLayout(wf,mobile), s=[], uid=esc(wf.id||"wf");
+    s.push('<svg viewBox="0 0 '+L.w+' '+L.h+'" width="100%" style="display:block" role="img" aria-label="'+esc(wf.title||"Workflow")+'">');
+    s.push('<defs><filter id="wf-glow-'+uid+'" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><linearGradient id="wf-wire-'+uid+'" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="'+L.w+'" y2="0"><stop offset="0" stop-color="#D84040"/><stop offset="1" stop-color="#8E1616"/></linearGradient><filter id="wf-bloom-'+uid+'" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>');
+    s.push('<g filter="url(#wf-bloom-'+uid+')">');
+    (wf.edges||[]).forEach(function(e,i){
+      var a=L.pos[e.from], b=L.pos[e.to]; if(!a||!b)return;
+      var x1,y1,x2,y2;
+      if(mobile){x1=a.x;y1=a.y+L.nh/2;x2=b.x;y2=b.y-L.nh/2;}
+      else{x1=a.x+L.nw/2;y1=a.y;x2=b.x-L.nw/2;y2=b.y;}
+      var d="M"+x1+","+y1+" L"+x2+","+y2;
+      s.push('<path d="'+d+'" fill="none" stroke="url(#wf-wire-'+uid+')" stroke-opacity="0.55" stroke-width="2.2"/><path d="'+d+'" fill="none" stroke="#ff5a5a" stroke-opacity="0.95" stroke-width="1.6" stroke-dasharray="4 12" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="32;0" dur="1.8s" repeatCount="indefinite"/></path>');
+      s.push('<circle r="2.6" fill="#ffd5d5"><animateMotion dur="3.2s" begin="'+(i*0.4)+'s" repeatCount="indefinite" path="'+d+'"/></circle>');
+      if(e.label){
+        var mx=(x1+x2)/2, my=(y1+y2)/2;
+        var raw=String(e.label), lines=[], rest=raw, max=mobile?36:28;
+        while(rest.length>max){var cut=rest.lastIndexOf(" ",max); if(cut<12)cut=max; lines.push(rest.slice(0,cut)); rest=rest.slice(cut).replace(/^\s+/,""); }
+        if(rest)lines.push(rest);
+        var ty=mobile?my-10:my+18;
+        lines.forEach(function(line,li){
+          s.push('<text x="'+mx+'" y="'+(ty+li*13)+'" text-anchor="middle" fill="#ffb4b4" font-size="10.5" font-weight="600">'+esc(line)+'</text>');
+        });
+      }
+    });
+    s.push('</g>');
+    (wf.nodes||[]).forEach(function(n){
+      var p=L.pos[n.id]; if(!p)return;
+      var bot=BOTS[n.id], kind=n.kind||(bot?"bot":"start");
+      var col=kind==="ceo"?SC.ceo:(kind==="start"?T.red:(bot?SC[bot.status]:T.red));
+      var gc=kind==="ceo"?C.crimson:(bot?groupColor(bot):T.red);
+      var x0=p.x-L.nw/2,y0=p.y-L.nh/2, clickable=!!bot;
+      s.push('<g class="'+(clickable?"node wf-node":"wf-node")+'"'+(clickable?' data-id="'+esc(n.id)+'" tabindex="0" role="button" aria-label="'+esc(n.label)+'" style="cursor:pointer;outline:none"':' role="group" aria-label="'+esc(n.label)+'"')+'>');
+      s.push('<rect x="'+x0+'" y="'+y0+'" width="'+L.nw+'" height="'+L.nh+'" rx="14" fill="'+C.panel+'" stroke="'+gc+'" stroke-opacity="0.85" stroke-width="1.4" filter="url(#wf-glow-'+uid+')"/>');
+      s.push('<circle cx="'+(x0+18)+'" cy="'+(y0+18)+'" r="5" fill="'+col+'"/>');
+      s.push('<text x="'+(x0+32)+'" y="'+(y0+22)+'" fill="'+C.ink+'" font-size="14" font-weight="700">'+esc(clip(n.label, mobile?32:24))+'</text>');
+      var sub=n.sub||"";
+      var max=mobile?42:28;
+      var s1=sub,s2="";
+      if(sub.length>max){var cut=sub.lastIndexOf(" ",max);if(cut>10){s1=sub.slice(0,cut);s2=sub.slice(cut+1);}else{s1=clip(sub,max);}}
+      s.push('<text x="'+(x0+14)+'" y="'+(y0+44)+'" fill="'+C.muted+'" font-size="10.5">'+esc(clip(s1,max+4))+'</text>');
+      if(s2)s.push('<text x="'+(x0+14)+'" y="'+(y0+58)+'" fill="'+C.muted+'" font-size="10.5">'+esc(clip(s2,max+4))+'</text>');
+      s.push('</g>');
+    });
+    s.push('</svg>');
+    return '<div class="sec">'+esc(wf.title||"Workflow")+'</div><div class="wf chartglass">'+s.join("")+'<div class="hint">'+esc(wf.hint||"")+'</div></div>';
+  }).join("");
 }
 function updateActs(){Array.prototype.forEach.call(document.querySelectorAll("[data-act]"),function(t){var b=BOTS[t.getAttribute("data-act")];t.textContent=clip(actText(b),mobile?40:30);});}
 function list(title,items,color){if(!items||!items.length)return "";return '<div class="lbl" style="color:'+color+'">'+esc(title)+'</div>'+items.map(function(it){return '<div class="li"><span style="color:'+color+'">›</span><span>'+esc(it)+'</span></div>';}).join("");}
@@ -3096,20 +3536,7 @@ function renderClients(){
 function oppCard(x,color){return '<div class="opp" style="--c:'+color+'"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><h4>'+esc(x.name)+'</h4>'+pill(x.stage,color)+'</div><div class="small">'+esc(x.services||"")+'</div><dl class="kv"><dt>Value</dt><dd>'+fig(x.value)+'</dd><dt>Next step</dt><dd>'+esc(x.next)+'</dd><dt>Owner</dt><dd>'+esc(x.owner)+'</dd>'+(x.note?'<dt>Note</dt><dd class="small">'+esc(x.note)+'</dd>':'')+'</dl></div>';}
 function renderOpps(){
   var main=D.opportunities.filter(function(x){return x.tier==="main";}),act=D.opportunities.filter(function(x){return x.tier==="active";});
-  var visits=Array.isArray(D.visits)?D.visits.filter(function(v){return v&&typeof v==="object";}):[];
-  var h="";
-  if(visits.length){
-    h+='<div class="sec" style="margin-top:0">In-person visits</div>';
-    if(D.visitsNote)h+='<div class="small" style="margin:-4px 0 12px">'+esc(D.visitsNote)+'</div>';
-    h+='<div class="row">'+visits.map(function(v){
-      var rows="";
-      if(v.opportunity)rows+='<dt>Opportunity</dt><dd>'+esc(v.opportunity)+'</dd>';
-      if(v.targetDay)rows+='<dt>Target day</dt><dd>'+esc(v.targetDay)+'</dd>';
-      if(v.notes)rows+='<dt>Notes</dt><dd class="small">'+esc(v.notes)+'</dd>';
-      return '<div class="opp" style="--c:'+T.red+'"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><h4>'+esc(v.business)+'</h4>'+(v.status?pill(v.status,T.red):"")+'</div>'+(v.purpose?'<div class="small">'+esc(v.purpose)+'</div>':"")+(rows?'<dl class="kv">'+rows+'</dl>':"")+'</div>';
-    }).join("")+'</div>';
-  }
-  h+='<div class="sec"'+(visits.length?'':' style="margin-top:0"')+'>The three main deals</div><div class="row">'+main.map(function(x){return oppCard(x,T.red);}).join("")+'</div>';
+  var h='<div class="sec" style="margin-top:0">The three main deals</div><div class="row">'+main.map(function(x){return oppCard(x,T.red);}).join("")+'</div>';
   h+='<div class="sec">Actively being worked</div><div class="row">'+act.map(function(x){return oppCard(x,T.crimson);}).join("")+'</div>';
   h+='<div class="sec">Current clients</div><div class="row">'+D.clients.map(function(c){return '<div class="opp" style="--c:'+T.light+'"><h4>'+esc(c.name)+'</h4><div class="small">'+esc(c.niche)+' · since '+fmtDate(c.start)+'</div><dl class="kv"><dt>Terms</dt><dd>'+fig(c.terms)+'</dd><dt>Status</dt><dd>'+esc(c.status)+'</dd></dl></div>';}).join("")+'</div>';
   if(!showFig)h+='<div class="small" style="margin-top:12px">Money figures are hidden. Use “Show figures” at the top.</div>';
