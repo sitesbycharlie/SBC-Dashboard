@@ -1,9 +1,9 @@
 {
- "asOf": "23 Nov 2026, 16:27 Dublin",
- "asOfISO": "2026-11-23T16:27+00:00",
+ "asOf": "23 Nov 2026, 17:19 Dublin",
+ "asOfISO": "2026-11-23T17:19+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-23 ~15:48 Europe/Dublin",
+  "tracker": "2026-11-23 ~16:42 Europe/Dublin",
   "agents": "2026-11-23T15:52:36+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
@@ -66,6 +66,7 @@
    "status": "ceo",
    "last": "23 Nov 15:39",
    "acts": [
+    "Zoee Feeney Fitness replied to the 23 Nov Instagram DM: not looking for a website at the moment, but might be later and will keep his details",
     "Confirmed Aoife and Steph Instagram DMs sent (23 Nov)",
     "Said Bar-Strength and Zoee DMs are approved/done (logged 23 Nov; DMer to confirm times)",
     "Closed the Station House Dental lead as lost (23 Nov)",
@@ -75,7 +76,7 @@
    "queue": [
     "Approve the T's Barbers Facebook or Booksy DM (Wed 25)",
     "Don Maguire commitment by Fri 27",
-    "Wed 25: email follow-ups for Aoife, Steph, Zoee, and Bar-Strength if an address is confirmed"
+    "Wed 25: email follow-ups for Aoife, Steph, and Bar-Strength if an address is confirmed"
    ],
    "waiting": []
   },
@@ -87,6 +88,7 @@
    "status": "waiting",
    "last": "23 Nov 15:45",
    "acts": [
+    "Logged Zoee Feeney Fitness as Replied — not now, warm for later. Cancelled her Wed 25 email and Day 5, 9 and 14 follow-ups, and removed the email from the send plan",
     "Logged Aoife and Steph messages as sent on 23 Nov and set email follow-ups for Wednesday, 25 Nov",
     "Logged Bar-Strength and Zoee DMs as sent 23 Nov (DMer to confirm exact times) and scheduled email follow-ups for Wed 25",
     "Closed the Station House Dental lead as lost, with no further follow-ups",
@@ -94,8 +96,8 @@
     "Kept Don Maguire target: commitment by Fri 27"
    ],
    "queue": [
-    "Send plan Mon 23 – Fri 27 Nov (12 of 80 sent)",
-    "Wed 25: T's Barbers DM draft plus four DM-first email follow-ups",
+    "Send plan Mon 23 – Fri 27 Nov (12 of 79 sent)",
+    "Wed 25: T's Barbers DM draft plus three DM-first email follow-ups (Aoife, Steph, and Bar-Strength if an address is confirmed)",
     "Fitness batch slotted for Thu 26 / Fri 27"
    ],
    "waiting": [
@@ -152,15 +154,16 @@
    "status": "waiting",
    "last": "23 Nov 15:42",
    "acts": [
-    "Aoife, Steph, Zoee and Bar-Strength email follow-ups now scheduled Wed 25 (2–3 days after the 23 Nov DMs)",
+    "Zoee Feeney Fitness email follow-up cancelled after her 23 Nov reply; no email to her is queued",
+    "Aoife, Steph and Bar-Strength email follow-ups remain scheduled Wed 25 (2–3 days after the 23 Nov DMs)",
     "Bar-Strength has no email in current drafts; confirm whether a public address exists before sending, and do not invent one",
     "T's Barbers stays off the email list (bounced); no email follow-ups queued"
    ],
    "queue": [
-    "Wed 25 email follow-ups: Aoife, Steph, Zoee, and Bar-Strength if an address is confirmed",
+    "Wed 25 email follow-ups: Aoife, Steph, and Bar-Strength if an address is confirmed",
     "Remaining first-touch emails in this week's plan and the spill list",
-    "24 fitness emails, each 2–3 days after that business's DM",
-    "5 need fixes (EVOLVE, Edel, LD Beauty, Prestige, Zoee Feeney)"
+    "Remaining fitness emails, each 2–3 days after that business's DM (Zoee's email is cancelled)",
+    "4 need fixes (EVOLVE, Edel, LD Beauty, Prestige)"
    ],
    "waiting": [
     "Is the 'more gyms around Donegal' line true?",
@@ -347,6 +350,11 @@
   }
  },
  "ticker": [
+  {
+   "t": "23 Nov 16:42",
+   "who": "Chief",
+   "text": "Zoee Feeney Fitness replied to Charlie's Instagram DM: she is not looking for a website at the moment, but might later, and will keep his details. Status is not now, warm for later. Her Wednesday email and Day 5, 9 and 14 follow-ups are cancelled."
+  },
   {
    "t": "23 Nov 15:48",
    "who": "Charlie",
@@ -1112,7 +1120,7 @@
    "name": "Zoee Feeney Fitness",
    "category": "Online coach",
    "county": "Sligo",
-   "stage": "Contacted",
+   "stage": "Replied",
    "channel": "Instagram",
    "fitness": true
   },
@@ -2136,10 +2144,10 @@
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. Email follow-ups for those four DMs are scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One warm reply is logged (Reform, 13 Nov)."
+  "note": "Cold replies this week: 1 (Zoee Feeney Fitness, 23 Nov). Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Zoee replied the same day: not looking for a website at the moment, but might be later and will keep Charlie's details. Status: not now, warm for later. Her Wednesday, 25 Nov email follow-up has been cancelled and removed from the send plan, and Day 5, 9 and 14 follow-ups are cancelled. A possible light check-in in about three months (late Feb 2027) is noted, if Charlie wants. Email follow-ups for Aoife, Steph and Bar-Strength remain scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One earlier warm reply is also logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
- "sendPlanTarget": 80,
+ "sendPlanTarget": 79,
  "sendDays": [
   {
    "day": "Mon 23 Nov",
@@ -2156,7 +2164,7 @@
   {
    "day": "Wed 25 Nov",
    "short": "Wed 25",
-   "emails": 9,
+   "emails": 8,
    "dms": 7
   },
   {
@@ -2537,15 +2545,6 @@
    "day": "Wed 25 Nov",
    "kind": "Email",
    "name": "Aoife McGill Personal Training",
-   "action": "First-touch email, 2–3 days after the DM",
-   "fitness": true,
-   "status": "Pending approval",
-   "warm": false
-  },
-  {
-   "day": "Wed 25 Nov",
-   "kind": "Email",
-   "name": "Zoee Feeney Fitness",
    "action": "First-touch email, 2–3 days after the DM",
    "fitness": true,
    "status": "Pending approval",
