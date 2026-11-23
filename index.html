@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Sites By Charlie: Mission Control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Share+Tech+Mono&display=swap">
 <style>
 :root{--bg:#000000;--panel:rgba(238,238,238,.03);--panel2:rgba(142,22,22,.10);--ink:#EEEEEE;--muted:rgba(238,238,238,.6);--faint:rgba(238,238,238,.38);--line:rgba(238,238,238,.12);--red:#D84040;--crimson:#8E1616;--brandgreen:#72c992;--cyan:#22d3ee;--violet:#a78bfa;--green:#34d399;--amber:#fbbf24;--gray:#64748b;--pink:#f472b6;--blue:#60a5fa}
 *{box-sizing:border-box}
@@ -93,7 +96,7 @@ th{background:rgba(0,0,0,.55)}
 .roster .bn{display:flex;justify-content:space-between;gap:8px;align-items:center;font-weight:700}
 .wf{margin-top:8px}
 .wf .chartglass{padding:14px 10px 8px}
-@media (max-width:759px){.wf svg{min-height:560px}}
+@media (max-width:759px){.wf svg{min-height:720px}}
 .roster .bs{font-size:10px;font-weight:700;letter-spacing:.08em}
 .roster .bl{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.4}
 .badge{display:inline-block;border-radius:999px;padding:2px 8px;font-size:10px;font-weight:800;letter-spacing:.1em}
@@ -101,15 +104,109 @@ th{background:rgba(0,0,0,.55)}
 .badge.live{background:rgba(114,201,146,.12);color:#72c992;border:1px solid rgba(114,201,146,.5)}
 .badge.emb{background:rgba(238,238,238,.06);color:rgba(238,238,238,.7);border:1px solid rgba(238,238,238,.2)}
 @media (max-width:759px){#app{padding:14px}h1{font-size:24px}.kv{grid-template-columns:80px 1fr}}
+
+/* ===== Jarvis HUD upgrade ===== */
+html,body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.mono,.kicker,.sec,.lbl,.tab,.badge,.chip,.roster .bs,th,.hud-clock,.sys-ok,.sys-ticker,.boot-kicker,.boot-log,.hero-lab{font-family:"Share Tech Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+h1,.boot-title,.hero-val{font-family:Orbitron,system-ui,sans-serif}
+#hudbg{position:fixed;inset:0;z-index:0;width:100%;height:100%;pointer-events:none;display:block}
+.backdrop{z-index:0}
+#app{z-index:1;background-color:transparent;max-width:1480px}
+.scanlines{position:fixed;inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0,rgba(255,255,255,.028) 1px,transparent 1px,transparent 3px);mix-blend-mode:overlay;opacity:.45}
+.hud-top{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:8px}
+.kicker{color:var(--red);font-size:11px;letter-spacing:.28em;font-weight:700;text-transform:uppercase;text-shadow:0 0 10px rgba(216,64,64,.45)}
+h1{font-size:clamp(22px,4vw,38px);font-weight:800;letter-spacing:.06em;margin:6px 0 0;line-height:1.15;text-transform:uppercase}
+h1 .em{color:var(--red);text-shadow:0 0 22px rgba(216,64,64,.75),0 0 4px rgba(216,64,64,.8)}
+h1 .dash{color:rgba(238,238,238,.35);font-weight:500;padding:0 .15em}
+.hud-clock{text-align:right;min-width:200px}
+#clock{font-size:28px;font-weight:700;letter-spacing:.12em;color:#EEEEEE;text-shadow:0 0 16px rgba(216,64,64,.55);line-height:1}
+#clockDate{color:var(--muted);font-size:11px;letter-spacing:.14em;margin-top:6px;text-transform:uppercase}
+.sys-ok{display:inline-flex;align-items:center;gap:8px;margin-top:8px;color:#72c992;font-size:11px;letter-spacing:.18em}
+.sys-ok i{width:8px;height:8px;border-radius:8px;background:#72c992;box-shadow:0 0 10px #72c992;animation:pulseok 1.6s ease-in-out infinite}
+@keyframes pulseok{50%{opacity:.35;box-shadow:0 0 2px #72c992}}
+.hero{display:flex;flex-wrap:wrap;gap:14px;align-items:stretch;margin:14px 0 10px;position:relative}
+.hero:before{content:"";position:absolute;left:50%;top:50%;width:280px;height:280px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(216,64,64,.18) 0%,rgba(142,22,22,.08) 40%,transparent 70%);pointer-events:none;z-index:0;animation:reactor 8s linear infinite}
+@keyframes reactor{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.hero-ring{position:relative;z-index:1;flex:1 1 180px;min-width:160px;text-align:center;padding:12px 8px 14px;border-radius:16px;transition:transform .2s ease,box-shadow .2s ease}
+.hero-ring svg{display:block;margin:0 auto;max-width:150px;filter:drop-shadow(0 0 8px rgba(216,64,64,.45))}
+.hero-lab{color:var(--red);font-size:10px;letter-spacing:.2em;margin-top:6px;text-transform:uppercase}
+.hero-sub{color:var(--faint);font-size:11px;margin-top:2px}
+.sys-ticker-wrap{overflow:hidden;border:1px solid rgba(216,64,64,.28);border-radius:10px;background:rgba(0,0,0,.45);margin:8px 0 4px;padding:7px 0;mask-image:linear-gradient(90deg,transparent,transparent 1%,#000 6%,#000 94%,transparent 99%)}
+.sys-ticker{display:flex;gap:0;white-space:nowrap;color:var(--muted);font-size:11px;letter-spacing:.08em;animation:marquee 48s linear infinite}
+.sys-ticker b{color:var(--red);font-weight:700}
+.sys-ticker .ok{color:#72c992}.sys-ticker .wait{color:#fbbf24}.sys-ticker .idle{color:var(--faint)}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.stats{margin-top:10px}
+.feed{border-color:rgba(216,64,64,.28)!important;box-shadow:0 0 18px rgba(216,64,64,.12)}
+.tab{letter-spacing:.1em;text-transform:uppercase;font-size:11px;border-radius:8px;transition:transform .15s ease,box-shadow .15s ease,background .15s ease,color .15s ease}
+.tab:hover{transform:translateY(-1px);box-shadow:0 0 12px rgba(216,64,64,.25)}
+.view{display:none;margin-top:16px;opacity:0}
+.view.active{display:block;animation:hudIn .34s ease forwards}
+@keyframes hudIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.card,.opp,.roster .bot,.panel{transform-style:preserve-3d;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.holo-hot{box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 24px rgba(216,64,64,.2)!important}
+.roster .bot:hover,.card:hover,.opp:hover{border-color:rgba(216,64,64,.55)}
+.boot{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 40%,rgba(142,22,22,.45),#000 65%);transition:opacity .4s ease}
+.boot.off{opacity:0;pointer-events:none}
+.boot-inner{text-align:center;padding:24px}
+.boot-kicker{color:var(--red);letter-spacing:.32em;font-size:12px}
+.boot-title{font-size:clamp(28px,6vw,54px);font-weight:800;letter-spacing:.14em;margin:10px 0 22px;text-shadow:0 0 28px rgba(216,64,64,.7)}
+.boot-bar{width:min(320px,70vw);height:4px;margin:0 auto 14px;background:rgba(238,238,238,.1);border-radius:4px;overflow:hidden}
+.boot-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#8E1616,#D84040,#ffd0d0);box-shadow:0 0 12px #D84040;animation:bootfill 1s ease forwards}
+@keyframes bootfill{to{width:100%}}
+.boot-log{color:var(--muted);letter-spacing:.14em;font-size:12px;min-height:1.4em}
+.boot .btn{margin-top:18px}
+@media (prefers-reduced-motion:reduce){
+  .hero:before,.sys-ok i,.sys-ticker,.boot-bar i,.tab,.view.active,.scanlines{animation:none!important}
+  .sys-ticker{transform:none;flex-wrap:wrap;white-space:normal;justify-content:center}
+  .view.active{opacity:1;transform:none}
+  .scanlines{opacity:.2}
+  #hudbg{display:none}
+}
+@media (max-width:759px){
+  .hud-clock{text-align:left;min-width:0}
+  #clock{font-size:20px}
+  h1{font-size:20px;letter-spacing:.04em}
+  .hero{flex-wrap:nowrap;align-items:center;gap:4px;margin:6px 0 4px;min-height:0;max-height:130px}
+  .hero:before{width:64px;height:64px;opacity:.5}
+  .hero-ring{flex:1 1 0;min-width:0;padding:2px 0 4px;border-radius:12px}
+  .hero-ring svg{width:72px;height:72px;max-width:72px}
+  .hero-lab{font-size:8px;letter-spacing:.08em;margin-top:1px;line-height:1.2}
+  .hero-sub{font-size:8px;line-height:1.2;margin-top:0}
+  .sys-ticker-wrap{mask-image:none;margin:6px 0 2px}
+  .hud-top{margin-bottom:2px}
+}
+
 </style>
 </head>
 <body>
+<canvas id="hudbg" aria-hidden="true"></canvas>
 <div class="backdrop" aria-hidden="true"><i></i><i></i><i></i></div>
-<div id="app">
-  <div class="top">
-    <div><div class="kicker">Sites By Charlie · Bot team</div><h1>Mission <span>Control</span></h1></div>
-    <div class="stats" id="stats"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div id="boot" class="boot" role="dialog" aria-label="Systems boot" aria-live="polite">
+  <div class="boot-inner">
+    <div class="boot-kicker">SITES BY CHARLIE</div>
+    <div class="boot-title">MISSION CONTROL</div>
+    <div class="boot-bar"><i></i></div>
+    <div class="boot-log" id="bootLog">Establishing uplink…</div>
+    <button type="button" class="btn" id="bootSkip">Skip</button>
   </div>
+</div>
+<div id="app">
+  <header class="hud-top">
+    <div>
+      <div class="kicker">Command interface · Europe/Dublin</div>
+      <h1>SITES BY CHARLIE<span class="dash">—</span><span class="em">MISSION CONTROL</span></h1>
+    </div>
+    <div class="hud-clock">
+      <div id="clock">--:--:--</div>
+      <div id="clockDate">Europe/Dublin</div>
+      <div class="sys-ok"><i></i> SYSTEMS ONLINE</div>
+    </div>
+  </header>
+  <div class="hero" id="hero"></div>
+  <div class="sys-ticker-wrap" aria-label="Systems status"><div class="sys-ticker" id="sysTicker"></div></div>
+  <div class="stats" id="stats"></div>
   <div class="feed"><span class="live">● FEED</span><span class="mono" id="feedT" style="color:var(--muted);font-size:12px"></span><b id="feedWho" style="color:var(--red)"></b><span id="feedText"></span><span class="mono" id="feedN" style="color:var(--faint);font-size:11px"></span></div>
   <nav class="tabs" id="tabs"></nav>
   <section class="view" id="v-org"></section>
@@ -119,6 +216,7 @@ th{background:rgba(0,0,0,.55)}
   <section class="view" id="v-sendplan"></section>
   <section class="view" id="v-clients"></section>
   <section class="view" id="v-opps"></section>
+  <section class="view" id="v-visits"></section>
   <section class="view" id="v-revenue"></section>
   <div class="foot" id="foot"></div>
 </div>
@@ -129,8 +227,8 @@ th{background:rgba(0,0,0,.55)}
    Privacy: no emails, social handles or phone numbers belong here.
    ===================================================================== */
 const DATA = {
- "asOf": "23 Nov 2026, 15:57 Dublin",
- "asOfISO": "2026-11-23T15:57+00:00",
+ "asOf": "23 Nov 2026, 16:07 Dublin",
+ "asOfISO": "2026-11-23T16:07+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-23 ~15:48 Europe/Dublin",
@@ -198,9 +296,9 @@ const DATA = {
    "acts": [
     "Confirmed Aoife and Steph Instagram DMs sent (23 Nov)",
     "Said Bar-Strength and Zoee DMs are approved/done (logged 23 Nov; DMer to confirm times)",
-    "Binned Station House Dental (Closed/Lost, 23 Nov)",
+    "Closed the Station House Dental lead as lost (23 Nov)",
     "Asked for a T's Barbers Facebook or Booksy DM on Wed 25",
-    "Keep Don Maguire commitment target by Fri 27"
+    "Keeping the Don Maguire commitment target of Friday, 27 Nov"
    ],
    "queue": [
     "Approve the T's Barbers Facebook or Booksy DM (Wed 25)",
@@ -217,9 +315,9 @@ const DATA = {
    "status": "waiting",
    "last": "23 Nov 15:45",
    "acts": [
-    "Logged Aoife and Steph DMs as sent 23 Nov (no earlier date on record) and set email follow-ups for Wed 25",
+    "Logged Aoife and Steph messages as sent on 23 Nov and set email follow-ups for Wednesday, 25 Nov",
     "Logged Bar-Strength and Zoee DMs as sent 23 Nov (DMer to confirm exact times) and scheduled email follow-ups for Wed 25",
-    "Binned Station House Dental: Closed/Lost, no further follow-ups",
+    "Closed the Station House Dental lead as lost, with no further follow-ups",
     "Added a T's Barbers Facebook or Booksy DM for Wed 25, pending Charlie's approval",
     "Kept Don Maguire target: commitment by Fri 27"
    ],
@@ -305,10 +403,10 @@ const DATA = {
    "status": "waiting",
    "last": "23 Nov 15:17",
    "acts": [
-    "Sent 4 follow-ups at ~15:17 as replies in their original threads, after Charlie's 15:16 go",
-    "Donegal Denture one-off extra sent; sequence ENDED",
+    "Sent four follow-up emails at 15:17, as replies in their original threads, after Charlie's go-ahead at 15:16",
+    "Sent a one-off extra to Donegal Denture Clinic; that sequence has ended",
     "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thu 26 Nov, Day 14 Tue 1 Dec",
-    "Fitsquad Day 5 dropped today; Errigal ended; Station House binned 23 Nov (Closed/Lost), no further follow-ups"
+    "Fitsquad's Day 5 was dropped; the Errigal sequence has ended; Station House Dental was closed as lost on 23 Nov, with no further follow-ups"
    ],
    "queue": [
     "9 catch-ups for the 16 Nov batch (Tue 24)",
@@ -421,7 +519,7 @@ const DATA = {
    "status": "idle",
    "last": "7 Nov 19:21",
    "acts": [
-    "Trashed 18 approved pages from the Notion buyer draft",
+    "Removed 18 approved pages from the Notion buyer draft",
     "Draft still private and not sale-ready"
    ],
    "queue": [
@@ -451,7 +549,7 @@ const DATA = {
    "status": "waiting",
    "last": "22 Nov 20:12",
    "acts": [
-    "Burn Studio 'Photos and Info Needed' doc done",
+    "Finished the Burn Studio photos-and-info briefing",
     "Burn Studio Google Business Profile setup doc done"
    ],
    "queue": [
@@ -480,102 +578,102 @@ const DATA = {
   {
    "t": "23 Nov 15:48",
    "who": "Charlie",
-   "text": "Confirmed Aoife and Steph DMs sent; Bar-Strength and Zoee done; binned Station House; T's Barbers DM planned for Wed 25"
+   "text": "Confirmed four Instagram DMs sent (Aoife, Steph, Bar-Strength and Zoee). Station House Dental is closed as lost. A Facebook or Booksy message to T's Barbers is planned for Wednesday, 25 Nov."
   },
   {
    "t": "23 Nov 15:48",
    "who": "Chief",
-   "text": "Logged 4 confirmed DMs for 23 Nov; email follow-ups set for Wed 25; Station House Closed/Lost; Don commitment still due Fri 27"
+   "text": "Logged four confirmed DMs for 23 Nov. Email follow-ups set for Wednesday, 25 Nov. Station House Dental is closed as lost. Don Maguire's commitment is still due by Friday, 27 Nov."
   },
   {
    "t": "23 Nov 15:45",
    "who": "Chief",
-   "text": "Refreshed every bot card from transcripts; Tapa Fri email skipped (no public email); T's next step is Facebook or Booksy"
+   "text": "Refreshed every bot card from today's transcripts. Tapa Gym has no public email, so the Friday email is skipped. T's Barbers will be reached via Facebook or Booksy."
   },
   {
    "t": "23 Nov 15:42",
    "who": "Prospector",
-   "text": "Confirmed Tapa Gym has no public email; remaining channel is phone"
+   "text": "Confirmed Tapa Gym has no public email. The remaining channel is phone."
   },
   {
    "t": "23 Nov 15:42",
    "who": "Emailer",
-   "text": "Tapa cannot go on the email list (no public email); Friday first-touch slot skipped"
+   "text": "Tapa Gym cannot go on the email list (no public email). The Friday first-touch slot is skipped."
   },
   {
    "t": "23 Nov 15:39",
    "who": "DMer",
-   "text": "Charlie confirmed the Tapa Instagram DM went out on 16 Nov and is still unseen"
+   "text": "Charlie confirmed the Tapa Gym Instagram message went out on 16 Nov and has not been seen yet."
   },
   {
    "t": "23 Nov 15:17",
    "who": "Chaser",
-   "text": "Sent 4 follow-ups: Donegal Denture extra (sequence ended), Day 5 for Limitless, O'Flaherty and Pure Grit"
+   "text": "Sent four follow-up emails: a final extra to Donegal Denture Clinic (sequence ended), and Day 5 notes to Limitless, O'Flaherty and Pure Grit."
   },
   {
    "t": "23 Nov 15:10",
    "who": "Emailer",
-   "text": "T's Barbers first-touch bounced (550, address does not exist); Day 5 email follow-up cancelled"
+   "text": "The first-touch email to T's Barbers bounced; the address is not valid. The email follow-up has been cancelled."
   },
   {
    "t": "23 Nov 15:11",
    "who": "Emailer",
-   "text": "Sent 5 first-touch emails: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic"
+   "text": "Sent five first-touch emails: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers and AAlba Foot Clinic. The T's Barbers message later bounced."
   },
   {
    "t": "23 Nov 15:08",
    "who": "DMer",
-   "text": "Charlie approved Aoife McGill and Steph Fit DMs; he is sending them himself, awaiting confirmation"
+   "text": "Charlie approved the Aoife McGill and Steph Fit messages and sent them himself."
   },
   {
    "t": "23 Nov 14:54",
    "who": "DMer",
-   "text": "Steph Fit's DM rewritten to a modern-refresh angle; Aoife's unchanged"
+   "text": "Steph Fit's message was rewritten to a modern-refresh angle; Aoife's was left unchanged."
   },
   {
    "t": "23 Nov 14:54",
    "who": "Emailer",
-   "text": "Aoife and Steph emails queued for Wed 25, held until their DMs are sent"
+   "text": "Aoife and Steph follow-up emails are queued for Wednesday, 25 Nov."
   },
   {
    "t": "23 Nov 14:35",
    "who": "Chaser",
-   "text": "4 follow-ups verified and ready: Denture, Limitless, O'Flaherty, Pure Grit"
+   "text": "Four follow-up emails were verified and ready: Donegal Denture Clinic, Limitless, O'Flaherty and Pure Grit."
   },
   {
    "t": "23 Nov 14:35",
    "who": "Chaser",
-   "text": "Station House held: its site is back up, so the draft would be wrong"
+   "text": "Station House Dental was held back because its site is back up, so the follow-up draft would have been wrong."
   },
   {
    "t": "23 Nov 14:28",
    "who": "Charlie",
-   "text": "Errigal extra binned and its sequence ended"
+   "text": "The extra Errigal follow-up was dropped and its sequence ended."
   },
   {
    "t": "23 Nov 14:26",
    "who": "Chief",
-   "text": "Asked DMer and Emailer for today's 5 DMs and 5 emails, nothing sent"
+   "text": "Asked DMer and Emailer for that day's five DMs and five emails; nothing was sent then."
   },
   {
    "t": "23 Nov 08:56",
    "who": "Chaser",
-   "text": "Daily check: no replies, no bounces, nothing sent since 19 Nov"
+   "text": "Daily check: no replies, no bounces, and nothing sent since 19 Nov."
   },
   {
    "t": "22 Nov 20:12",
    "who": "Fixer",
-   "text": "Two Burn Studio docs finished in Drive, not shared"
+   "text": "Two Burn Studio documents were finished in Drive and have not been shared yet."
   },
   {
    "t": "22 Nov 20:04",
    "who": "Onboarder",
-   "text": "Jenny's terms confirmed: €0 build, 3 months free, €100/mo"
+   "text": "Jenny's terms were confirmed: no build fee, three months free, then €100 a month."
   },
   {
    "t": "22 Nov 18:30",
    "who": "Prospector",
-   "text": "25 Ireland-wide fitness leads delivered and routed"
+   "text": "Twenty-five Ireland-wide fitness leads were delivered and routed."
   }
  ],
  "workflows": [
@@ -1576,7 +1674,7 @@ const DATA = {
    "first": "2026-11-05",
    "stage": "Sequence ended",
    "overdue": "",
-   "next": "Sequence ended (extra binned, not sent)",
+   "next": "Sequence ended (the extra follow-up was dropped and not sent).",
    "response": "Sequence ended",
    "fitness": false
   },
@@ -1600,7 +1698,7 @@ const DATA = {
    "first": "2026-11-05",
    "stage": "Sequence ended",
    "overdue": "",
-   "next": "Binned 23 Nov by Charlie. Closed/Lost. No further follow-ups.",
+   "next": "Closed as lost on 23 Nov by Charlie. No further follow-ups.",
    "response": "Sequence ended",
    "fitness": false
   },
@@ -1900,7 +1998,7 @@ const DATA = {
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Coach-proof Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1908,7 +2006,7 @@ const DATA = {
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Modern-refresh Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1916,7 +2014,7 @@ const DATA = {
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1924,7 +2022,7 @@ const DATA = {
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1997,38 +2095,6 @@ const DATA = {
    "type": "Follow-up (Day 5)",
    "angle": "Day 5 follow-up — typo and Eircode still there; strongman, powerlifting, bodybuilding and ",
    "outcome": "No reply"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Aoife McGill Personal Training",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Coach-proof Instagram DM",
-   "outcome": "Sent by Charlie"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Steph Fit Coaching",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Modern-refresh Instagram DM",
-   "outcome": "Sent by Charlie"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Calisthenics Sligo / Bar-Strength",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Instagram DM",
-   "outcome": "Sent (DMer to confirm exact time)"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Zoee Feeney Fitness",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Instagram DM",
-   "outcome": "Sent (DMer to confirm exact time)"
   },
   {
    "date": "2026-11-19",
@@ -2267,7 +2333,7 @@ const DATA = {
  "batches": [
   {
    "label": "5 Nov dental (3)",
-   "detail": "Day 14 finals sent 19 Nov. Errigal's extra was binned and its sequence ended (23 Nov). Station House's extra is held. Donegal Denture's extra is ready for today."
+   "detail": "Day 14 finals were sent on 19 Nov. Errigal's extra follow-up was dropped and its sequence ended (23 Nov). Station House Dental was closed as lost on 23 Nov. The one-off extra to Donegal Denture Clinic was sent on 23 Nov and that sequence has ended."
   },
   {
    "label": "16 Nov batch (9 + 1 bounce)",
@@ -2292,13 +2358,13 @@ const DATA = {
   "emailFitness": 24
  },
  "outreach": {
-  "dmsThisWeek": 8,
+  "dmsThisWeek": 4,
   "dmTarget": 25,
   "emailsThisWeek": 8,
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie 23 Nov; Bar-Strength and Zoee Feeney logged as sent 23 Nov, DMer to confirm exact times). Tapa Gym was DM'd by Charlie on 16 Nov (Unseen) and counts in last week, not w/c 23 Nov. Email follow-ups for those four DMs are scheduled Wed 25 Nov (2–3 days later). Bar-Strength has no email in current drafts; Emailer to confirm whether a public address exists before sending. T's Barbers: Facebook or Booksy DM planned Wed 25 Nov (DMer drafting; needs Charlie's approval); no email follow-ups queued. Station House Dental was binned by Charlie on 23 Nov (Closed/Lost); no further follow-ups. Don Maguire remains Verbal yes, awaiting commitment by Fri 27 Nov. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 and 4 first-touches delivered ~15:11; T's Barbers bounced (550) and is not counted as delivered. One warm reply logged (Reform, 13 Nov)."
+  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. Email follow-ups for those four DMs are scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One warm reply is logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
  "sendPlanTarget": 80,
@@ -2341,7 +2407,7 @@ const DATA = {
    "name": "Station House Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Binned",
+   "status": "Closed as lost",
    "warm": false
   },
   {
@@ -2359,7 +2425,7 @@ const DATA = {
    "name": "Errigal Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Binned",
+   "status": "Dropped",
    "warm": false
   },
   {
@@ -2989,7 +3055,7 @@ const DATA = {
    "name": "Tapa Gym",
    "action": "First-touch email",
    "fitness": true,
-   "status": "Skipped — no public email; Charlie DM'd 16 Nov; remaining channel is phone",
+   "status": "Skipped — no public email; Charlie messaged on 16 Nov; remaining channel is phone",
    "warm": false
   },
   {
@@ -3271,7 +3337,7 @@ var C={bg:"#000000",panel:"rgba(14,14,16,0.62)",panel2:"rgba(70,12,12,0.62)",ink
 /* Brand theme (sitesbycharlie.ie :root): black #000000, crimson #8E1616, red #D84040, light #EEEEEE, green #72c992 */
 var T={red:"#D84040",crimson:"#8E1616",light:"#EEEEEE",green:"#72c992",track:"rgba(238,238,238,0.08)"};
 var SC={working:C.green,waiting:C.amber,idle:C.gray,ceo:C.crimson,side:C.faint};
-var SL={working:"Working",waiting:"Waiting on Charlie",idle:"Idle",ceo:"CEO",side:"Standalone"};
+var SL={working:"Working",waiting:"Waiting on Charlie",idle:"Idle",ceo:"Commander",side:"Standalone"};
 var showFig=false, tick=0, sel="chief", hover=null, mobile=null, tab="org";
 var $=function(id){return document.getElementById(id);};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
@@ -3288,6 +3354,110 @@ applyData(DATA);
 function groupColor(b){if(b.group==="top")return b.id==="charlie"?C.crimson:C.cyan;if(b.group==="side")return C.faint;for(var i=0;i<GROUPS.length;i++)if(GROUPS[i].id===b.group)return GROUPS[i].color;return C.cyan;}
 function count(s){return team.filter(function(b){return b.status===s;}).length;}
 
+
+function reduceMotion(){return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;}
+function dublinNow(){return new Date();}
+function tickClock(){
+  var el=$("clock"), d=$("clockDate"); if(!el)return;
+  var fmt=function(opts){return new Intl.DateTimeFormat("en-IE",opts).format(dublinNow());};
+  el.textContent=fmt({timeZone:"Europe/Dublin",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"});
+  if(d)d.textContent=fmt({timeZone:"Europe/Dublin",weekday:"short",day:"2-digit",month:"short",year:"numeric"})+" · Europe/Dublin";
+}
+function ringSvg(pct, color, label, valueHtml, sub, spin){
+  var p=Math.max(0,Math.min(1,pct||0)), r=52, c=2*Math.PI*r, dash=(c*p).toFixed(1), gap=(c-c*p).toFixed(1);
+  var spinEl=reduceMotion()?"":'<circle cx="70" cy="70" r="62" fill="none" stroke="'+color+'" stroke-opacity="0.28" stroke-width="1" stroke-dasharray="3 9"><animateTransform attributeName="transform" type="rotate" from="0 70 70" to="360 70 70" dur="'+(spin||18)+'s" repeatCount="indefinite"/></circle>';
+  return '<div class="hero-ring glass"><svg viewBox="0 0 140 140" width="100%" height="100%">'+spinEl+
+    '<circle cx="70" cy="70" r="'+r+'" fill="none" stroke="'+T.track+'" stroke-width="8"/>'+
+    '<circle cx="70" cy="70" r="'+r+'" fill="none" stroke="'+color+'" stroke-width="8" stroke-linecap="round" transform="rotate(-90 70 70)" stroke-dasharray="'+dash+' '+gap+'"/>'+
+    '<circle cx="70" cy="70" r="38" fill="none" stroke="'+color+'" stroke-opacity="0.2" stroke-width="1"/>'+
+    '<text x="70" y="76" text-anchor="middle" fill="'+C.ink+'" font-size="18" font-weight="700" font-family="Orbitron,system-ui,sans-serif">'+valueHtml+'</text></svg>'+
+    '<div class="hero-lab">'+esc(label)+'</div><div class="hero-sub">'+esc(sub)+'</div></div>';
+}
+function renderHero(){
+  var el=$("hero"); if(!el)return;
+  var o=D.outreach||{}, R=D.revenue||{};
+  var inPlay=0, tot=(D.prospects||[]).length;
+  (D.prospects||[]).forEach(function(p){if(p.stage!=="New"&&p.stage!=="Lost")inPlay++;});
+  var dm=o.dmsThisWeek||0, dmt=o.dmTarget||25;
+  var mrr=R.mrr||0, pot=R.potentialMrr||mrr;
+  var mrrVal=showFig?esc(eur(mrr)):'<tspan fill="'+C.faint+'">•••</tspan>';
+  var mrrSub=showFig?("Potential "+eur(pot)):"Figures hidden";
+  var dmSub=mobile?("of "+dmt):("Target "+dmt+" · "+(o.thisWeekLabel||""));
+  var pipeSub=mobile?("of "+tot+" prospects"):("In play of "+tot+" prospects");
+  var mrrSubMob=mobile?(showFig?("of "+eur(pot)):"Hidden"):mrrSub;
+  el.innerHTML=ringSvg(pot?mrr/pot:0,T.green,"Contracted MRR",mrrVal,mrrSubMob,22)+
+    ringSvg(dmt?dm/dmt:0,T.red,"DMs this week",String(dm),dmSub,14)+
+    ringSvg(tot?inPlay/tot:0,T.light,"Pipeline",String(inPlay),pipeSub,18);
+}
+function renderSysTicker(){
+  var el=$("sysTicker"); if(!el)return;
+  var bits=[];
+  Object.keys(BOTS).forEach(function(id){
+    var b=BOTS[id]; if(!b||b.status==="side")return;
+    var cls=b.status==="working"?"ok":b.status==="waiting"?"wait":"idle";
+    bits.push('<span class="'+cls+'"><b>'+esc(b.name.toUpperCase())+'</b> · last active '+esc(b.last)+' · '+esc(SL[b.status].toUpperCase())+'</span>');
+  });
+  var line='<span>SYSTEMS ONLINE</span>&nbsp;&nbsp;//&nbsp;&nbsp;'+bits.join('&nbsp;&nbsp;//&nbsp;&nbsp;')+'&nbsp;&nbsp;//&nbsp;&nbsp;';
+  el.innerHTML=line+line;
+}
+function startBoot(){
+  var el=$("boot"); if(!el)return;
+  function hide(){el.classList.add("off"); setTimeout(function(){el.setAttribute("hidden","hidden");},450); try{sessionStorage.setItem("sbcMcBooted","1");}catch(e){}}
+  var skip=false; try{skip=reduceMotion()||sessionStorage.getItem("sbcMcBooted")==="1";}catch(e){}
+  if(skip){hide();return;}
+  var lines=["Establishing uplink…","Syncing agent grid…","Systems online."], i=0, log=$("bootLog");
+  var iv=setInterval(function(){i++; if(log&&lines[i])log.textContent=lines[i];}, 320);
+  var done=false;
+  function finish(){if(done)return; done=true; clearInterval(iv); hide();}
+  if($("bootSkip"))$("bootSkip").onclick=finish;
+  document.addEventListener("keydown",function sk(){finish(); document.removeEventListener("keydown",sk);});
+  setTimeout(finish, 1050);
+}
+function startHudBg(){
+  var c=$("hudbg"); if(!c||!c.getContext||reduceMotion()){if(c)c.style.display="none"; return;}
+  var ctx=c.getContext("2d"), pts=[], running=true, last=0;
+  function resize(){c.width=window.innerWidth; c.height=window.innerHeight;}
+  resize(); window.addEventListener("resize", resize);
+  var n=window.innerWidth<760?28:48;
+  for(var i=0;i<n;i++)pts.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-0.5)*0.18,vy:(Math.random()-0.4)*0.22,r:Math.random()*1.4+0.4});
+  document.addEventListener("visibilitychange",function(){running=!document.hidden; if(running)requestAnimationFrame(draw);});
+  function draw(ts){
+    if(!running)return;
+    if(ts-last<33){requestAnimationFrame(draw);return;}
+    last=ts;
+    var w=c.width,h=c.height;
+    ctx.clearRect(0,0,w,h);
+    var gy=((ts/60)%36);
+    ctx.strokeStyle="rgba(216,64,64,0.07)"; ctx.lineWidth=1;
+    for(var y=gy;y<h;y+=36){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke();}
+    for(var x=0;x<w;x+=36){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke();}
+    var scan=(ts/8)%h;
+    ctx.fillStyle="rgba(216,64,64,0.05)"; ctx.fillRect(0,scan,w,18);
+    ctx.fillStyle="rgba(216,64,64,0.7)";
+    pts.forEach(function(p){
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<0)p.x=w; if(p.x>w)p.x=0; if(p.y<0)p.y=h; if(p.y>h)p.y=0;
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+}
+function bindTilt(){
+  if(reduceMotion()||(window.matchMedia&&window.matchMedia("(pointer:coarse)").matches))return;
+  var cur=null;
+  document.addEventListener("pointermove",function(e){
+    var card=e.target.closest?e.target.closest(".card, .opp, .roster .bot, .panel, .hero-ring"):null;
+    if(cur&&cur!==card){cur.style.transform=""; cur.classList.remove("holo-hot"); cur=null;}
+    if(!card)return;
+    cur=card;
+    var r=card.getBoundingClientRect(), px=(e.clientX-r.left)/r.width-0.5, py=(e.clientY-r.top)/r.height-0.5;
+    card.style.transform="perspective(900px) rotateY("+((px*7).toFixed(2))+"deg) rotateX("+((-py*6).toFixed(2))+"deg) translateZ(4px)";
+    card.classList.add("holo-hot");
+  });
+  document.addEventListener("pointerleave",function(){if(cur){cur.style.transform=""; cur.classList.remove("holo-hot"); cur=null;}}, true);
+}
+
 /* ---------- header ---------- */
 function renderStats(){
   $("stats").innerHTML='<span style="color:'+C.green+'">● '+count("working")+' working</span><span style="color:'+C.amber+'">● '+count("waiting")+' waiting on Charlie</span><span style="color:'+C.gray+'">● '+count("idle")+' idle</span>'+
@@ -3303,7 +3473,7 @@ function updateLoaded(){var el=$("loaded");if(!el)return;var t=loadedAt.toLocale
 function renderFeed(){var f=D.ticker[tick%D.ticker.length];var tx=$("feedText");tx.style.opacity=0;setTimeout(function(){$("feedT").textContent=f.t;$("feedWho").textContent=f.who;tx.textContent=f.text;$("feedN").textContent=(tick%D.ticker.length+1)+"/"+D.ticker.length;tx.style.opacity=1;},150);}
 
 /* ---------- tabs ---------- */
-var TABS=[["org","Org chart"],["pipeline","Pipeline"],["outreach","Outreach"],["history","Outreach history"],["sendplan","Send plan"],["clients","Clients"],["opps","Opportunities"],["revenue","Revenue"]];
+var TABS=[["org","Org chart"],["pipeline","Pipeline"],["outreach","Outreach"],["history","Outreach history"],["sendplan","Send plan"],["clients","Clients"],["opps","Opportunities"],["visits","Visits"],["revenue","Revenue"]];
 function renderTabs(){
   $("tabs").innerHTML=TABS.map(function(t){return '<button class="tab'+(tab===t[0]?' active':'')+'" data-tab="'+t[0]+'">'+t[1]+'</button>';}).join("");
   Array.prototype.forEach.call(document.querySelectorAll(".tab"),function(b){b.onclick=function(){tab=b.getAttribute("data-tab");if(history.replaceState)history.replaceState(null,"","#"+tab);renderTabs();showView();};});
@@ -3351,7 +3521,8 @@ function renderOrg(){
     if(pulse)s.push('<circle cx="'+cx+'" cy="'+p.y+'" r="7" fill="none" stroke="'+col+'" stroke-width="2"><animate attributeName="r" values="7;19" dur="'+pulse+'" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0" dur="'+pulse+'" repeatCount="indefinite"/></circle>');
     s.push('<circle cx="'+cx+'" cy="'+p.y+'" r="6.5" fill="'+col+'"/>');
     s.push('<text x="'+(x0+40)+'" y="'+(p.y-6)+'" fill="'+C.ink+'" font-size="15" font-weight="700">'+esc(b.name)+'</text>');
-    s.push('<text x="'+(x0+L.nw-12)+'" y="'+(p.y-6)+'" fill="'+col+'" font-size="9" font-weight="700" text-anchor="end" letter-spacing="0.08em">'+esc(SL[b.status].toUpperCase().replace("WAITING ON CHARLIE","WAITING"))+'</text>');
+    s.push('<text x="'+(x0+L.nw-12)+'" y="'+(p.y-6)+'" fill="'+col+'" font-size="9" font-weight="700" text-anchor="end" letter-spacing="0.08em">'+esc((id==="charlie"?"COMMANDER":SL[b.status].toUpperCase().replace("WAITING ON CHARLIE","WAITING")))+'</text>');
+    if(id==="charlie")s.push('<rect x="'+(x0-5)+'" y="'+(y0-5)+'" width="'+(L.nw+10)+'" height="'+(L.nh+10)+'" rx="16" fill="none" stroke="#D84040" stroke-opacity="0.7" stroke-width="1.2" stroke-dasharray="5 7"><animate attributeName="stroke-dashoffset" values="0;24" dur="5s" repeatCount="indefinite"/></rect>');
     s.push('<text data-act="'+id+'" x="'+(x0+40)+'" y="'+(p.y+13)+'" fill="'+(b.status==="idle"?C.faint:C.muted)+'" font-size="10.5">'+esc(clip(actText(b),mobile?40:30))+'</text></g>');});
   if(!mobile)s.push('<text x="'+L.pos.labrat.x+'" y="'+(L.pos.labrat.y+46)+'" text-anchor="middle" fill="'+C.faint+'" font-size="10">Standalone · not part of the team</text>');
   s.push('</svg>');
@@ -3362,13 +3533,13 @@ function renderOrg(){
   renderPanel();renderRoster();
 }
 function wfLayout(wf,mob){
-  var nodes=wf.nodes||[], pos={}, nw=mob?300:200, nh=mob?78:86, w,h;
+  var nodes=wf.nodes||[], pos={}, nw=mob?280:200, nh=mob?80:80, w,h;
   if(!mob){
-    w=1280; var gap=w/(nodes.length); nodes.forEach(function(n,i){pos[n.id]={x:gap*(i+0.5),y:100};});
-    h=250;
+    w=1280; var gap=w/(nodes.length); nodes.forEach(function(n,i){pos[n.id]={x:gap*(i+0.5),y:86};});
+    h=230;
   }else{
-    w=400; nodes.forEach(function(n,i){pos[n.id]={x:200,y:54+i*160};});
-    h=54+nodes.length*160+16;
+    w=400; nodes.forEach(function(n,i){pos[n.id]={x:200,y:50+i*200};});
+    h=50+nodes.length*200+8;
   }
   return {w:w,h:h,nw:nw,nh:nh,pos:pos};
 }
@@ -3388,18 +3559,28 @@ function renderWorkflows(){
       var d="M"+x1+","+y1+" L"+x2+","+y2;
       s.push('<path d="'+d+'" fill="none" stroke="url(#wf-wire-'+uid+')" stroke-opacity="0.55" stroke-width="2.2"/><path d="'+d+'" fill="none" stroke="#ff5a5a" stroke-opacity="0.95" stroke-width="1.6" stroke-dasharray="4 12" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="32;0" dur="1.8s" repeatCount="indefinite"/></path>');
       s.push('<circle r="2.6" fill="#ffd5d5"><animateMotion dur="3.2s" begin="'+(i*0.4)+'s" repeatCount="indefinite" path="'+d+'"/></circle>');
-      if(e.label){
-        var mx=(x1+x2)/2, my=(y1+y2)/2;
-        var raw=String(e.label), lines=[], rest=raw, max=mobile?36:28;
-        while(rest.length>max){var cut=rest.lastIndexOf(" ",max); if(cut<12)cut=max; lines.push(rest.slice(0,cut)); rest=rest.slice(cut).replace(/^\s+/,""); }
-        if(rest)lines.push(rest);
-        var ty=mobile?my-10:my+18;
-        lines.forEach(function(line,li){
-          s.push('<text x="'+mx+'" y="'+(ty+li*13)+'" text-anchor="middle" fill="#ffb4b4" font-size="10.5" font-weight="600">'+esc(line)+'</text>');
-        });
-      }
     });
     s.push('</g>');
+    (wf.edges||[]).forEach(function(e){
+      var a=L.pos[e.from], b=L.pos[e.to]; if(!a||!b||!e.label)return;
+      var raw=String(e.label), lines=[], rest=raw, max=mobile?28:38;
+      while(rest.length>max){var cut=rest.lastIndexOf(" ",max); if(cut<10)cut=max; lines.push(rest.slice(0,cut)); rest=rest.slice(cut).replace(/^\s+/,""); }
+      if(rest)lines.push(rest);
+      var mx, ty, lw, lh;
+      if(mobile){
+        mx=200; ty=((a.y+L.nh/2)+(b.y-L.nh/2))/2 - (lines.length*13)/2 + 10;
+      }else{
+        mx=(a.x+b.x)/2;
+        ty=a.y+L.nh/2+22;
+      }
+      lw=0; lines.forEach(function(line){if(line.length>lw)lw=line.length;});
+      lh=lines.length*13+10;
+      var rw=Math.min(mobile?260:300, lw*6.6+20), rh=lh, rx=mx-rw/2, ry=ty-14;
+      s.push('<rect x="'+rx.toFixed(1)+'" y="'+ry.toFixed(1)+'" width="'+rw.toFixed(1)+'" height="'+rh+'" rx="6" fill="rgba(0,0,0,0.78)" stroke="rgba(216,64,64,0.35)" stroke-width="0.8"/>');
+      lines.forEach(function(line,li){
+        s.push('<text x="'+mx+'" y="'+(ty+li*13)+'" text-anchor="middle" fill="#ffc9c9" font-size="11" font-weight="600">'+esc(line)+'</text>');
+      });
+    });
     (wf.nodes||[]).forEach(function(n){
       var p=L.pos[n.id]; if(!p)return;
       var bot=BOTS[n.id], kind=n.kind||(bot?"bot":"start");
@@ -3517,7 +3698,7 @@ function renderSendPlan(){
   h+='<div class="filters" style="margin-top:14px">'+opts("sfKind","Channel",["All","Email","DM"],sf.kind)+'</div>';
   D.sendDays.forEach(function(d){var items=D.sendPlan.filter(function(x){return x.day===d.day&&(sf.kind==="All"||x.kind===sf.kind);});
     h+='<div class="sec">'+esc(d.day)+' <span class="small" style="letter-spacing:0;text-transform:none">· target '+d.emails+' emails, '+d.dms+' DMs</span></div>';
-    h+=table(["Channel","Business","Action","Tag","Status"],items.map(function(x){return [esc(x.kind),esc(x.name),esc(x.action),x.fitness?pill("Fitness",C.crimson):x.warm?pill("Warm",T.green):"—",pill(x.status,x.status==="Sent"?T.green:/Pending|Ready|Awaiting/.test(x.status)?C.amber:/Binned|Dropped/.test(x.status)?T.crimson:T.light)];}));});
+    h+=table(["Channel","Business","Action","Tag","Status"],items.map(function(x){return [esc(x.kind),esc(x.name),esc(x.action),x.fitness?pill("Fitness",C.crimson):x.warm?pill("Warm",T.green):"—",pill(x.status,x.status==="Sent"?T.green:/Pending|Ready|Awaiting/.test(x.status)?C.amber:/Closed|Dropped|Binned|Skipped/.test(x.status)?T.crimson:T.light)];}));});
   h+='<div class="sec">Spills to next week</div><div class="small">'+esc(D.spillList.join(", "))+'.</div>';
   $("v-sendplan").innerHTML=h;$("sfKind").onchange=function(e){sf.kind=e.target.value;renderSendPlan();};
 }
@@ -3554,13 +3735,24 @@ function renderRevenue(){
   $("v-revenue").innerHTML=h;
 }
 
-function renderAll(){renderOrg();renderPipeline();renderOutreach();renderHistory();renderSendPlan();renderClients();renderOpps();renderRevenue();}
-function checkLayout(){var m=window.innerWidth<760;if(m!==mobile){mobile=m;renderOrg();}}
+function renderVisits(){
+  var el=$("v-visits"); if(!el)return;
+  var v=D.visits||[], note=D.visitsNote||"";
+  var h='<div class="sec" style="margin-top:0">In-person visits</div>';
+  if(!v.length)h+='<div class="small">No visits logged yet.</div>';
+  else h+=table(["Business","Opportunity","Target day","Purpose","Status","Notes"], v.map(function(x){return [esc(x.business||""),esc(x.opportunity||""),esc(x.targetDay||""),esc(x.purpose||""),pill(x.status||"", x.status==="Done"?T.green:x.status==="Skipped"?C.muted:T.red),esc(x.notes||"")];}));
+  if(note)h+='<div class="hint">'+esc(note)+'</div>';
+  el.innerHTML=h;
+}
+function renderAll(){renderHero();renderOrg();renderPipeline();renderOutreach();renderHistory();renderSendPlan();renderClients();renderOpps();renderVisits();renderRevenue();renderSysTicker();}
+function checkLayout(){var m=window.innerWidth<760;if(m!==mobile){mobile=m;renderHero();renderOrg();}}
 
 var h0=(location.hash||"").replace("#","");if(TABS.some(function(t){return t[0]===h0;}))tab=h0;
 $("foot").textContent=D.footer;
 mobile=window.innerWidth<760;
 renderStats();renderTabs();renderAll();showView();renderFeed();
+tickClock(); startBoot(); startHudBg(); bindTilt();
+setInterval(tickClock, 1000);
 function loadData(){
   if(!window.fetch)return;
   fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();}).then(function(d){

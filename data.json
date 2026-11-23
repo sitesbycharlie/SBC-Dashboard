@@ -1,6 +1,6 @@
 {
- "asOf": "23 Nov 2026, 15:57 Dublin",
- "asOfISO": "2026-11-23T15:57+00:00",
+ "asOf": "23 Nov 2026, 16:07 Dublin",
+ "asOfISO": "2026-11-23T16:07+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-23 ~15:48 Europe/Dublin",
@@ -68,9 +68,9 @@
    "acts": [
     "Confirmed Aoife and Steph Instagram DMs sent (23 Nov)",
     "Said Bar-Strength and Zoee DMs are approved/done (logged 23 Nov; DMer to confirm times)",
-    "Binned Station House Dental (Closed/Lost, 23 Nov)",
+    "Closed the Station House Dental lead as lost (23 Nov)",
     "Asked for a T's Barbers Facebook or Booksy DM on Wed 25",
-    "Keep Don Maguire commitment target by Fri 27"
+    "Keeping the Don Maguire commitment target of Friday, 27 Nov"
    ],
    "queue": [
     "Approve the T's Barbers Facebook or Booksy DM (Wed 25)",
@@ -87,9 +87,9 @@
    "status": "waiting",
    "last": "23 Nov 15:45",
    "acts": [
-    "Logged Aoife and Steph DMs as sent 23 Nov (no earlier date on record) and set email follow-ups for Wed 25",
+    "Logged Aoife and Steph messages as sent on 23 Nov and set email follow-ups for Wednesday, 25 Nov",
     "Logged Bar-Strength and Zoee DMs as sent 23 Nov (DMer to confirm exact times) and scheduled email follow-ups for Wed 25",
-    "Binned Station House Dental: Closed/Lost, no further follow-ups",
+    "Closed the Station House Dental lead as lost, with no further follow-ups",
     "Added a T's Barbers Facebook or Booksy DM for Wed 25, pending Charlie's approval",
     "Kept Don Maguire target: commitment by Fri 27"
    ],
@@ -175,10 +175,10 @@
    "status": "waiting",
    "last": "23 Nov 15:17",
    "acts": [
-    "Sent 4 follow-ups at ~15:17 as replies in their original threads, after Charlie's 15:16 go",
-    "Donegal Denture one-off extra sent; sequence ENDED",
+    "Sent four follow-up emails at 15:17, as replies in their original threads, after Charlie's go-ahead at 15:16",
+    "Sent a one-off extra to Donegal Denture Clinic; that sequence has ended",
     "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thu 26 Nov, Day 14 Tue 1 Dec",
-    "Fitsquad Day 5 dropped today; Errigal ended; Station House binned 23 Nov (Closed/Lost), no further follow-ups"
+    "Fitsquad's Day 5 was dropped; the Errigal sequence has ended; Station House Dental was closed as lost on 23 Nov, with no further follow-ups"
    ],
    "queue": [
     "9 catch-ups for the 16 Nov batch (Tue 24)",
@@ -291,7 +291,7 @@
    "status": "idle",
    "last": "7 Nov 19:21",
    "acts": [
-    "Trashed 18 approved pages from the Notion buyer draft",
+    "Removed 18 approved pages from the Notion buyer draft",
     "Draft still private and not sale-ready"
    ],
    "queue": [
@@ -321,7 +321,7 @@
    "status": "waiting",
    "last": "22 Nov 20:12",
    "acts": [
-    "Burn Studio 'Photos and Info Needed' doc done",
+    "Finished the Burn Studio photos-and-info briefing",
     "Burn Studio Google Business Profile setup doc done"
    ],
    "queue": [
@@ -350,102 +350,102 @@
   {
    "t": "23 Nov 15:48",
    "who": "Charlie",
-   "text": "Confirmed Aoife and Steph DMs sent; Bar-Strength and Zoee done; binned Station House; T's Barbers DM planned for Wed 25"
+   "text": "Confirmed four Instagram DMs sent (Aoife, Steph, Bar-Strength and Zoee). Station House Dental is closed as lost. A Facebook or Booksy message to T's Barbers is planned for Wednesday, 25 Nov."
   },
   {
    "t": "23 Nov 15:48",
    "who": "Chief",
-   "text": "Logged 4 confirmed DMs for 23 Nov; email follow-ups set for Wed 25; Station House Closed/Lost; Don commitment still due Fri 27"
+   "text": "Logged four confirmed DMs for 23 Nov. Email follow-ups set for Wednesday, 25 Nov. Station House Dental is closed as lost. Don Maguire's commitment is still due by Friday, 27 Nov."
   },
   {
    "t": "23 Nov 15:45",
    "who": "Chief",
-   "text": "Refreshed every bot card from transcripts; Tapa Fri email skipped (no public email); T's next step is Facebook or Booksy"
+   "text": "Refreshed every bot card from today's transcripts. Tapa Gym has no public email, so the Friday email is skipped. T's Barbers will be reached via Facebook or Booksy."
   },
   {
    "t": "23 Nov 15:42",
    "who": "Prospector",
-   "text": "Confirmed Tapa Gym has no public email; remaining channel is phone"
+   "text": "Confirmed Tapa Gym has no public email. The remaining channel is phone."
   },
   {
    "t": "23 Nov 15:42",
    "who": "Emailer",
-   "text": "Tapa cannot go on the email list (no public email); Friday first-touch slot skipped"
+   "text": "Tapa Gym cannot go on the email list (no public email). The Friday first-touch slot is skipped."
   },
   {
    "t": "23 Nov 15:39",
    "who": "DMer",
-   "text": "Charlie confirmed the Tapa Instagram DM went out on 16 Nov and is still unseen"
+   "text": "Charlie confirmed the Tapa Gym Instagram message went out on 16 Nov and has not been seen yet."
   },
   {
    "t": "23 Nov 15:17",
    "who": "Chaser",
-   "text": "Sent 4 follow-ups: Donegal Denture extra (sequence ended), Day 5 for Limitless, O'Flaherty and Pure Grit"
+   "text": "Sent four follow-up emails: a final extra to Donegal Denture Clinic (sequence ended), and Day 5 notes to Limitless, O'Flaherty and Pure Grit."
   },
   {
    "t": "23 Nov 15:10",
    "who": "Emailer",
-   "text": "T's Barbers first-touch bounced (550, address does not exist); Day 5 email follow-up cancelled"
+   "text": "The first-touch email to T's Barbers bounced; the address is not valid. The email follow-up has been cancelled."
   },
   {
    "t": "23 Nov 15:11",
    "who": "Emailer",
-   "text": "Sent 5 first-touch emails: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic"
+   "text": "Sent five first-touch emails: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers and AAlba Foot Clinic. The T's Barbers message later bounced."
   },
   {
    "t": "23 Nov 15:08",
    "who": "DMer",
-   "text": "Charlie approved Aoife McGill and Steph Fit DMs; he is sending them himself, awaiting confirmation"
+   "text": "Charlie approved the Aoife McGill and Steph Fit messages and sent them himself."
   },
   {
    "t": "23 Nov 14:54",
    "who": "DMer",
-   "text": "Steph Fit's DM rewritten to a modern-refresh angle; Aoife's unchanged"
+   "text": "Steph Fit's message was rewritten to a modern-refresh angle; Aoife's was left unchanged."
   },
   {
    "t": "23 Nov 14:54",
    "who": "Emailer",
-   "text": "Aoife and Steph emails queued for Wed 25, held until their DMs are sent"
+   "text": "Aoife and Steph follow-up emails are queued for Wednesday, 25 Nov."
   },
   {
    "t": "23 Nov 14:35",
    "who": "Chaser",
-   "text": "4 follow-ups verified and ready: Denture, Limitless, O'Flaherty, Pure Grit"
+   "text": "Four follow-up emails were verified and ready: Donegal Denture Clinic, Limitless, O'Flaherty and Pure Grit."
   },
   {
    "t": "23 Nov 14:35",
    "who": "Chaser",
-   "text": "Station House held: its site is back up, so the draft would be wrong"
+   "text": "Station House Dental was held back because its site is back up, so the follow-up draft would have been wrong."
   },
   {
    "t": "23 Nov 14:28",
    "who": "Charlie",
-   "text": "Errigal extra binned and its sequence ended"
+   "text": "The extra Errigal follow-up was dropped and its sequence ended."
   },
   {
    "t": "23 Nov 14:26",
    "who": "Chief",
-   "text": "Asked DMer and Emailer for today's 5 DMs and 5 emails, nothing sent"
+   "text": "Asked DMer and Emailer for that day's five DMs and five emails; nothing was sent then."
   },
   {
    "t": "23 Nov 08:56",
    "who": "Chaser",
-   "text": "Daily check: no replies, no bounces, nothing sent since 19 Nov"
+   "text": "Daily check: no replies, no bounces, and nothing sent since 19 Nov."
   },
   {
    "t": "22 Nov 20:12",
    "who": "Fixer",
-   "text": "Two Burn Studio docs finished in Drive, not shared"
+   "text": "Two Burn Studio documents were finished in Drive and have not been shared yet."
   },
   {
    "t": "22 Nov 20:04",
    "who": "Onboarder",
-   "text": "Jenny's terms confirmed: €0 build, 3 months free, €100/mo"
+   "text": "Jenny's terms were confirmed: no build fee, three months free, then €100 a month."
   },
   {
    "t": "22 Nov 18:30",
    "who": "Prospector",
-   "text": "25 Ireland-wide fitness leads delivered and routed"
+   "text": "Twenty-five Ireland-wide fitness leads were delivered and routed."
   }
  ],
  "workflows": [
@@ -1446,7 +1446,7 @@
    "first": "2026-11-05",
    "stage": "Sequence ended",
    "overdue": "",
-   "next": "Sequence ended (extra binned, not sent)",
+   "next": "Sequence ended (the extra follow-up was dropped and not sent).",
    "response": "Sequence ended",
    "fitness": false
   },
@@ -1470,7 +1470,7 @@
    "first": "2026-11-05",
    "stage": "Sequence ended",
    "overdue": "",
-   "next": "Binned 23 Nov by Charlie. Closed/Lost. No further follow-ups.",
+   "next": "Closed as lost on 23 Nov by Charlie. No further follow-ups.",
    "response": "Sequence ended",
    "fitness": false
   },
@@ -1770,7 +1770,7 @@
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Coach-proof Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1778,7 +1778,7 @@
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Modern-refresh Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1786,7 +1786,7 @@
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1794,7 +1794,7 @@
    "channel": "DM",
    "type": "Instagram DM",
    "angle": "Instagram DM",
-   "outcome": "No reply"
+   "outcome": "Sent"
   },
   {
    "date": "2026-11-23",
@@ -1867,38 +1867,6 @@
    "type": "Follow-up (Day 5)",
    "angle": "Day 5 follow-up — typo and Eircode still there; strongman, powerlifting, bodybuilding and ",
    "outcome": "No reply"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Aoife McGill Personal Training",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Coach-proof Instagram DM",
-   "outcome": "Sent by Charlie"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Steph Fit Coaching",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Modern-refresh Instagram DM",
-   "outcome": "Sent by Charlie"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Calisthenics Sligo / Bar-Strength",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Instagram DM",
-   "outcome": "Sent (DMer to confirm exact time)"
-  },
-  {
-   "date": "2026-11-23",
-   "name": "Zoee Feeney Fitness",
-   "channel": "DM",
-   "type": "Instagram DM",
-   "angle": "Instagram DM",
-   "outcome": "Sent (DMer to confirm exact time)"
   },
   {
    "date": "2026-11-19",
@@ -2137,7 +2105,7 @@
  "batches": [
   {
    "label": "5 Nov dental (3)",
-   "detail": "Day 14 finals sent 19 Nov. Errigal's extra was binned and its sequence ended (23 Nov). Station House's extra is held. Donegal Denture's extra is ready for today."
+   "detail": "Day 14 finals were sent on 19 Nov. Errigal's extra follow-up was dropped and its sequence ended (23 Nov). Station House Dental was closed as lost on 23 Nov. The one-off extra to Donegal Denture Clinic was sent on 23 Nov and that sequence has ended."
   },
   {
    "label": "16 Nov batch (9 + 1 bounce)",
@@ -2162,13 +2130,13 @@
   "emailFitness": 24
  },
  "outreach": {
-  "dmsThisWeek": 8,
+  "dmsThisWeek": 4,
   "dmTarget": 25,
   "emailsThisWeek": 8,
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie 23 Nov; Bar-Strength and Zoee Feeney logged as sent 23 Nov, DMer to confirm exact times). Tapa Gym was DM'd by Charlie on 16 Nov (Unseen) and counts in last week, not w/c 23 Nov. Email follow-ups for those four DMs are scheduled Wed 25 Nov (2–3 days later). Bar-Strength has no email in current drafts; Emailer to confirm whether a public address exists before sending. T's Barbers: Facebook or Booksy DM planned Wed 25 Nov (DMer drafting; needs Charlie's approval); no email follow-ups queued. Station House Dental was binned by Charlie on 23 Nov (Closed/Lost); no further follow-ups. Don Maguire remains Verbal yes, awaiting commitment by Fri 27 Nov. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 and 4 first-touches delivered ~15:11; T's Barbers bounced (550) and is not counted as delivered. One warm reply logged (Reform, 13 Nov)."
+  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. Email follow-ups for those four DMs are scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One warm reply is logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
  "sendPlanTarget": 80,
@@ -2211,7 +2179,7 @@
    "name": "Station House Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Binned",
+   "status": "Closed as lost",
    "warm": false
   },
   {
@@ -2229,7 +2197,7 @@
    "name": "Errigal Dental",
    "action": "Extra follow-up",
    "fitness": false,
-   "status": "Binned",
+   "status": "Dropped",
    "warm": false
   },
   {
@@ -2859,7 +2827,7 @@
    "name": "Tapa Gym",
    "action": "First-touch email",
    "fitness": true,
-   "status": "Skipped — no public email; Charlie DM'd 16 Nov; remaining channel is phone",
+   "status": "Skipped — no public email; Charlie messaged on 16 Nov; remaining channel is phone",
    "warm": false
   },
   {
