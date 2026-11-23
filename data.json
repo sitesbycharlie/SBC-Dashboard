@@ -1,10 +1,10 @@
 {
- "asOf": "23 Nov 2026, 18:25 Dublin",
- "asOfISO": "2026-11-23T18:25+00:00",
+ "asOf": "23 Nov 2026, 19:17 Dublin",
+ "asOfISO": "2026-11-23T19:17+00:00",
  "sources": {
-  "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
+  "crm": "CRM canvas 7a235316 (tmp)",
   "tracker": "2026-11-23 ~16:42 Europe/Dublin",
-  "agents": "2026-11-23T18:25:48+00:00"
+  "agents": "2026-11-23T19:17:14+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,7 +86,7 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "23 Nov 18:25",
+   "last": "23 Nov 19:17",
    "acts": [
     "Set every bot to report its status to Mission Control after each job, and shipped the darker HUD layout fixes",
     "Logged Zoee Feeney Fitness as Replied — not now, warm for later. Cancelled her Wednesday email and Day 5, 9 and 14 follow-ups",
@@ -365,6 +365,11 @@
   }
  },
  "ticker": [
+  {
+   "t": "23 Nov 19:17",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
   {
    "t": "23 Nov 18:25",
    "who": "Chief",
