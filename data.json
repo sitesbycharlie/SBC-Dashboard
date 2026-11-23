@@ -1,10 +1,10 @@
 {
- "asOf": "23 Nov 2026, 15:23 Dublin",
- "asOfISO": "2026-11-23T15:23+00:00",
+ "asOf": "23 Nov 2026, 15:45 Dublin",
+ "asOfISO": "2026-11-23T15:45+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-23 ~15:17 Europe/Dublin",
-  "agents": "2026-11-23T15:22:00+00:00"
+  "agents": "2026-11-23T15:45:49+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -64,15 +64,22 @@
    "role": "CEO · approves every send",
    "group": "top",
    "status": "ceo",
-   "last": "23 Nov 14:26 (voice)",
+   "last": "23 Nov 15:39",
    "acts": [
-    "Asked for today's 5 emails and 5 DMs to review",
-    "Asked Chief for this Mission Control board"
+    "Approved today's 5 first-touch emails and 4 follow-ups",
+    "Approved Aoife and Steph DMs, sending them himself (awaiting confirmation)",
+    "Confirmed he DM'd Tapa Gym on 16 Nov (still unseen)",
+    "Don Maguire: verbal yes, awaiting commitment by Fri 27",
+    "T's Barbers bounced; remaining channel is Facebook or Booksy",
+    "Tapa has no public email; remaining channel is phone"
    ],
    "queue": [
-    "Review today's 5 DMs in DMer's chat",
-    "Review today's 5 emails in Emailer's chat",
-    "Approve Chaser's follow-up cards"
+    "Confirm Aoife's and Steph's DMs went out",
+    "Approve Bar-Strength and Zoee DMs",
+    "Don Maguire commitment by Fri 27",
+    "Station House: end the sequence?",
+    "T's Barbers: contact via Facebook or Booksy",
+    "Tapa: await IG reply, or phone"
    ],
    "waiting": []
   },
@@ -81,23 +88,30 @@
    "name": "Chief",
    "role": "Chief of Staff · the hub",
    "group": "top",
-   "status": "working",
-   "last": "23 Nov 14:26",
+   "status": "waiting",
+   "last": "23 Nov 15:45",
    "acts": [
-    "Building this Mission Control board",
-    "Asked DMer for today's 5 DMs, fitness first",
-    "Asked Emailer for today's 5 first-touch emails",
-    "Tracking the Mon–Fri send plan: 0 of 75 sent"
+    "Mission Control redesign pushed and auto-refresh routine set up",
+    "Logged today's 5 first-touch emails, 4 follow-ups, and the T's Barbers bounce",
+    "Flagged Don Maguire's verbal yes, awaiting commitment by Fri 27",
+    "Created the in-person visits list",
+    "Corrected Tapa's Instagram DM to 16 Nov (Unseen; counts last week)",
+    "Prospector confirmed Tapa has no public email; Friday email slot skipped; next step is awaiting IG reply, or Charlie to phone",
+    "T's Barbers next step: no valid email; contact via Facebook or Booksy; no follow-ups queued",
+    "Told the bots Mission Control is the single dashboard",
+    "Refreshed every bot card from today's transcripts"
    ],
    "queue": [
-    "Send plan Mon 23 – Fri 27 Nov, 15 sends a day",
+    "Send plan Mon 23 – Fri 27 Nov (8 of 78 sent; Tapa Fri skipped, T's bounced)",
     "Fitness batch slotted for Thu 26 / Fri 27",
-    "Pass DM sent dates to Emailer once logged"
+    "Pass DM sent dates to Emailer once Aoife and Steph are confirmed"
    ],
    "waiting": [
-    "Approve each day's batch in DMer, Emailer and Chaser chats",
-    "Station House: end the sequence? (Chaser recommends)",
-    "Fitsquadgym Day 5: cut the unconfirmed booking-app line?"
+    "Confirm Aoife and Steph DMs",
+    "DMer approvals for Bar-Strength and Zoee",
+    "Don's commitment by Fri",
+    "Station House decision",
+    "A T's Barbers DM"
    ]
   },
   "prospector": {
@@ -106,10 +120,11 @@
    "role": "Finds leads with no or weak sites",
    "group": "lead",
    "status": "idle",
-   "last": "22 Nov 18:30",
+   "last": "23 Nov 15:42",
    "acts": [
-    "Delivered 25 Ireland-wide fitness leads (+14 partials)",
-    "Routed the fitness batch to DMer (25) and Emailer (24)"
+    "Confirmed Tapa Gym has no public email (checked Instagram, directories, old site, company records)",
+    "Told Emailer Tapa cannot go on the email list; remaining channel is phone",
+    "Delivered 25 Ireland-wide fitness leads (+14 partials) on 22 Nov"
    ],
    "queue": [
     "Sunday routine next runs Sun 29 Nov ~6 AM, ready by 10 AM",
@@ -123,21 +138,22 @@
    "role": "Instagram DM outreach",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 15:08",
+   "last": "23 Nov 15:39",
    "acts": [
-    "Charlie approved Aoife McGill (coach-proof) and Steph Fit (modern-refresh) at 15:08",
-    "Charlie is sending both himself from his own Instagram; awaiting confirmation they went out",
-    "Those two are not counted as sent yet"
+    "Charlie confirmed he DM'd Tapa Gym himself on 16 Nov; still unseen; counts in last week, not this week",
+    "Charlie approved Aoife McGill and Steph Fit at 15:08 and is sending both himself; awaiting confirmation",
+    "Steph's DM wording revised at 15:37; those two are not counted as sent yet",
+    "Today's remaining DMs (Bar-Strength and Zoee) are still waiting on approval"
    ],
    "queue": [
+    "Bar-Strength and Zoee Feeney, still pending Charlie's approval",
     "33 cold DMs (6 fitness first) + warm DM to Nails by Aileen",
     "25 fitness DMs F1–F25 from Thu 26 / Fri 27",
-    "Rest of today's planned DMs still pending",
     "Suggests holding F9 Fit Factory, F14 McCullagh's, F25 Barry's"
    ],
    "waiting": [
     "Confirm Aoife's and Steph's DMs went out",
-    "Approve the rest of today's DMs"
+    "Approve Bar-Strength and Zoee DMs"
    ]
   },
   "emailer": {
@@ -145,13 +161,13 @@
    "name": "Emailer",
    "role": "Cold first-touch emails",
    "group": "lead",
-   "status": "working",
-   "last": "23 Nov 15:11",
+   "status": "waiting",
+   "last": "23 Nov 15:42",
    "acts": [
     "Sent 5 first-touch emails at ~15:11, on Charlie's go: Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic",
-    "Day 5 follow-ups due 27 Nov (Chaser)",
-    "Aoife and Steph follow-up emails still held until their DMs are confirmed sent",
-    "T's Barbers first-touch bounced ~15:10 (550, address does not exist); not counted as delivered"
+    "T's Barbers first-touch bounced ~15:10 (550, address does not exist); not counted as delivered; no email follow-ups queued",
+    "Prospector confirmed Tapa has no public email, so the Fri 27 first-touch email is skipped",
+    "Aoife and Steph follow-up emails still held until their DMs are confirmed sent"
    ],
    "queue": [
     "Remaining first-touch emails in this week's plan and the spill list",
@@ -193,10 +209,10 @@
    "role": "Polishes every draft",
    "group": "lead",
    "status": "idle",
-   "last": "23 Nov ~14:50",
+   "last": "23 Nov 14:54",
    "acts": [
-    "Polished the DM line in Aoife's and Steph's emails",
-    "Cleaned 24 fitness emails and 25 fitness DMs (6.7/10)"
+    "Polished the DM-mention line in Aoife's and Steph's emails at 14:54; neither email has been sent",
+    "Cleaned 24 fitness emails and 25 fitness DMs earlier today"
    ],
    "queue": [
     "Standing by for rewrites"
@@ -230,7 +246,7 @@
    "role": "Client care and monthly reviews",
    "group": "clients",
    "status": "idle",
-   "last": "18 Nov",
+   "last": "18 Nov 01:21",
    "acts": [
     "Added build-kit component links to the monthly review"
    ],
@@ -247,7 +263,7 @@
    "role": "CFO · Stripe and payments",
    "group": "money",
    "status": "idle",
-   "last": "18 Nov",
+   "last": "18 Nov 01:16",
    "acts": [
     "Posted both Chào Donegal Stripe payment links"
    ],
@@ -260,7 +276,7 @@
    "role": "Strategy and sales prep",
    "group": "money",
    "status": "idle",
-   "last": "16 Nov",
+   "last": "16 Nov 17:19",
    "acts": [
     "Wrote 3 pain points and discovery questions for Don Maguire"
    ],
@@ -273,7 +289,7 @@
    "role": "Social content",
    "group": "content",
    "status": "idle",
-   "last": "5 Nov",
+   "last": "5 Nov 21:03",
    "acts": [
     "November content research and four-week plan",
     "Recommended Repurpose.io for Instagram → TikTok"
@@ -287,7 +303,7 @@
    "role": "Digital products",
    "group": "content",
    "status": "idle",
-   "last": "7 Nov",
+   "last": "7 Nov 19:21",
    "acts": [
     "Trashed 18 approved pages from the Notion buyer draft",
     "Draft still private and not sale-ready"
@@ -303,10 +319,10 @@
    "role": "Prompt writer",
    "group": "content",
    "status": "idle",
-   "last": "18 Nov",
+   "last": "18 Nov 14:39",
    "acts": [
-    "Told DMer there's no HTML template, only prompts",
-    "Offered a Claude prompt for a Nails by Aileen demo"
+    "Chào Donegal prompts are finished; Charlie is building it in Claude",
+    "SEO (keywords, titles, meta, headings, schema, Google Business Profile) now goes into every build prompt"
    ],
    "queue": [],
    "waiting": []
@@ -345,6 +361,26 @@
   }
  },
  "ticker": [
+  {
+   "t": "23 Nov 15:45",
+   "who": "Chief",
+   "text": "Refreshed every bot card from transcripts; Tapa Fri email skipped (no public email); T's next step is Facebook or Booksy"
+  },
+  {
+   "t": "23 Nov 15:42",
+   "who": "Prospector",
+   "text": "Confirmed Tapa Gym has no public email; remaining channel is phone"
+  },
+  {
+   "t": "23 Nov 15:42",
+   "who": "Emailer",
+   "text": "Tapa cannot go on the email list (no public email); Friday first-touch slot skipped"
+  },
+  {
+   "t": "23 Nov 15:39",
+   "who": "DMer",
+   "text": "Charlie confirmed the Tapa Instagram DM went out on 16 Nov and is still unseen"
+  },
   {
    "t": "23 Nov 15:17",
    "who": "Chaser",
@@ -528,8 +564,9 @@
    "name": "Tapa Gym",
    "category": "Strength / HYROX gym",
    "county": "Sligo",
-   "stage": "New",
-   "channel": "Instagram"
+   "stage": "Contacted",
+   "channel": "Instagram",
+   "fitness": true
   },
   {
    "name": "CrossFit Carrick",
@@ -1661,7 +1698,7 @@
    "first": "2026-11-23",
    "stage": "Bounced",
    "overdue": "",
-   "next": "Email dead, needs Instagram/Booksy. Day 5 email follow-up cancelled",
+   "next": "No valid email; contact via Facebook or Booksy. Day 5 email follow-up cancelled; no email follow-ups queued",
    "response": "Bounced",
    "fitness": false
   },
@@ -1944,6 +1981,14 @@
    "outcome": "No reply"
   },
   {
+   "date": "2026-11-16",
+   "name": "Tapa Gym",
+   "channel": "DM",
+   "type": "Instagram DM",
+   "angle": "No-website Instagram DM",
+   "outcome": "Unseen"
+  },
+  {
    "date": "2026-11-13",
    "name": "Reform Barbershop",
    "channel": "Email",
@@ -2027,10 +2072,10 @@
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies: 0. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 (Donegal Denture extra, now ended; Day 5 for Limitless, O'Flaherty and Pure Grit). Earlier today: 4 first-touches delivered ~15:11 (Intensity Fitness, MriduYoga, Orlaith's Barber Shop, AAlba Foot Clinic); T's Barbers bounced (550) and is not counted as delivered. Two Instagram DMs approved at 15:08 (Aoife McGill, Steph Fit); Charlie is sending them himself, awaiting confirmation. One warm reply logged (Reform, 13 Nov)."
+  "note": "Cold replies: 0. Confirmed Instagram DMs this week: 0. Tapa Gym was DM'd by Charlie on 16 Nov (Unseen) and counts in last week, not w/c 23 Nov. Two DMs (Aoife McGill, Steph Fit) are approved and awaiting confirmation. Tapa has no public email (Prospector confirmed 23 Nov 15:42); the Fri 27 first-touch email is skipped; next step is awaiting IG reply, or Charlie to phone. Last emails out: 4 Chaser follow-ups 23 Nov ~15:17 (Donegal Denture extra, now ended; Day 5 for Limitless, O'Flaherty and Pure Grit). Also 4 first-touches delivered ~15:11 (Intensity Fitness, MriduYoga, Orlaith's Barber Shop, AAlba Foot Clinic); T's Barbers bounced (550) and is not counted as delivered. T's Barbers: no valid email; contact via Facebook or Booksy; no email follow-ups queued. One warm reply logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
- "sendPlanTarget": 77,
+ "sendPlanTarget": 78,
  "sendDays": [
   {
    "day": "Mon 23 Nov",
@@ -2059,7 +2104,7 @@
   {
    "day": "Fri 27 Nov",
    "short": "Fri 27",
-   "emails": 7,
+   "emails": 8,
    "dms": 7
   }
  ],
@@ -2178,7 +2223,7 @@
    "name": "Tapa Gym",
    "action": "Instagram DM",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Skipped",
    "warm": false
   },
   {
@@ -2692,6 +2737,15 @@
    "action": "First-touch email",
    "fitness": false,
    "status": "Pending approval",
+   "warm": false
+  },
+  {
+   "day": "Fri 27 Nov",
+   "kind": "Email",
+   "name": "Tapa Gym",
+   "action": "First-touch email",
+   "fitness": true,
+   "status": "Skipped — no public email; Charlie DM'd 16 Nov; remaining channel is phone",
    "warm": false
   },
   {
