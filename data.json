@@ -1,10 +1,10 @@
 {
- "asOf": "24 Nov 2026, 08:21 Dublin",
- "asOfISO": "2026-11-24T08:21+00:00",
+ "asOf": "24 Nov 2026, 09:19 Dublin",
+ "asOfISO": "2026-11-24T09:19+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-23 ~16:42 Europe/Dublin",
-  "agents": "2026-11-24T08:21:46+00:00"
+  "tracker": "2026-11-24 ~08:57 Europe/Dublin",
+  "agents": "2026-11-24T09:18:59+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,7 +86,7 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "24 Nov 08:21",
+   "last": "24 Nov 09:18",
    "acts": [
     "Set every bot to report its status to Mission Control after each job, and shipped the darker HUD layout fixes",
     "Logged Zoee Feeney Fitness as Replied — not now, warm for later. Cancelled her Wednesday email and Day 5, 9 and 14 follow-ups",
@@ -179,9 +179,10 @@
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 17:21",
+   "last": "24 Nov 08:56",
    "acts": [
-    "Sent four approved follow-ups today: Donegal Denture Clinic, Limitless, O'Flaherty Fitness and Pure Grit",
+    "Daily check on Tuesday, 24 Nov: no replies or new bounces among 18 active prospects, and nothing new to draft today",
+    "Sent four approved follow-ups on 23 Nov: Donegal Denture Clinic, Limitless, O'Flaherty Fitness and Pure Grit",
     "Sent a one-off extra to Donegal Denture Clinic; that sequence has ended",
     "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thursday, 26 Nov, Day 14 Tuesday, 1 Dec",
     "Closed Zoee Feeney Fitness as replied, not now. Fitsquad's Day 5 was dropped; the Errigal sequence has ended; Station House Dental was closed as lost on 23 Nov"
@@ -258,7 +259,7 @@
    "role": "CFO · Stripe and payments",
    "group": "money",
    "status": "idle",
-   "last": "23 Nov 17:22",
+   "last": "24 Nov 09:00",
    "acts": [
     "Daily payments check done; Stripe was quiet",
     "Payment links for Chào Donegal and Don Maguire Fitness are live and waiting"
@@ -365,6 +366,21 @@
   }
  },
  "ticker": [
+  {
+   "t": "24 Nov 09:18",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 09:00",
+   "who": "Ledger",
+   "text": "Daily payments check done. Stripe was quiet. Payment links for Chào Donegal and Don Maguire Fitness are live and waiting."
+  },
+  {
+   "t": "24 Nov 08:56",
+   "who": "Chaser",
+   "text": "Daily check: no replies or new bounces among 18 active prospects, and nothing new to draft today. Fourteen catch-up follow-up drafts are still waiting for approval: nine for Tuesday, 24 Nov, and five for Wednesday, 25 Nov."
+  },
   {
    "t": "24 Nov 08:21",
    "who": "Chief",
