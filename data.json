@@ -1,10 +1,10 @@
 {
- "asOf": "24 Nov 2026, 15:20 Dublin",
- "asOfISO": "2026-11-24T15:20+00:00",
+ "asOf": "24 Nov 2026, 17:26 Dublin",
+ "asOfISO": "2026-11-24T17:26+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-24 ~13:44 Europe/Dublin",
-  "agents": "2026-11-24T15:18:00+00:00"
+  "agents": "2026-11-24T17:26:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,8 +86,9 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "24 Nov 15:18",
+   "last": "24 Nov 17:26",
    "acts": [
+    "Logged Emailer's 24 Nov 16:30 follow-up email to The Burn Studio, re-sharing the website concepts link",
     "Logged nine 16 Nov batch catch-up emails as sent 24 Nov ~13:43 by Chaser, after Charlie's go at 13:41",
     "Set every bot to report its status to Mission Control after each job, and shipped the darker HUD layout fixes",
     "Logged Zoee Feeney Fitness as Replied — not now, warm for later. Cancelled her Wednesday email and Day 5, 9 and 14 follow-ups",
@@ -152,8 +153,9 @@
    "role": "Cold first-touch emails",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 17:21",
+   "last": "24 Nov 16:30",
    "acts": [
+    "Sent a follow-up email to The Burn Studio at 16:30 on 24 Nov, re-sharing the website concepts link after the Sunday meeting",
     "Sent five approved first-touch emails (Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic); the T's Barbers message bounced",
     "Merged inbox checks into one hourly routine",
     "Zoee Feeney Fitness email follow-up cancelled after her 23 Nov reply; no email to her is queued",
@@ -168,7 +170,7 @@
     "4 need fixes (EVOLVE, Edel, LD Beauty, Prestige)"
    ],
    "waiting": [
-    "Aoife McGill PT and Steph Fit Coaching emails go to Charlie for approval on Wednesday, 25 Nov",
+    "Go on Aoife McGill PT and Steph Fit Coaching emails (Wednesday, 25 Nov)",
     "Whether Bar-Strength has a public email (do not invent one)"
    ]
   },
@@ -205,7 +207,7 @@
    "acts": [
     "Polished a follow-up email to The Burn Studio re-sharing the website concepts link",
     "Polished today's outreach: 24 fitness emails, 7 v2 emails, the Aoife and Steph DM-reference lines, and the T's Barbers Messenger draft",
-    "None of those polished emails have been sent except the earlier approved first-touches"
+    "The polished Burn Studio concepts follow-up was sent by Emailer on 24 Nov at 16:30; the other polished outreach emails have not been sent yet"
    ],
    "queue": [
     "Standing by for rewrites"
@@ -367,6 +369,21 @@
   }
  },
  "ticker": [
+  {
+   "t": "24 Nov 17:26",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 16:30",
+   "who": "Emailer",
+   "text": "Sent a follow-up email to The Burn Studio, re-sharing the website concepts link after the Sunday meeting."
+  },
+  {
+   "t": "24 Nov 16:22",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
   {
    "t": "24 Nov 15:18",
    "who": "Chief",
@@ -2007,6 +2024,14 @@
    "outcome": "No reply"
   },
   {
+   "date": "2026-11-24",
+   "name": "The Burn Studio",
+   "channel": "Email",
+   "type": "Follow-up (extra)",
+   "angle": "Extra follow-up — website concepts link",
+   "outcome": "No reply"
+  },
+  {
    "date": "2026-11-23",
    "name": "Aoife McGill Personal Training",
    "channel": "DM",
@@ -2374,11 +2399,11 @@
  "outreach": {
   "dmsThisWeek": 4,
   "dmTarget": 25,
-  "emailsThisWeek": 17,
+  "emailsThisWeek": 18,
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies this week: 1 (Zoee Feeney Fitness, 23 Nov). Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Zoee replied the same day: not looking for a website at the moment, but might be later and will keep Charlie's details. Status: not now, warm for later. Her Wednesday, 25 Nov email follow-up has been cancelled and removed from the send plan, and Day 5, 9 and 14 follow-ups are cancelled. A possible light check-in in about three months (late Feb 2027) is noted, if Charlie wants. Email follow-ups for Aoife, Steph and Bar-Strength remain scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: nine Chaser catch-up follow-ups for the 16 Nov batch around 13:43 on 24 Nov. Earlier this week: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One earlier warm reply is also logged (Reform, 13 Nov)."
+  "note": "Cold replies this week: 1 (Zoee Feeney Fitness, 23 Nov). Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Zoee replied the same day: not looking for a website at the moment, but might be later and will keep Charlie's details. Status: not now, warm for later. Her Wednesday, 25 Nov email follow-up has been cancelled and removed from the send plan, and Day 5, 9 and 14 follow-ups are cancelled. A possible light check-in in about three months (late Feb 2027) is noted, if Charlie wants. Email follow-ups for Aoife, Steph and Bar-Strength remain scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: Emailer sent a follow-up to The Burn Studio at 16:30 on 24 Nov, re-sharing the website concepts link. Earlier on 24 Nov: nine Chaser catch-up follow-ups for the 16 Nov batch around 13:43. Earlier this week: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One earlier warm reply is also logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
  "sendPlanTarget": 79,
@@ -3199,7 +3224,7 @@
    "stage": "Terms agreed · agreement in progress",
    "services": "Studio website; domain and hosting included in the monthly care",
    "value": "€0 build (normally €500), 3 months free, then €100/mo founder rate (normally €150–€175)",
-   "next": "Onboarder drafts the agreement once Charlie pastes the Kass reference; Fixer's info docs are ready to review",
+   "next": "Concepts-link follow-up emailed 24 Nov 16:30; await reply. Onboarder drafts the agreement once Charlie pastes the Kass reference; Fixer's info docs are ready to review",
    "owner": "Onboarder (agreement) · Fixer (info docs) · Charlie"
   },
   {
