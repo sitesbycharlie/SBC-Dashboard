@@ -1,10 +1,10 @@
 {
- "asOf": "24 Nov 2026, 14:25 Dublin",
- "asOfISO": "2026-11-24T14:25+00:00",
+ "asOf": "24 Nov 2026, 15:20 Dublin",
+ "asOfISO": "2026-11-24T15:20+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-24 ~13:44 Europe/Dublin",
-  "agents": "2026-11-24T14:25:00+00:00"
+  "agents": "2026-11-24T15:18:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,7 +86,7 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "24 Nov 14:25",
+   "last": "24 Nov 15:18",
    "acts": [
     "Logged nine 16 Nov batch catch-up emails as sent 24 Nov ~13:43 by Chaser, after Charlie's go at 13:41",
     "Set every bot to report its status to Mission Control after each job, and shipped the darker HUD layout fixes",
@@ -201,8 +201,9 @@
    "role": "Polishes every draft",
    "group": "lead",
    "status": "idle",
-   "last": "23 Nov 17:21",
+   "last": "24 Nov 14:58",
    "acts": [
+    "Polished a follow-up email to The Burn Studio re-sharing the website concepts link",
     "Polished today's outreach: 24 fitness emails, 7 v2 emails, the Aoife and Steph DM-reference lines, and the T's Barbers Messenger draft",
     "None of those polished emails have been sent except the earlier approved first-touches"
    ],
@@ -210,6 +211,7 @@
     "Standing by for rewrites"
    ],
    "waiting": [
+    "Confirm whether the concepts link for The Burn Studio is a new set or the 31 Oct one",
     "Confirm whether the “more gyms around Donegal” line is true before those emails go out"
    ]
   },
@@ -365,6 +367,16 @@
   }
  },
  "ticker": [
+  {
+   "t": "24 Nov 15:18",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 14:58",
+   "who": "Cleaner",
+   "text": "Polished a follow-up email to The Burn Studio re-sharing the website concepts link. Waiting on whether that concepts link is a new set or the 31 Oct one."
+  },
   {
    "t": "24 Nov 14:25",
    "who": "Chief",
