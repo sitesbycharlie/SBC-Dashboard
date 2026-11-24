@@ -1,10 +1,10 @@
 {
- "asOf": "24 Nov 2026, 09:19 Dublin",
- "asOfISO": "2026-11-24T09:19+00:00",
+ "asOf": "24 Nov 2026, 14:25 Dublin",
+ "asOfISO": "2026-11-24T14:25+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-24 ~08:57 Europe/Dublin",
-  "agents": "2026-11-24T09:18:59+00:00"
+  "tracker": "2026-11-24 ~13:44 Europe/Dublin",
+  "agents": "2026-11-24T14:25:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,18 +86,17 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "24 Nov 09:18",
+   "last": "24 Nov 14:25",
    "acts": [
+    "Logged nine 16 Nov batch catch-up emails as sent 24 Nov ~13:43 by Chaser, after Charlie's go at 13:41",
     "Set every bot to report its status to Mission Control after each job, and shipped the darker HUD layout fixes",
     "Logged Zoee Feeney Fitness as Replied — not now, warm for later. Cancelled her Wednesday email and Day 5, 9 and 14 follow-ups",
     "Logged four Instagram DMs as sent on 23 Nov (Aoife, Steph, Bar-Strength and Zoee) and set email follow-ups for Wednesday, 25 Nov",
-    "Closed the Station House Dental lead as lost, with no further follow-ups",
-    "Added a T's Barbers Facebook or Booksy message for Wednesday, 25 Nov, pending Charlie's approval",
-    "Kept Don Maguire's commitment target of Friday, 27 Nov"
+    "Closed the Station House Dental lead as lost, with no further follow-ups"
    ],
    "queue": [
-    "Send plan Mon 23 – Fri 27 Nov (12 of 79 sent)",
-    "Wed 25: T's Barbers message draft plus email follow-ups for Aoife, Steph, and Bar-Strength if an address is confirmed",
+    "Send plan Mon 23 – Fri 27 Nov (21 of 79 sent)",
+    "Wed 25: five 17 Nov batch catch-ups, pending approval; T's Barbers message draft plus email follow-ups for Aoife, Steph, and Bar-Strength if an address is confirmed",
     "Fitness batch slotted for Thu 26 / Fri 27"
    ],
    "waiting": [
@@ -179,21 +178,21 @@
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "24 Nov 08:56",
+   "last": "24 Nov 13:44",
    "acts": [
-    "Daily check on Tuesday, 24 Nov: no replies or new bounces among 18 active prospects, and nothing new to draft today",
+    "Sent nine approved catch-up follow-ups on 24 Nov ~13:43 for the 16 Nov batch: JDV Buncrana, CrossFit Carrick, Honey Nails & Beauty, R and R Nails & Beauty, La Vie Beauty, Yoga With Sarah Mo, On The Go Coffee Co, Castle Clinic Podiatry and The Foot Care Clinic. Next: Day 14 Sunday, 29 Nov",
+    "Daily check earlier on Tuesday, 24 Nov: no replies or new bounces among 18 active prospects, and nothing new to draft today",
     "Sent four approved follow-ups on 23 Nov: Donegal Denture Clinic, Limitless, O'Flaherty Fitness and Pure Grit",
     "Sent a one-off extra to Donegal Denture Clinic; that sequence has ended",
-    "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thursday, 26 Nov, Day 14 Tuesday, 1 Dec",
-    "Closed Zoee Feeney Fitness as replied, not now. Fitsquad's Day 5 was dropped; the Errigal sequence has ended; Station House Dental was closed as lost on 23 Nov"
+    "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thursday, 26 Nov, Day 14 Tuesday, 1 Dec"
    ],
    "queue": [
-    "9 catch-ups for the 16 Nov batch (Tuesday, 24 Nov)",
     "5 catch-ups for the 17 Nov batch (Wednesday, 25 Nov)",
-    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thursday, 26 Nov — Fitsquad must drop the unverified booking-app claim"
+    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thursday, 26 Nov — Fitsquad must drop the unverified booking-app claim",
+    "Day 14s for the 16 Nov batch on Sunday, 29 Nov"
    ],
    "waiting": [
-    "Approval on 14 catch-up follow-up drafts (9 for Tuesday, 24 Nov, 5 for Wednesday, 25 Nov)"
+    "Approval on the 5 catch-ups for the 17 Nov batch (planned Wednesday, 25 Nov)"
    ]
   },
   "cleaner": {
@@ -366,6 +365,36 @@
   }
  },
  "ticker": [
+  {
+   "t": "24 Nov 14:25",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 13:44",
+   "who": "Chaser",
+   "text": "Sent nine approved catch-up follow-ups for the 16 Nov batch: JDV Buncrana, CrossFit Carrick, Honey Nails & Beauty, R and R Nails & Beauty, La Vie Beauty, Yoga With Sarah Mo, On The Go Coffee Co, Castle Clinic Podiatry and The Foot Care Clinic. Five catch-ups for the 17 Nov batch are still waiting for approval, planned for Wednesday, 25 Nov."
+  },
+  {
+   "t": "24 Nov 13:23",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 12:21",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 11:14",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 10:23",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
   {
    "t": "24 Nov 09:18",
    "who": "Chief",
@@ -1609,9 +1638,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1621,9 +1650,9 @@
    "county": "Leitrim",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1633,9 +1662,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1657,9 +1686,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1669,9 +1698,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1681,9 +1710,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1693,9 +1722,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1705,9 +1734,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1717,9 +1746,9 @@
    "county": "Donegal",
    "channel": "Email",
    "first": "2026-11-16",
-   "stage": "Day 1 first touch",
-   "overdue": "Day 5 was due 20 Nov, not sent",
-   "next": "Day 9 catch-up (16 Nov batch) Tue 24 Nov",
+   "stage": "Day 9 sent",
+   "overdue": "",
+   "next": "Catch-up (Day 5/9) sent 24 Nov ~13:43 by Chaser, as a reply in the original thread. Next: Day 14 Sun 29 Nov. No reply yet.",
    "response": "No reply",
    "fitness": false
   },
@@ -1893,6 +1922,78 @@
   }
  ],
  "history": [
+  {
+   "date": "2026-11-24",
+   "name": "JDV Buncrana",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — membership prices on the Bookwhen page don't match",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "CrossFit Carrick / Carrick Fitness",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — cfcarrick.com still not loading; the domain is still registered",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "Honey Nails & Beauty",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — late opening hours only appear on a directory listing",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "R and R Nails & Beauty",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — Thursday hours don't match across booking pages",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "La Vie Beauty",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — opening hours don't match across the Wix page and a local listing",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "Yoga With Sarah Mo",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — December classes only appear as rows on the booking calendar",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "On The Go Coffee Co",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — seasonal boxes and platters are still only ordered through messages",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "Castle Clinic Podiatry",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — late hours and registration are scattered across directories",
+   "outcome": "No reply"
+  },
+  {
+   "date": "2026-11-24",
+   "name": "The Foot Care Clinic",
+   "channel": "Email",
+   "type": "Follow-up (Day 9)",
+   "angle": "Day 9 catch-up — the obvious domain still belongs to a clinic in Galway",
+   "outcome": "No reply"
+  },
   {
    "date": "2026-11-23",
    "name": "Aoife McGill Personal Training",
@@ -2238,7 +2339,7 @@
   },
   {
    "label": "16 Nov batch (9 + 1 bounce)",
-   "detail": "Day 5 (20 Nov) not sent. Day 9 catch-ups Tue 24 Nov, Day 14 due 29 Nov. Donegal Barber bounced and moved to a Facebook DM for Charlie."
+   "detail": "Day 5 (20 Nov) was not sent on the day. Day 9 catch-ups were sent Tuesday, 24 Nov ~13:43. Day 14 due 29 Nov. Donegal Barber bounced and moved to a Facebook DM for Charlie."
   },
   {
    "label": "17 Nov batch (5)",
@@ -2246,7 +2347,7 @@
   },
   {
    "label": "18 Nov gyms (4)",
-   "detail": "Day 5 Mon 23 Nov, Day 9 Thu 26 Nov, Day 14 due 1 Dec."
+   "detail": "Day 5 sent Monday, 23 Nov for Limitless, O'Flaherty and Pure Grit (Fitsquad Day 5 was dropped). Day 9 Thu 26 Nov, Day 14 due 1 Dec. Fitsquad Day 9 must drop the unverified booking-app claim."
   }
  ],
  "dmNote": "33 cold DMs, 1 warm DM and 25 fitness DMs are drafted and waiting on Charlie's approval.",
@@ -2261,11 +2362,11 @@
  "outreach": {
   "dmsThisWeek": 4,
   "dmTarget": 25,
-  "emailsThisWeek": 8,
+  "emailsThisWeek": 17,
   "emailsLastWeek": 21,
   "thisWeekLabel": "w/c 23 Nov",
   "lastWeekLabel": "16–19 Nov, +1 bounce",
-  "note": "Cold replies this week: 1 (Zoee Feeney Fitness, 23 Nov). Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Zoee replied the same day: not looking for a website at the moment, but might be later and will keep Charlie's details. Status: not now, warm for later. Her Wednesday, 25 Nov email follow-up has been cancelled and removed from the send plan, and Day 5, 9 and 14 follow-ups are cancelled. A possible light check-in in about three months (late Feb 2027) is noted, if Charlie wants. Email follow-ups for Aoife, Steph and Bar-Strength remain scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One earlier warm reply is also logged (Reform, 13 Nov)."
+  "note": "Cold replies this week: 1 (Zoee Feeney Fitness, 23 Nov). Confirmed Instagram DMs this week: 4 of 25 (Aoife McGill and Steph Fit, sent by Charlie on 23 Nov; Bar-Strength and Zoee Feeney also logged as sent that day). Zoee replied the same day: not looking for a website at the moment, but might be later and will keep Charlie's details. Status: not now, warm for later. Her Wednesday, 25 Nov email follow-up has been cancelled and removed from the send plan, and Day 5, 9 and 14 follow-ups are cancelled. A possible light check-in in about three months (late Feb 2027) is noted, if Charlie wants. Email follow-ups for Aoife, Steph and Bar-Strength remain scheduled for Wednesday, 25 Nov. Bar-Strength has no email in the current drafts; Emailer will confirm whether a public address exists before sending. Tapa Gym was messaged by Charlie on 16 Nov (still unseen) and counts in last week, not the week of 23 Nov. T's Barbers: a Facebook or Booksy message is planned for Wednesday, 25 Nov, and needs Charlie's approval. No further email follow-ups are queued, because the first-touch address was not valid. Station House Dental was closed as lost on 23 Nov, with no further follow-ups. Don Maguire remains at verbal yes, with commitment due by Friday, 27 Nov. Last emails out: nine Chaser catch-up follow-ups for the 16 Nov batch around 13:43 on 24 Nov. Earlier this week: four Chaser follow-ups around 15:17 and four first-touches delivered around 15:11, all on 23 Nov. The T's Barbers message bounced and is not counted as delivered. One earlier warm reply is also logged (Reform, 13 Nov)."
  },
  "sendPlanWeek": "Mon 23 – Fri 27 Nov",
  "sendPlanTarget": 79,
@@ -2488,7 +2589,7 @@
    "name": "JDV Buncrana",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2497,7 +2598,7 @@
    "name": "CrossFit Carrick",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2506,7 +2607,7 @@
    "name": "Yoga With Sarah Mo",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": true,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2515,7 +2616,7 @@
    "name": "Honey Nails & Beauty",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2524,7 +2625,7 @@
    "name": "R and R Nails & Beauty",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2533,7 +2634,7 @@
    "name": "La Vie Beauty",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2542,7 +2643,7 @@
    "name": "On The Go Coffee Co",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2551,7 +2652,7 @@
    "name": "Castle Clinic Podiatry",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
@@ -2560,7 +2661,7 @@
    "name": "The Foot Care Clinic",
    "action": "Day 9 catch-up (16 Nov batch)",
    "fitness": false,
-   "status": "Pending approval",
+   "status": "Sent",
    "warm": false
   },
   {
