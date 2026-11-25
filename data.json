@@ -1,10 +1,10 @@
 {
- "asOf": "24 Nov 2026, 17:26 Dublin",
- "asOfISO": "2026-11-24T17:26+00:00",
+ "asOf": "25 Nov 2026, 09:15 Dublin",
+ "asOfISO": "2026-11-25T09:15+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-24 ~13:44 Europe/Dublin",
-  "agents": "2026-11-24T17:26:00+00:00"
+  "tracker": "2026-11-25 ~09:10 Europe/Dublin",
+  "agents": "2026-11-25T09:15:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,7 +86,7 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "24 Nov 17:26",
+   "last": "25 Nov 09:15",
    "acts": [
     "Logged Emailer's 24 Nov 16:30 follow-up email to The Burn Studio, re-sharing the website concepts link",
     "Logged nine 16 Nov batch catch-up emails as sent 24 Nov ~13:43 by Chaser, after Charlie's go at 13:41",
@@ -103,6 +103,8 @@
    "waiting": [
     "Go-ahead on the bespoke redesign direction",
     "Approve the T's Barbers Facebook or Booksy message for Wednesday, 25 Nov, and who sends it",
+    "Approval on the five catch-ups for the 17 Nov batch (planned today)",
+    "Go on Aoife McGill PT and Steph Fit Coaching emails",
     "Don Maguire's commitment by Friday, 27 Nov"
    ]
   },
@@ -130,8 +132,9 @@
    "role": "Instagram DM outreach",
    "group": "lead",
    "status": "waiting",
-   "last": "23 Nov 17:21",
+   "last": "25 Nov 09:05",
    "acts": [
+    "Cleaned the T's Barbers (Sligo) message and showed it to Charlie for approval",
     "Drafted and cleaned a Facebook message for T's Barbers (Sligo), ready for Wednesday, 25 Nov",
     "Logged Zoee Feeney Fitness as replied: not now, maybe later",
     "Aoife and Steph messages confirmed sent by Charlie on 23 Nov",
@@ -153,8 +156,9 @@
    "role": "Cold first-touch emails",
    "group": "lead",
    "status": "waiting",
-   "last": "24 Nov 16:30",
+   "last": "25 Nov 09:11",
    "acts": [
+    "Presented Aoife McGill PT and Steph Fit Coaching email drafts for approval",
     "Sent a follow-up email to The Burn Studio at 16:30 on 24 Nov, re-sharing the website concepts link after the Sunday meeting",
     "Sent five approved first-touch emails (Intensity Fitness, MriduYoga, Orlaith's Barber Shop, T's Barbers, AAlba Foot Clinic); the T's Barbers message bounced",
     "Merged inbox checks into one hourly routine",
@@ -180,8 +184,9 @@
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "24 Nov 13:44",
+   "last": "25 Nov 08:57",
    "acts": [
+    "Daily check on Wednesday, 25 Nov: no replies or bounces. Drafted four gym Day 9 follow-ups for Thursday, 26 Nov, now with Cleaner",
     "Sent nine approved catch-up follow-ups on 24 Nov ~13:43 for the 16 Nov batch: JDV Buncrana, CrossFit Carrick, Honey Nails & Beauty, R and R Nails & Beauty, La Vie Beauty, Yoga With Sarah Mo, On The Go Coffee Co, Castle Clinic Podiatry and The Foot Care Clinic. Next: Day 14 Sunday, 29 Nov",
     "Daily check earlier on Tuesday, 24 Nov: no replies or new bounces among 18 active prospects, and nothing new to draft today",
     "Sent four approved follow-ups on 23 Nov: Donegal Denture Clinic, Limitless, O'Flaherty Fitness and Pure Grit",
@@ -189,8 +194,8 @@
     "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thursday, 26 Nov, Day 14 Tuesday, 1 Dec"
    ],
    "queue": [
-    "5 catch-ups for the 17 Nov batch (Wednesday, 25 Nov)",
-    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) for Thursday, 26 Nov — Fitsquad must drop the unverified booking-app claim",
+    "5 catch-ups for the 17 Nov batch (Wednesday, 25 Nov) — still waiting for approval",
+    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) drafted 25 Nov for Thursday, 26 Nov — now with Cleaner. Fitsquad must drop the unverified booking-app claim",
     "Day 14s for the 16 Nov batch on Sunday, 29 Nov"
    ],
    "waiting": [
@@ -203,17 +208,19 @@
    "role": "Polishes every draft",
    "group": "lead",
    "status": "idle",
-   "last": "24 Nov 14:58",
+   "last": "25 Nov 09:04",
    "acts": [
+    "Cleaned the first-touch message for T's Barbers in Sligo",
     "Polished a follow-up email to The Burn Studio re-sharing the website concepts link",
     "Polished today's outreach: 24 fitness emails, 7 v2 emails, the Aoife and Steph DM-reference lines, and the T's Barbers Messenger draft",
     "The polished Burn Studio concepts follow-up was sent by Emailer on 24 Nov at 16:30; the other polished outreach emails have not been sent yet"
    ],
    "queue": [
+    "4 gym Day 9 follow-ups from Chaser for Thursday, 26 Nov",
     "Standing by for rewrites"
    ],
    "waiting": [
-    "Confirm whether the concepts link for The Burn Studio is a new set or the 31 Oct one",
+    "Approve the T's Barbers message and the 4 follow-ups Chaser plans for Thursday, 26 Nov",
     "Confirm whether the “more gyms around Donegal” line is true before those emails go out"
    ]
   },
@@ -262,9 +269,9 @@
    "role": "CFO · Stripe and payments",
    "group": "money",
    "status": "idle",
-   "last": "24 Nov 09:00",
+   "last": "25 Nov 09:02",
    "acts": [
-    "Daily payments check done; Stripe was quiet",
+    "Daily payments check done; Stripe was still quiet",
     "Payment links for Chào Donegal and Don Maguire Fitness are live and waiting"
    ],
    "queue": [],
@@ -369,6 +376,56 @@
   }
  },
  "ticker": [
+  {
+   "t": "25 Nov 09:15",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 09:11",
+   "who": "Emailer",
+   "text": "Presented Aoife McGill PT and Steph Fit Coaching email drafts for approval."
+  },
+  {
+   "t": "25 Nov 09:05",
+   "who": "DMer",
+   "text": "Cleaned the T's Barbers (Sligo) message and showed it to Charlie for approval."
+  },
+  {
+   "t": "25 Nov 09:04",
+   "who": "Cleaner",
+   "text": "Cleaned the first-touch message for T's Barbers in Sligo."
+  },
+  {
+   "t": "25 Nov 09:02",
+   "who": "Ledger",
+   "text": "Daily payments check done. Stripe was still quiet. Payment links for Chào Donegal and Don Maguire Fitness are live and waiting."
+  },
+  {
+   "t": "25 Nov 08:57",
+   "who": "Chaser",
+   "text": "Daily check: no replies or bounces. Drafted four gym Day 9 follow-ups for Thursday, 26 Nov, now with Cleaner. Five catch-ups for the 17 Nov batch are still waiting for approval, planned for today."
+  },
+  {
+   "t": "25 Nov 08:24",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 20:17",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 19:17",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "24 Nov 18:17",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
   {
    "t": "24 Nov 17:26",
    "who": "Chief",
