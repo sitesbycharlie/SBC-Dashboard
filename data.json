@@ -1,10 +1,10 @@
 {
- "asOf": "25 Nov 2026, 09:15 Dublin",
- "asOfISO": "2026-11-25T09:15+00:00",
+ "asOf": "25 Nov 2026, 10:21 Dublin",
+ "asOfISO": "2026-11-25T10:21+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-25 ~09:10 Europe/Dublin",
-  "agents": "2026-11-25T09:15:00+00:00"
+  "agents": "2026-11-25T10:21:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,7 +86,7 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "25 Nov 09:15",
+   "last": "25 Nov 10:21",
    "acts": [
     "Logged Emailer's 24 Nov 16:30 follow-up email to The Burn Studio, re-sharing the website concepts link",
     "Logged nine 16 Nov batch catch-up emails as sent 24 Nov ~13:43 by Chaser, after Charlie's go at 13:41",
@@ -376,6 +376,11 @@
   }
  },
  "ticker": [
+  {
+   "t": "25 Nov 10:21",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
   {
    "t": "25 Nov 09:15",
    "who": "Chief",
