@@ -1,10 +1,10 @@
 {
- "asOf": "25 Nov 2026, 10:21 Dublin",
- "asOfISO": "2026-11-25T10:21+00:00",
+ "asOf": "26 Nov 2026, 08:21 Dublin",
+ "asOfISO": "2026-11-26T08:21+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
   "tracker": "2026-11-25 ~09:10 Europe/Dublin",
-  "agents": "2026-11-25T10:21:00+00:00"
+  "agents": "2026-11-26T08:21:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,7 +86,7 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "25 Nov 10:21",
+   "last": "26 Nov 08:21",
    "acts": [
     "Logged Emailer's 24 Nov 16:30 follow-up email to The Burn Studio, re-sharing the website concepts link",
     "Logged nine 16 Nov batch catch-up emails as sent 24 Nov ~13:43 by Chaser, after Charlie's go at 13:41",
@@ -97,13 +97,13 @@
    ],
    "queue": [
     "Send plan Mon 23 – Fri 27 Nov (21 of 79 sent)",
-    "Wed 25: five 17 Nov batch catch-ups, pending approval; T's Barbers message draft plus email follow-ups for Aoife, Steph, and Bar-Strength if an address is confirmed",
+    "Still pending from Wed 25: five 17 Nov batch catch-ups; T's Barbers message draft plus email follow-ups for Aoife, Steph, and Bar-Strength if an address is confirmed",
     "Fitness batch slotted for Thu 26 / Fri 27"
    ],
    "waiting": [
     "Go-ahead on the bespoke redesign direction",
-    "Approve the T's Barbers Facebook or Booksy message for Wednesday, 25 Nov, and who sends it",
-    "Approval on the five catch-ups for the 17 Nov batch (planned today)",
+    "Approve the T's Barbers Facebook or Booksy message, and who sends it",
+    "Approval on the five catch-ups for the 17 Nov batch (planned Wed 25 Nov)",
     "Go on Aoife McGill PT and Steph Fit Coaching emails",
     "Don Maguire's commitment by Friday, 27 Nov"
    ]
@@ -376,6 +376,61 @@
   }
  },
  "ticker": [
+  {
+   "t": "26 Nov 08:21",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 20:22",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 19:19",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 18:19",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 17:22",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 16:19",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 15:16",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 14:16",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 13:14",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 12:15",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "25 Nov 11:15",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
   {
    "t": "25 Nov 10:21",
    "who": "Chief",
@@ -3277,7 +3332,7 @@
    "value": "€250 setup (normally €500), months 1–6 free, then €75/mo founder rate (normally €150). Year-one cash €700",
    "next": "TARGET: get Don's commitment this week (by Fri 27 Nov 2026)",
    "owner": "Charlie · Compass prepped discovery questions (16 Nov)",
-   "note": "Payment link: unconfirmed (from Chief's notes; the CRM doesn't record one) · 23 Nov 2026: Charlie spoke with Don: he said he'll go for it and will confirm today or over the next few days. Photo shoot in a few weeks (new equipment); hoping to go live in a few weeks. Payment date and firm go-live TBC on commitment. The original 23 Nov launch target has lapsed."
+   "note": "Payment link: live and unpaid, confirmed in Stripe on 25 Nov: €250 setup, 6 months included, then €75/mo subscription. No client name attached in Stripe; matched by terms. Checkout opened 17 Nov 15:33 Dublin, abandoned · 23 Nov 2026: Charlie spoke with Don: he said he'll go for it and will confirm today or over the next few days. Photo shoot in a few weeks (new equipment); hoping to go live in a few weeks. Payment date and firm go-live TBC on commitment. The original 23 Nov launch target has lapsed."
   },
   {
    "name": "The Burn Studio (Jenny)",
