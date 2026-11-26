@@ -1,10 +1,10 @@
 {
- "asOf": "26 Nov 2026, 08:21 Dublin",
- "asOfISO": "2026-11-26T08:21+00:00",
+ "asOf": "26 Nov 2026, 15:26 Dublin",
+ "asOfISO": "2026-11-26T15:26+00:00",
  "sources": {
   "crm": "CRM canvas 7a235316 (7a235316-98f7-46da-94da-ebcf65fa7288)",
-  "tracker": "2026-11-25 ~09:10 Europe/Dublin",
-  "agents": "2026-11-26T08:21:00+00:00"
+  "tracker": "2026-11-26 ~08:57 Europe/Dublin",
+  "agents": "2026-11-26T15:26:00+00:00"
  },
  "footer": "Snapshot from each bot's latest activity, the follow-up tracker and the Client Generation CRM. The page checks for a new data.json every 10 minutes; numbers change only when data.json is updated in the repo. Lab Rat is Charlie's standalone consultant and isn't tracked here. No email addresses, social handles or phone numbers are published.",
  "groups": [
@@ -86,7 +86,7 @@
    "role": "Chief of Staff · the hub",
    "group": "top",
    "status": "waiting",
-   "last": "26 Nov 08:21",
+   "last": "26 Nov 15:26",
    "acts": [
     "Logged Emailer's 24 Nov 16:30 follow-up email to The Burn Studio, re-sharing the website concepts link",
     "Logged nine 16 Nov batch catch-up emails as sent 24 Nov ~13:43 by Chaser, after Charlie's go at 13:41",
@@ -98,12 +98,14 @@
    "queue": [
     "Send plan Mon 23 – Fri 27 Nov (21 of 79 sent)",
     "Still pending from Wed 25: five 17 Nov batch catch-ups; T's Barbers message draft plus email follow-ups for Aoife, Steph, and Bar-Strength if an address is confirmed",
+    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) ready today, Thursday 26 Nov, waiting for approval to send",
     "Fitness batch slotted for Thu 26 / Fri 27"
    ],
    "waiting": [
     "Go-ahead on the bespoke redesign direction",
     "Approve the T's Barbers Facebook or Booksy message, and who sends it",
     "Approval on the five catch-ups for the 17 Nov batch (planned Wed 25 Nov)",
+    "Approval to send the four gym Day 9 follow-ups due today",
     "Go on Aoife McGill PT and Steph Fit Coaching emails",
     "Don Maguire's commitment by Friday, 27 Nov"
    ]
@@ -184,8 +186,9 @@
    "role": "Follow-ups and reply watch",
    "group": "lead",
    "status": "waiting",
-   "last": "25 Nov 08:57",
+   "last": "26 Nov 08:56",
    "acts": [
+    "Daily check on Thursday, 26 Nov: no replies or bounces. Reminded Charlie that the four gym Day 9s and the five catch-ups for the 17 Nov batch still need approval to send.",
     "Daily check on Wednesday, 25 Nov: no replies or bounces. Drafted four gym Day 9 follow-ups for Thursday, 26 Nov, now with Cleaner",
     "Sent nine approved catch-up follow-ups on 24 Nov ~13:43 for the 16 Nov batch: JDV Buncrana, CrossFit Carrick, Honey Nails & Beauty, R and R Nails & Beauty, La Vie Beauty, Yoga With Sarah Mo, On The Go Coffee Co, Castle Clinic Podiatry and The Foot Care Clinic. Next: Day 14 Sunday, 29 Nov",
     "Daily check earlier on Tuesday, 24 Nov: no replies or new bounces among 18 active prospects, and nothing new to draft today",
@@ -194,12 +197,12 @@
     "Day 5 sent for Limitless, O'Flaherty and Pure Grit; next Day 9 Thursday, 26 Nov, Day 14 Tuesday, 1 Dec"
    ],
    "queue": [
-    "5 catch-ups for the 17 Nov batch (Wednesday, 25 Nov) — still waiting for approval",
-    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) drafted 25 Nov for Thursday, 26 Nov — now with Cleaner. Fitsquad must drop the unverified booking-app claim",
+    "5 catch-ups for the 17 Nov batch (planned Wednesday, 25 Nov) — still waiting for approval, now a day late",
+    "Gym Day 9s (Limitless, O'Flaherty, Pure Grit, Fitsquad) cleaned and shown as cards on 25 Nov for Thursday, 26 Nov — still waiting for approval. Fitsquad must drop the unverified booking-app claim",
     "Day 14s for the 16 Nov batch on Sunday, 29 Nov"
    ],
    "waiting": [
-    "Approval on the 5 catch-ups for the 17 Nov batch (planned Wednesday, 25 Nov)"
+    "Approval to send the four gym Day 9s and the five catch-ups for the 17 Nov batch"
    ]
   },
   "cleaner": {
@@ -269,7 +272,7 @@
    "role": "CFO · Stripe and payments",
    "group": "money",
    "status": "idle",
-   "last": "25 Nov 09:02",
+   "last": "26 Nov 09:04",
    "acts": [
     "Daily payments check done; Stripe was still quiet",
     "Payment links for Chào Donegal and Don Maguire Fitness are live and waiting"
@@ -376,6 +379,26 @@
   }
  },
  "ticker": [
+  {
+   "t": "26 Nov 15:26",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "26 Nov 09:19",
+   "who": "Chief",
+   "text": "Hourly Mission Control refresh from every bot's latest check-in."
+  },
+  {
+   "t": "26 Nov 09:04",
+   "who": "Ledger",
+   "text": "Daily payments check done. Stripe was still quiet. Payment links for Chào Donegal and Don Maguire Fitness are live and waiting."
+  },
+  {
+   "t": "26 Nov 08:56",
+   "who": "Chaser",
+   "text": "Daily check: no replies or bounces. The four gym Day 9s and the five catch-ups for the 17 Nov batch still need approval to send."
+  },
   {
    "t": "26 Nov 08:21",
    "who": "Chief",
